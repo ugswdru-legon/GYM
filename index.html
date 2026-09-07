@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>University of Ghana Sports Directorate</title>
+<title>University of Ghana Sports and Wellness Directorate</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 <style>
@@ -403,16 +403,27 @@
     font-family:'JetBrains Mono',monospace; font-size:20px; letter-spacing:0.08em; text-align:center;
   }
   input.code-input::placeholder{ font-size:14px; letter-spacing:normal; font-family:'Inter',sans-serif; }
+
+  /* ---- Phone screens ---- */
+  @media (max-width:480px){
+    body{ padding:16px 10px; }
+    .card{ padding:22px 16px; }
+    h1{ font-size:32px; }
+    .field-row{ grid-template-columns:1fr; }
+  }
+  @media (max-width:360px){
+    .activity-grid{ grid-template-columns:1fr; }
+  }
 </style>
 </head>
 <body>
 
 <div class="screen active" id="screen-picker">
   <div class="card">
-    <p class="brand-eyebrow">University of Ghana Sports Directorate</p>
+    <p class="brand-eyebrow">University of Ghana Sports and Wellness Directorate</p>
     <button type="button" class="switch-link back-link" id="activityPickerBack" style="display:none;margin:0 0 8px;">← Back</button>
-    <h1 id="activityPickerTitle">CHOOSE YOUR PROGRAM</h1>
-    <p class="subhead" id="activityPickerSub">Pick what you're registering for, signing in to, or renewing.</p>
+    <h1 id="activityPickerTitle">CHOOSE YOUR ACTIVITY</h1>
+    <p class="subhead" id="activityPickerSub" style="display:none;"></p>
     <div class="setup-warning" id="setupWarningPicker" style="display:none;">
       ⚠ SCRIPT_URL isn't set yet. Open this file's code and paste in your Apps Script /exec URL.
     </div>
@@ -653,7 +664,7 @@
       <p class="section-label">Declaration</p>
       <div class="field" id="field-declaration">
         <div class="declaration-box">
-          <p class="declaration-text">I, <strong id="declarationName">&mdash;</strong>, do promise to adhere to the rules, regulations, terms and conditions governing membership and use of the University Of Ghana Sports Directorate facilities.</p>
+          <p class="declaration-text">I, <strong id="declarationName">&mdash;</strong>, do promise to adhere to the rules, regulations, terms and conditions governing membership and use of the University Of Ghana Sports and Wellness Directorate facilities.</p>
         </div>
         <div class="tick-row" id="declarationRow">
           <div class="tick-box" data-value="Yes"><span class="box"></span> Yes</div>
@@ -949,7 +960,7 @@
 <script>
 (function(){
   // ---- PASTE YOUR APPS SCRIPT WEB APP URL HERE ----
-  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwCMvHruSCUJ6hDzBzuFdiEAxWkK_Kzcwf3Fa_hMhCMa6OhV7ePM5Y2KnEb9MstpgyX/exec";
+  const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbztcwxYFjySdw-VNsa1hOmi6z5FeYlJ2MtEJNInTKbHTUsF_tIKZbZlPhgKUGxqnsTn/exec";
   // ---------------------------------------------------
 
   if(!SCRIPT_URL || SCRIPT_URL.indexOf("PASTE_") === 0){
@@ -1115,10 +1126,9 @@
 
   function renderActivityPicker(){
     const grid = document.getElementById('activityGrid');
-    document.getElementById('activityPickerTitle').textContent = pickerSection ? pickerSection.label : 'CHOOSE YOUR PROGRAM';
-    document.getElementById('activityPickerSub').textContent = pickerSection
-      ? 'Leisure play, or structured lessons?'
-      : "Pick what you're registering for, signing in to, or renewing.";
+    document.getElementById('activityPickerTitle').textContent = pickerSection ? pickerSection.label : 'CHOOSE YOUR ACTIVITY';
+    document.getElementById('activityPickerSub').textContent = pickerSection ? 'Leisure play, or structured lessons?' : '';
+    document.getElementById('activityPickerSub').style.display = pickerSection ? 'block' : 'none';
     document.getElementById('activityPickerBack').style.display = pickerSection ? 'block' : 'none';
 
     if(pickerSection){
@@ -1787,7 +1797,8 @@
 
   function updateDeclarationName(){
     const fullName = `${surnameField.value.trim()} ${otherNamesField.value.trim()}`.trim();
-    declarationNameEl.textContent = fullName || '—';
+    const isFamily = classField.value === FAMILY_CATEGORY;
+    declarationNameEl.textContent = fullName ? (fullName + (isFamily ? ' and family' : '')) : '—';
   }
 
   function showWizardStep(n){
