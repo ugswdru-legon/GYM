@@ -807,6 +807,7 @@
     </div>
 
     <div class="view" id="view-lookup">
+      <button type="button" class="back-btn" id="toCodeBtn">← Back</button>
       <p class="subhead">Find your code using the phone number you registered with.</p>
       <form id="lookupForm" novalidate>
         <div class="field" id="field-phone-lookup">
@@ -819,10 +820,10 @@
         </div>
         <button type="submit" class="btn btn-primary" id="lookupBtn">Find My Status</button>
       </form>
-      <button type="button" class="back-btn" id="toCodeBtn">← Back</button>
     </div>
 
     <div class="view" id="view-walkin">
+      <button type="button" class="back-btn" id="toCodeFromWalkinBtn">← Back</button>
       <p class="subhead">Quick walk-in entry — just a few details. Front desk still needs to approve it before you're checked in.</p>
       <form id="walkinSigninForm" novalidate>
         <div class="field" id="field-walkin-class">
@@ -857,7 +858,6 @@
         </div>
         <button type="submit" class="btn btn-primary" id="walkinSubmitBtn">Submit Walk-in</button>
       </form>
-      <button type="button" class="back-btn" id="toCodeFromWalkinBtn">← Back</button>
     </div>
 
     <div class="view" id="view-result">
@@ -874,6 +874,7 @@
     </div>
 
     <div class="view" id="view-out-code">
+      <button type="button" class="back-btn" id="toOutStartBtn">← Back</button>
       <p class="subhead">Enter your member code or ID number to sign out.</p>
       <form id="codeOutForm" novalidate>
         <div class="field" id="field-code-out">
@@ -883,10 +884,10 @@
         </div>
         <button type="submit" class="btn btn-primary" id="checkoutBtn">Sign Out</button>
       </form>
-      <button type="button" class="back-btn" id="toOutStartBtn">← Back</button>
     </div>
 
     <div class="view" id="view-out-phone">
+      <button type="button" class="back-btn" id="toOutCodeBtn">← Back</button>
       <p class="subhead">Sign out using the phone number you entered when you walked in.</p>
       <form id="phoneOutForm" novalidate>
         <div class="field" id="field-phone-out">
@@ -899,7 +900,6 @@
         </div>
         <button type="submit" class="btn btn-primary" id="checkoutPhoneBtn">Sign Out</button>
       </form>
-      <button type="button" class="back-btn" id="toOutCodeBtn">← Back</button>
     </div>
 
     <div class="view" id="view-out-result">
@@ -2260,12 +2260,28 @@
   // bare Date constructor treats an ambiguous slash-separated string as
   // M/D/Y and mangles (or fails to parse) any day-of-month above 12, so
   // this matches that shape explicitly first.
+  // Mirrors Code.gs's parseDateSafe() — DATE_FORMAT used to be month-
+  // first ("M/d/yyyy") before switching to day-first ("dd/MM/yyyy"), so
+  // a row written before that switch is still stored the old way. Tries
+  // day-first first, but only accepts it if the second number is a
+  // valid month (1-12); otherwise falls back to the old month-first
+  // reading. Only genuinely ambiguous dates (both numbers 1-12) can
+  // still come out wrong — no way to tell those apart from the string
+  // alone.
   function parseRegDate(dateStr){
     if(!dateStr) return null;
     const m = String(dateStr).match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/);
     if(m) {
-      const d = new Date(Number(m[3]), Number(m[2]) - 1, Number(m[1]));
-      return isNaN(d.getTime()) ? null : d;
+      const a = Number(m[1]), b = Number(m[2]), year = Number(m[3]);
+      if(b >= 1 && b <= 12){
+        const d = new Date(year, b - 1, a);
+        if(!isNaN(d.getTime())) return d;
+      }
+      if(a >= 1 && a <= 12){
+        const d = new Date(year, a - 1, b);
+        if(!isNaN(d.getTime())) return d;
+      }
+      return null;
     }
     const d = new Date(dateStr);
     return isNaN(d.getTime()) ? null : d;
