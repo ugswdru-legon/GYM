@@ -1324,25 +1324,169 @@
   let currentActivity = null;
 
   // ---- Country codes for phone fields ----
+  // Country list for the phone fields. The flag is built from the 2-letter country code
+  // (Windows shows the letters, e.g. "JP +81", instead of a flag picture — that's normal there).
+  // US and Canada share +1, so one entry covers both.
   const COUNTRY_CODES = [
-    { code:"+233", label:"🇬🇭 +233", def:true },
-    { code:"+234", label:"🇳🇬 +234" },
-    { code:"+225", label:"🇨🇮 +225" },
-    { code:"+228", label:"🇹🇬 +228" },
-    { code:"+229", label:"🇧🇯 +229" },
-    { code:"+226", label:"🇧🇫 +226" },
-    { code:"+223", label:"🇲🇱 +223" },
-    { code:"+221", label:"🇸🇳 +221" },
-    { code:"+232", label:"🇸🇱 +232" },
-    { code:"+231", label:"🇱🇷 +231" },
-    { code:"+27",  label:"🇿🇦 +27" },
-    { code:"+254", label:"🇰🇪 +254" },
-    { code:"+1",   label:"🇺🇸 +1" },
-    { code:"+44",  label:"🇬🇧 +44" },
-    { code:"+91",  label:"🇮🇳 +91" },
-    { code:"+81",  label:"🇯🇵 +81" },
-    { code:"+86",  label:"🇨🇳 +86" }
-  ];
+    { iso:"GH", code:"+233",def:true },
+    { iso:"NG", code:"+234" },
+    { iso:"CI", code:"+225" },
+    { iso:"TG", code:"+228" },
+    { iso:"BJ", code:"+229" },
+    { iso:"BF", code:"+226" },
+    { iso:"ML", code:"+223" },
+    { iso:"SN", code:"+221" },
+    { iso:"SL", code:"+232" },
+    { iso:"LR", code:"+231" },
+    { iso:"GM", code:"+220" },
+    { iso:"GN", code:"+224" },
+    { iso:"NE", code:"+227" },
+    { iso:"CM", code:"+237" },
+    { iso:"ZA", code:"+27" },
+    { iso:"KE", code:"+254" },
+    { iso:"EG", code:"+20" },
+    { iso:"ET", code:"+251" },
+    { iso:"TZ", code:"+255" },
+    { iso:"UG", code:"+256" },
+    { iso:"RW", code:"+250" },
+    { iso:"ZM", code:"+260" },
+    { iso:"ZW", code:"+263" },
+    { iso:"BW", code:"+267" },
+    { iso:"NA", code:"+264" },
+    { iso:"MA", code:"+212" },
+    { iso:"DZ", code:"+213" },
+    { iso:"TN", code:"+216" },
+    { iso:"US", code:"+1" },
+    { iso:"GB", code:"+44" },
+    { iso:"IE", code:"+353" },
+    { iso:"FR", code:"+33" },
+    { iso:"DE", code:"+49" },
+    { iso:"NL", code:"+31" },
+    { iso:"BE", code:"+32" },
+    { iso:"CH", code:"+41" },
+    { iso:"AT", code:"+43" },
+    { iso:"IT", code:"+39" },
+    { iso:"ES", code:"+34" },
+    { iso:"PT", code:"+351" },
+    { iso:"SE", code:"+46" },
+    { iso:"NO", code:"+47" },
+    { iso:"DK", code:"+45" },
+    { iso:"FI", code:"+358" },
+    { iso:"IS", code:"+354" },
+    { iso:"PL", code:"+48" },
+    { iso:"CZ", code:"+420" },
+    { iso:"GR", code:"+30" },
+    { iso:"TR", code:"+90" },
+    { iso:"RU", code:"+7" },
+    { iso:"UA", code:"+380" },
+    { iso:"AE", code:"+971" },
+    { iso:"SA", code:"+966" },
+    { iso:"QA", code:"+974" },
+    { iso:"IL", code:"+972" },
+    { iso:"IN", code:"+91" },
+    { iso:"PK", code:"+92" },
+    { iso:"BD", code:"+880" },
+    { iso:"LK", code:"+94" },
+    { iso:"CN", code:"+86" },
+    { iso:"HK", code:"+852" },
+    { iso:"JP", code:"+81" },
+    { iso:"KR", code:"+82" },
+    { iso:"SG", code:"+65" },
+    { iso:"MY", code:"+60" },
+    { iso:"TH", code:"+66" },
+    { iso:"VN", code:"+84" },
+    { iso:"PH", code:"+63" },
+    { iso:"ID", code:"+62" },
+    { iso:"AU", code:"+61" },
+    { iso:"NZ", code:"+64" },
+    { iso:"BR", code:"+55" },
+    { iso:"MX", code:"+52" },
+    { iso:"AR", code:"+54" },
+    { iso:"CO", code:"+57" },
+    { iso:"LU", code:"+352" },
+    { iso:"MT", code:"+356" },
+    { iso:"CY", code:"+357" },
+    { iso:"HU", code:"+36" },
+    { iso:"RO", code:"+40" },
+    { iso:"BG", code:"+359" },
+    { iso:"HR", code:"+385" },
+    { iso:"RS", code:"+381" },
+    { iso:"SK", code:"+421" },
+    { iso:"SI", code:"+386" },
+    { iso:"LT", code:"+370" },
+    { iso:"LV", code:"+371" },
+    { iso:"EE", code:"+372" },
+    { iso:"BY", code:"+375" },
+    { iso:"AL", code:"+355" },
+    { iso:"BA", code:"+387" },
+    { iso:"MK", code:"+389" },
+    { iso:"ME", code:"+382" },
+    { iso:"MD", code:"+373" },
+    { iso:"AO", code:"+244" },
+    { iso:"MZ", code:"+258" },
+    { iso:"MW", code:"+265" },
+    { iso:"CD", code:"+243" },
+    { iso:"CG", code:"+242" },
+    { iso:"GA", code:"+241" },
+    { iso:"GQ", code:"+240" },
+    { iso:"SD", code:"+249" },
+    { iso:"LY", code:"+218" },
+    { iso:"MU", code:"+230" },
+    { iso:"SC", code:"+248" },
+    { iso:"MG", code:"+261" },
+    { iso:"SO", code:"+252" },
+    { iso:"DJ", code:"+253" },
+    { iso:"BI", code:"+257" },
+    { iso:"SS", code:"+211" },
+    { iso:"TD", code:"+235" },
+    { iso:"CV", code:"+238" },
+    { iso:"GW", code:"+245" },
+    { iso:"MR", code:"+222" },
+    { iso:"LS", code:"+266" },
+    { iso:"SZ", code:"+268" },
+    { iso:"ER", code:"+291" },
+    { iso:"JO", code:"+962" },
+    { iso:"LB", code:"+961" },
+    { iso:"KW", code:"+965" },
+    { iso:"BH", code:"+973" },
+    { iso:"OM", code:"+968" },
+    { iso:"IQ", code:"+964" },
+    { iso:"IR", code:"+98" },
+    { iso:"YE", code:"+967" },
+    { iso:"AF", code:"+93" },
+    { iso:"NP", code:"+977" },
+    { iso:"MM", code:"+95" },
+    { iso:"KH", code:"+855" },
+    { iso:"LA", code:"+856" },
+    { iso:"MN", code:"+976" },
+    { iso:"UZ", code:"+998" },
+    { iso:"TW", code:"+886" },
+    { iso:"MO", code:"+853" },
+    { iso:"BN", code:"+673" },
+    { iso:"CL", code:"+56" },
+    { iso:"PE", code:"+51" },
+    { iso:"VE", code:"+58" },
+    { iso:"EC", code:"+593" },
+    { iso:"UY", code:"+598" },
+    { iso:"PY", code:"+595" },
+    { iso:"BO", code:"+591" },
+    { iso:"CR", code:"+506" },
+    { iso:"PA", code:"+507" },
+    { iso:"GT", code:"+502" },
+    { iso:"HN", code:"+504" },
+    { iso:"SV", code:"+503" },
+    { iso:"NI", code:"+505" },
+    { iso:"CU", code:"+53" }
+  ].map(c => Object.assign(c, {
+    label: (c.iso === "US" ? "\uD83C\uDDFA\uD83C\uDDF8\uD83C\uDDE8\uD83C\uDDE6" : String.fromCodePoint(...[...c.iso].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65))) + " " + c.code
+  }));
+  // Digits allowed in the number part, after the country code and without the leading 0.
+  // Ghana's are exactly 9; everywhere else numbers vary (Norway 8, Germany up to 11, USA/UK 10...), so
+  // allow anything from 7 digits up to the international limit of 15 digits in total with the country code.
+  function phoneDigitRules(code){
+    if(code === '+233') return { min: 9, max: 9 };
+    return { min: 7, max: Math.max(7, 15 - String(code).replace(/\D/g, '').length) };
+  }
   function populateCountryCodeSelects(){
     document.querySelectorAll('select.country-code-select').forEach(sel => {
       sel.innerHTML = COUNTRY_CODES.map(c =>
@@ -1356,20 +1500,26 @@
   // ("024 123 4567") even though every phone field here already pairs
   // with an explicit country code select that accounts for it — so a
   // leading 0 is dropped the moment it's typed, and typing is capped
-  // at 9 digits (the length of a local number once that 0 is gone).
+  // at the most digits that country's numbers can have (see phoneDigitRules).
   document.querySelectorAll('.phone-group input[type="text"]').forEach(input => {
-    input.addEventListener('input', () => {
-      let value = input.value.replace(/^0/, '');
+    const codeSelect = input.closest('.phone-group').querySelector('select');
+    function applyLimit(){
+      const code = codeSelect ? codeSelect.value : '+233';
+      const maxDigits = phoneDigitRules(code).max;
+      // Italy is the one common exception where the leading 0 is part of the number.
+      let value = code === '+39' ? input.value : input.value.replace(/^0/, '');
       let digitCount = 0, cutIndex = value.length;
       for(let i = 0; i < value.length; i++){
         if(/\d/.test(value[i])){
           digitCount++;
-          if(digitCount > 9){ cutIndex = i; break; }
+          if(digitCount > maxDigits){ cutIndex = i; break; }
         }
       }
       value = value.slice(0, cutIndex);
       if(value !== input.value) input.value = value;
-    });
+    }
+    input.addEventListener('input', applyLimit);
+    if(codeSelect) codeSelect.addEventListener('change', applyLimit);
   });
 
   /* ===================== Screens: activity picker <-> app ===================== */
@@ -1841,11 +1991,14 @@
   // ---- Photo upload ----
   let photoBase64 = null;
   let photoMimeType = null;
-  const MAX_PHOTO_BYTES = 4 * 1024 * 1024; // ~4MB, generous but keeps requests small
+  let photoThumbBase64 = null; // tiny preview the front desk can show before the real upload lands
+  // The picked photo is shrunk below before it's sent, so the limit only needs to cover what a phone camera produces.
+  const MAX_PHOTO_BYTES = 15 * 1024 * 1024;
 
   function resetPhotoUI(){
     photoBase64 = null;
     photoMimeType = null;
+    photoThumbBase64 = null;
     photoThumb.innerHTML = "📷";
     photoCopyMain.textContent = "Tap to add a photo";
     photoCopySub.textContent = "Clear photo of your face";
@@ -1882,21 +2035,57 @@
       return;
     }
     if(file.size > MAX_PHOTO_BYTES){
-      showConfirm(true, "Photo too large", "Please choose a photo under 4MB.");
+      showConfirm(true, "Photo too large", "Please choose a photo under 15MB.");
       inputEl.value = '';
       return;
     }
     const reader = new FileReader();
     reader.onload = () => {
-      photoBase64 = reader.result;
-      photoMimeType = file.type;
-      photoThumb.innerHTML = `<img src="${reader.result}" alt="Selected photo">`;
-      photoCopyMain.textContent = "Photo added — tap to change";
-      photoCopySub.textContent = "Clear photo of your face";
-      photoUploadBox.classList.add('has-photo');
-      clearFieldError('field-photo');
+      const original = reader.result;
+      // Phone cameras make 3-8MB photos; uploading that over mobile data (then Drive saving it) was most
+      // of the wait before a photo showed up on the front desk's approval screen. Shrink it to a sensible
+      // size first (~100-200KB), plus a tiny preview the front desk can show straight away.
+      shrinkPhoto(original, file.type).then(shrunk => {
+        photoBase64 = shrunk.full;
+        photoMimeType = shrunk.mime;
+        photoThumbBase64 = shrunk.thumb;
+        photoThumb.innerHTML = `<img src="${shrunk.thumb || shrunk.full}" alt="Selected photo">`;
+        photoCopyMain.textContent = "Photo added — tap to change";
+        photoCopySub.textContent = "Clear photo of your face";
+        photoUploadBox.classList.add('has-photo');
+        clearFieldError('field-photo');
+      });
     };
     reader.readAsDataURL(file);
+  }
+
+  // Resolves with { full, mime, thumb }. If the browser can't decode the image (an unusual format),
+  // falls back to sending the original untouched, exactly as before.
+  function shrinkPhoto(dataUrl, originalMime){
+    return new Promise(resolve => {
+      const fallback = { full: dataUrl, mime: originalMime, thumb: null };
+      const img = new Image();
+      img.onload = () => {
+        try{
+          function draw(maxEdge, quality){
+            const scale = Math.min(1, maxEdge / Math.max(img.naturalWidth, img.naturalHeight));
+            const c = document.createElement('canvas');
+            c.width = Math.max(1, Math.round(img.naturalWidth * scale));
+            c.height = Math.max(1, Math.round(img.naturalHeight * scale));
+            const g = c.getContext('2d');
+            g.fillStyle = '#fff'; g.fillRect(0, 0, c.width, c.height);
+            g.drawImage(img, 0, 0, c.width, c.height);
+            return c.toDataURL('image/jpeg', quality);
+          }
+          const full = draw(1024, 0.82);
+          const thumb = draw(120, 0.7);
+          // Never make it bigger than what we were given.
+          resolve({ full: full.length < dataUrl.length ? full : dataUrl, mime: full.length < dataUrl.length ? 'image/jpeg' : originalMime, thumb: thumb });
+        }catch(e){ resolve(fallback); }
+      };
+      img.onerror = () => resolve(fallback);
+      img.src = dataUrl;
+    });
   }
 
   photoInputSelfie.addEventListener('change', () => handlePhotoFile(photoInputSelfie));
@@ -2085,7 +2274,7 @@
   function validateStep3(){
     let valid = true;
     const phoneDigits = phoneField.value.replace(/[^0-9+]/g, '');
-    if(!phoneDigits || phoneDigits.replace(/\D/g,'').length < 9){ markInvalid('field-phone'); valid = false; } else clearFieldError('field-phone');
+    if(!phoneDigits || phoneDigits.replace(/\D/g,'').length < phoneDigitRules(regPhoneCode.value).min){ markInvalid('field-phone'); valid = false; } else clearFieldError('field-phone');
     if(!isValidEmail(emailField.value.trim())){ markInvalid('field-email'); valid = false; } else clearFieldError('field-email');
     if(!addressField.value.trim()){ markInvalid('field-address'); valid = false; } else clearFieldError('field-address');
     return valid;
@@ -2104,7 +2293,7 @@
     if(!emergencySurnameField.value.trim()){ markInvalid('field-emergencySurname'); valid = false; } else clearFieldError('field-emergencySurname');
     if(!emergencyOtherNamesField.value.trim()){ markInvalid('field-emergencyOtherNames'); valid = false; } else clearFieldError('field-emergencyOtherNames');
     const emPhoneDigits = emergencyPhoneField.value.replace(/[^0-9+]/g, '');
-    if(!emPhoneDigits || emPhoneDigits.replace(/\D/g,'').length < 9){ markInvalid('field-emergencyPhone'); valid = false; } else clearFieldError('field-emergencyPhone');
+    if(!emPhoneDigits || emPhoneDigits.replace(/\D/g,'').length < phoneDigitRules(regEmergencyPhoneCode.value).min){ markInvalid('field-emergencyPhone'); valid = false; } else clearFieldError('field-emergencyPhone');
     if(!emergencyRelationshipField.value.trim()){ markInvalid('field-emergencyRelationship'); valid = false; } else clearFieldError('field-emergencyRelationship');
     return valid;
   }
@@ -2215,6 +2404,7 @@
     const payload = {
       action: "submit",
       activity: currentActivity.key,
+      photoThumb: photoThumbBase64 || "",
       class: classField.value,
       name: fullName,
       department: deptField.value.trim(),
@@ -2832,7 +3022,7 @@
     e.preventDefault();
     if(!requireCurrentActivity()) return;
     const phoneDigits = phoneInput.value.replace(/[^0-9+]/g, '');
-    if(!phoneDigits || phoneDigits.replace(/\D/g,'').length < 9){ markInvalid('field-phone-lookup'); return; }
+    if(!phoneDigits || phoneDigits.replace(/\D/g,'').length < phoneDigitRules(document.getElementById('phoneInputCode').value).min){ markInvalid('field-phone-lookup'); return; }
     clearFieldError('field-phone-lookup');
 
     lookupBtn.disabled = true;
@@ -3240,13 +3430,13 @@
     e.preventDefault();
     let valid = true;
     const phoneDigits = renPhone.value.replace(/[^0-9+]/g, '');
-    if(!phoneDigits || phoneDigits.replace(/\D/g,'').length < 9){ markInvalid('field-ren-phone'); valid = false; } else clearFieldError('field-ren-phone');
+    if(!phoneDigits || phoneDigits.replace(/\D/g,'').length < phoneDigitRules(renPhoneCode.value).min){ markInvalid('field-ren-phone'); valid = false; } else clearFieldError('field-ren-phone');
     if(!isValidEmail(renEmail.value.trim())){ markInvalid('field-ren-email'); valid = false; } else clearFieldError('field-ren-email');
     if(!renAddress.value.trim()){ markInvalid('field-ren-address'); valid = false; } else clearFieldError('field-ren-address');
     if(!renEmergencySurname.value.trim()){ markInvalid('field-ren-emergencySurname'); valid = false; } else clearFieldError('field-ren-emergencySurname');
     if(!renEmergencyOtherNames.value.trim()){ markInvalid('field-ren-emergencyOtherNames'); valid = false; } else clearFieldError('field-ren-emergencyOtherNames');
     const emPhoneDigits = renEmergencyPhone.value.replace(/[^0-9+]/g, '');
-    if(!emPhoneDigits || emPhoneDigits.replace(/\D/g,'').length < 9){ markInvalid('field-ren-emergencyPhone'); valid = false; } else clearFieldError('field-ren-emergencyPhone');
+    if(!emPhoneDigits || emPhoneDigits.replace(/\D/g,'').length < phoneDigitRules(renEmergencyPhoneCode.value).min){ markInvalid('field-ren-emergencyPhone'); valid = false; } else clearFieldError('field-ren-emergencyPhone');
     if(!renEmergencyRelationship.value.trim()){ markInvalid('field-ren-emergencyRelationship'); valid = false; } else clearFieldError('field-ren-emergencyRelationship');
     if(!valid) return;
 
