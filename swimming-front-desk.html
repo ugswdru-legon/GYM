@@ -3,13 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>Front Desk — Check-In Log</title>
+<title>Swimming Front Desk</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgaWQ9InN2ZzExMjYiCiAgIHZlcnNpb249IjEuMSIKICAgdmlld0JveD0iMCAwIDc5LjM3NSA5NS4xNTI1MzQiCiAgIGhlaWdodD0iOTUuMTUyNTM0bW0iCiAgIHdpZHRoPSI3OS4zNzVtbSI+CiAgPGRlZnMKICAgICBpZD0iZGVmczExMjAiPgogICAgPGNsaXBQYXRoCiAgICAgICBjbGlwUGF0aFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGlkPSJjbGlwUGF0aDg4MSI+CiAgICAgIDxwYXRoCiAgICAgICAgIGQ9Im0gMTIwLjIyNCwzMTEuNjg2IGggNTcuMTkgdiA2My4wNjggaCAtNTcuMTkgeiIKICAgICAgICAgaWQ9InBhdGg4NzkiIC8+CiAgICA8L2NsaXBQYXRoPgogIDwvZGVmcz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGExMTIzIj4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNzcuMzM5MDMsLTc5LjM3NDk5MikiCiAgICAgaWQ9ImxheWVyMSI+CiAgICA8ZwogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMS41MjczMjMyLDAsMCwtMS41MjczMjMyLDg5LjgxMzExNyw2NTEuNzQ1NDcpIgogICAgICAgY2xpcC1wYXRoPSJ1cmwoI2NsaXBQYXRoODgxKSIKICAgICAgIGlkPSJnODc3Ij4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYyLjI0NjksMzE4LjkzMjkpIgogICAgICAgICBpZD0iZzg4MyI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDg4NSIKICAgICAgICAgICBzdHlsZT0iZmlsbDojYmE4ZjRhO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgICAgIGQ9Ik0gMCwwIEMgMC4wNjYsMC40MTUgMC4wNzcsMC41NjkgMC4xNDQsMC45ODQgMS4yMjgsMS4wNDggMi4yNTgsMC44NTIgMy4yODcsMC42NTYgMi41ODQsMC4xMjEgMS4xNjgsLTAuMDU4IDAsMCBtIC0yNi44NzcsLTAuMjc3IGMgLTEuMTc3LDAuMDg3IC0yLjU0OSwwLjQzNSAtMy4xMzcsMS4wNDQgMS4wNjcsMC4wNjUgMi4xMzUsMC4xMyAzLjIwMiwtMC4wNjUgLTAuMDIyLC0wLjQxNCAtMC4wNDMsLTAuNTY2IC0wLjA2NSwtMC45NzkgTSA0LjExMywxLjEwMiBDIDIuMDg1LDEuNzMxIDEuMDIyLDEuNTU5IC0wLjM5NiwxLjU3OSBMIC0wLjU5LC0wLjQyOSBjIC04LjI2LC0xLjQ2NyAtMTYuOTI2LC0xLjM0NyAtMjUuNTMsMC4wNCAtMC4xMzQsMC44NTIgLTAuMDExLDEuMjIzIC0wLjE1MSwxLjc2OSAtMi42NCwwLjE2NyAtNC43MjQsMC4wNzMgLTQuNzQ4LC0wLjgwNSAwLC0xLjMxNiAwLC0zLjQ4NSAwLC00LjggMTEuNTA3LC0zLjAwNSAyMy42MjUsLTMuMDQ2IDM1LjEzMiwwLjEyMSAwLDEuMDk3IDAsNC4xMSAwLDUuMjA2IiAvPgogICAgICA8L2c+CiAgICAgIDxnCiAgICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3NC43MjEzLDMyMy4yOTM4KSIKICAgICAgICAgaWQ9Imc4ODciPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGg4ODkiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6I2JhOGY0YTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgICAgICBkPSJtIDAsMCBjIDAuMTEsMS41NTYgLTMuMjY4LDIuNDU4IC02LjA0MywwLjg0NCAtMy4yNDUsLTIuNzEzIDMuMjExLC0zLjQxMyA0LjQyOSwtMS40MzMgMC4zNSwwLjcxMiAtMC4yNTYsMC44NjcgLTAuNzk4LDAuNTExIC0xLjAwOCwtMC42NjMgLTMuMzY5LC0wLjg4OSAtMy4xMzcsMC4xMjMgMC42ODMsMC44NyAzLjM1MiwwLjg1IDMuODE0LDAuNTg1IDMuNDEyLC0xLjY5MSAtMy40MzgsLTMuODcyIC01LjA5NiwtMi44MjMgLTQuMTkzLDEuNDQzIC01Ljg5NCwwLjU3NiAtNS44NTYsMC40NCAtMC4wNDgsLTAuNjQ2IDAuNDc1LC0wLjYwMiAxLjY1NSwtMC41NTMgMS4wNDEsMC4wNDIgMi4yMiwtMC4wNjggMy4xMjIsLTAuNTc5IDAsLTEuMzAyIDAuMTEzLC0yLjg4NiAwLjExMywtNC4xODcgMi43NjUsLTAuMTQgNS4xOTUsMC4yMjggNy4zMDksMS43MTIgQyAtMC40OTQsLTMuNzQyIDAuMTc2LC0wLjQzNCAwLDAiIC8+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYzLjMyNjQsMzE1Ljg0ODMpIgogICAgICAgICBpZD0iZzg5MSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDg5MyIKICAgICAgICAgICBzdHlsZT0iZmlsbDojMjMyNTU5O2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgICAgIGQ9Im0gMCwwIDAuMzc5LDAuMTE3IGMgMC4xMDMsLTAuMjg3IDAuMjc2LC0wLjQwOSAwLjUxOSwtMC4zNjMgMC4xMTksMC4wMjIgMC4yMDgsMC4wNyAwLjI2NCwwLjE0NCBDIDEuMjE5LC0wLjAyOSAxLjIzOCwwLjA1MyAxLjIyLDAuMTQyIDEuMjEsMC4xOTUgMS4xODksMC4yMzcgMS4xNTgsMC4yNyAxLjEyNiwwLjMwMiAxLjA4MywwLjMyNSAxLjAyOSwwLjM0IDAuOTc1LDAuMzU0IDAuODQ5LDAuMzcyIDAuNjQ4LDAuMzkyIDAuNDY5LDAuNDEgMC4zMzQsMC40NCAwLjI0NCwwLjQ4NCAwLjE1NCwwLjUyNyAwLjA3NiwwLjU5MSAwLjAxLDAuNjc2IC0wLjA1NSwwLjc2MiAtMC4wOTgsMC44NTkgLTAuMTIsMC45NjcgLTAuMTQ2LDEuMDk0IC0wLjEzOSwxLjIxMyAtMC4xLDEuMzI1IC0wLjA2MSwxLjQzNyAwLjAwNiwxLjUyOSAwLjEsMS42IDAuMTk1LDEuNjcxIDAuMzE5LDEuNzIxIDAuNDczLDEuNzUgMC43MDUsMS43OTQgMC44OTcsMS43NjcgMS4wNTEsMS42NyAxLjIwNiwxLjU3NCAxLjMxLDEuNDEzIDEuMzYyLDEuMTg5IEwgMC45NjksMS4wOTQgQyAwLjkyNiwxLjIxNiAwLjg3MSwxLjI5NSAwLjgwMywxLjMzNCAwLjczNiwxLjM3MiAwLjY0OCwxLjM4MSAwLjU0MSwxLjM2MSAwLjQzNCwxLjM0MSAwLjM1NiwxLjMwNCAwLjMwNywxLjI1MSAwLjI1OCwxLjE5NiAwLjIzOSwxLjEzOCAwLjI1MiwxLjA3MyAwLjI2NSwxLjAxIDAuMzAyLDAuOTYyIDAuMzYzLDAuOTI5IDAuNDI1LDAuODk1IDAuNTU1LDAuODcxIDAuNzU0LDAuODU0IDAuOTY1LDAuODM2IDEuMTIxLDAuODA0IDEuMjIyLDAuNzU5IDEuMzI0LDAuNzE0IDEuNDA4LDAuNjQ3IDEuNDc0LDAuNTU5IDEuNTQxLDAuNDcgMS41ODgsMC4zNTcgMS42MTYsMC4yMTggMS42NTcsMC4wMTcgMS42MjYsLTAuMTY0IDEuNTI2LC0wLjMyNSAxLjQyNSwtMC40ODYgMS4yMzgsLTAuNTkyIDAuOTY2LC0wLjY0MyAwLjQ4MywtMC43MzMgMC4xNjEsLTAuNTE5IDAsMCBtIC0yLjE2MywxLjI1NSAwLjM5NywwLjA2NyAwLjIzLC0xLjI1NyBjIDAuMDM2LC0wLjE5NiAwLjA2NCwtMC4zMjIgMC4wODUsLTAuMzggMC4wMzYsLTAuMDk5IDAuMDkyLC0wLjE3MSAwLjE2OSwtMC4yMTYgMC4wNzYsLTAuMDQ1IDAuMTY5LC0wLjA1OCAwLjI3NywtMC4wMzkgMC4wOTIsMC4wMTUgMC4xNjMsMC4wNDggMC4yMTUsMC4wOTcgMC4wNSwwLjA1IDAuMDgsMC4xMTIgMC4wODgsMC4xODYgMC4wMDksMC4wNzMgLTAuMDA4LDAuMjI2IC0wLjA1LDAuNDU3IGwgLTAuMjM1LDEuMjg1IDAuMzk5LDAuMDY4IDAuMjIzLC0xLjIyIGMgMC4wNTcsLTAuMzEyIDAuMDgxLC0wLjU0IDAuMDcyLC0wLjY4NCAtMC4wMSwtMC4xNDUgLTAuMDY2LC0wLjI3MSAtMC4xNzIsLTAuMzc3IC0wLjEwNSwtMC4xMDggLTAuMjU3LC0wLjE3NyAtMC40NTUsLTAuMjExIC0wLjIwNiwtMC4wMzUgLTAuMzczLC0wLjAyNyAtMC41MDIsMC4wMjUgLTAuMTI4LDAuMDUxIC0wLjIzLDAuMTM4IC0wLjMwNiwwLjI1OCAtMC4wNzYsMC4xMiAtMC4xNDUsMC4zNTQgLTAuMjA5LDAuNzAyIHogbSAtMS44NzYsLTIuNjI5IC0wLjI5OCwyLjM0IDAuNjAxLDAuMDcxIDAuNTY1LC0xLjU1NCAwLjE1NCwxLjYzOSAwLjYwMiwwLjA3MiAwLjI5OCwtMi4zNDEgLTAuMzcyLC0wLjA0NCAtMC4yMzUsMS44NDMgLTAuMTYxLC0xLjg5IC0wLjM4NywtMC4wNDUgLTAuNjI3LDEuNzk1IDAuMjM0LC0xLjg0MiB6IE0gLTUuMSwtMC42MDYgLTUuNDY5LDAuMjM3IC01LjY0NCwtMC42NjEgWiBtIDAuODQzLC0wLjg1MiAtMC40MzgsLTAuMDQ1IC0wLjIzMiwwLjUxNiAtMC43OTcsLTAuMDgxIC0wLjEwNiwtMC41NSAtMC40MjgsLTAuMDQzIDAuNTIxLDIuNDI0IDAuNDI2LDAuMDQzIHogbSAtMy41NjMsMS42MzUgMC4xNDEsLTEuNTU2IDAuMzAzLDAuMDI2IGMgMC4xMjksMC4wMSAwLjIyMywwLjAzIDAuMjc4LDAuMDU4IDAuMDU3LDAuMDI5IDAuMTAxLDAuMDY4IDAuMTM0LDAuMTE5IDAuMDMzLDAuMDUxIDAuMDU3LDAuMTI4IDAuMDcyLDAuMjMzIDAuMDE1LDAuMTA1IDAuMDE0LDAuMjQxIC0xMGUtNCwwLjQwOSAtMC4wMTYsMC4xNzMgLTAuMDQxLDAuMzEgLTAuMDc0LDAuNDA4IC0wLjAzNSwwLjA5OCAtMC4wOCwwLjE3NCAtMC4xMzgsMC4yMjcgLTAuMDU4LDAuMDU0IC0wLjEyNSwwLjA4NiAtMC4yMDIsMC4wOTggLTAuMDU5LDAuMDA5IC0wLjE2OCwwLjAwNyAtMC4zMywtMC4wMDcgeiBtIC0wLjQzNywwLjM2MyAwLjczNSwwLjA2MiBjIDAuMTg2LDAuMDE2IDAuMzI5LDAuMDA4IDAuNDI3LC0wLjAyNCAwLjA5OCwtMC4wMzIgMC4xOTIsLTAuMDkzIDAuMjgsLTAuMTgxIDAuMDg5LC0wLjA4OCAwLjE2MiwtMC4yMDYgMC4yMjIsLTAuMzU0IDAuMDU5LC0wLjE0OCAwLjA5OSwtMC4zMzQgMC4xMTksLTAuNTYgMC4wMTksLTAuMjAzIDAuMDExLC0wLjM4MSAtMC4wMjMsLTAuNTM2IC0wLjAzNCwtMC4xNTQgLTAuMDg0LC0wLjI3NyAtMC4xNDksLTAuMzcyIC0wLjA2NiwtMC4wOTMgLTAuMTQ4LC0wLjE2NiAtMC4yNDcsLTAuMjE5IC0wLjEsLTAuMDUzIC0wLjIzMSwtMC4wODcgLTAuMzk0LC0wLjEwMSBsIC0wLjc1NywtMC4wNjQgeiBtIC0xLjY1MiwtMi40NTQgLTAuMTI4LDIuMzU0IDEuNDg2LDAuMDc2IDAuMDIyLC0wLjM5OSAtMS4wODQsLTAuMDU1IDAuMDI5LC0wLjUyMiAxLjAwNiwwLjA1MSAwLjAyMiwtMC4zOTYgLTEuMDA3LC0wLjA1MSAwLjAzNSwtMC42NDEgMS4xMiwwLjA1NyAwLjAyMSwtMC4zOTcgeiBtIC0wLjc3MSwwLjg0IDAuMzk3LC0wLjEzMyBjIC0wLjA1MiwtMC4yNjYgLTAuMTQ2LC0wLjQ2MiAtMC4yODQsLTAuNTg4IC0wLjEzOCwtMC4xMjcgLTAuMzExLC0wLjE5MyAtMC41MTksLTAuMiAtMC4yNjEsLTAuMDA5IC0wLjQ3NiwwLjA4MSAtMC42NDUsMC4yNjkgLTAuMTk2LDAuMjE4IC0wLjMsMC41MTcgLTAuMzE0LDAuODk3IC0wLjAxNCwwLjQwMiAwLjA2OCwwLjcyIDAuMjQ4LDAuOTUzIDAuMTU2LDAuMjAzIDAuMzcyLDAuMzA5IDAuNjQ4LDAuMzE4IDAuMjI0LDAuMDA4IDAuNDE1LC0wLjA2IDAuNTcxLC0wLjIwMiAwLjExMiwtMC4xMDIgMC4xOTYsLTAuMjU1IDAuMjU0LC0wLjQ2IGwgLTAuMzk2LC0wLjEyNiBjIC0wLjAzLDAuMTI3IC0wLjA4NCwwLjIyMiAtMC4xNjMsMC4yODggLTAuMDc5LDAuMDY1IC0wLjE3LDAuMDk2IC0wLjI3MywwLjA5MyAtMC4xNDgsLTAuMDA1IC0wLjI2NiwtMC4wNzEgLTAuMzU1LC0wLjE5OSAtMC4wODksLTAuMTI3IC0wLjEyOCwtMC4zMzQgLTAuMTE4LC0wLjYyIDAuMDExLC0wLjI5NyAwLjA2NCwtMC41MDcgMC4xNiwtMC42MjkgMC4wOTUsLTAuMTIyIDAuMjE2LC0wLjE4MSAwLjM2MiwtMC4xNzYgMC4xMDcsMC4wMDQgMC4xOTcsMC4wNDcgMC4yNzIsMC4xMjkgMC4wNzUsMC4wODMgMC4xMjcsMC4yMTEgMC4xNTUsMC4zODYgbSAtMy4wOTYsMC4yNjQgYyAwLC0wLjI3MSAwLjA1NCwtMC40NzQgMC4xNiwtMC42MSAwLjEwNywtMC4xMzYgMC4yMzksLTAuMjA0IDAuMzk4LC0wLjIwNCAwLjE1OCwwIDAuMjksMC4wNjggMC4zOTUsMC4yMDIgMC4xMDUsMC4xMzUgMC4xNTYsMC4zNDEgMC4xNTYsMC42MiAwLDAuMjc0IC0wLjA1LDAuNDc2IC0wLjE1MiwwLjYwNyAtMC4xMDIsMC4xMyAtMC4yMzUsMC4xOTYgLTAuMzk5LDAuMTk2IC0wLjE2NSwwIC0wLjI5OSwtMC4wNjYgLTAuNDAzLC0wLjE5OCAtMC4xMDMsLTAuMTMyIC0wLjE1NSwtMC4zMzYgLTAuMTU1LC0wLjYxMyBtIC0wLjQxNywtMC4wMTYgYyAwLDAuMjgxIDAuMDQzLDAuNTEyIDAuMTMsMC42OTQgMC4wODYsMC4xODIgMC4xOTgsMC4zMTcgMC4zMzcsMC40MDYgMC4xMzksMC4wODkgMC4zMDgsMC4xMzQgMC41MDYsMC4xMzQgMC4yODcsMCAwLjUyLC0wLjEwNiAwLjcwMSwtMC4zMTcgMC4xODEsLTAuMjExIDAuMjcxLC0wLjUxMiAwLjI3MSwtMC45MDMgMCwtMC4zOTQgLTAuMDk1LC0wLjcwMiAtMC4yODcsLTAuOTI0IC0wLjE2OCwtMC4xOTcgLTAuMzk1LC0wLjI5NSAtMC42ODMsLTAuMjk1IC0wLjI5MSwwIC0wLjUyLDAuMDk4IC0wLjY4OCwwLjI5MSAtMC4xOTEsMC4yMjIgLTAuMjg3LDAuNTI3IC0wLjI4NywwLjkxNCBtIC0xLjUxMiwwLjIxOSAwLjMwMSwtMC4wMDUgYyAwLjE4MywtMC4wMDMgMC4zLDAuMDAzIDAuMzUsMC4wMTcgMC4wNTEsMC4wMTUgMC4wOTIsMC4wNDUgMC4xMjQsMC4wOTIgMC4wMzEsMC4wNDcgMC4wNDgsMC4xMDkgMC4wNSwwLjE4NyAwLjAwMSwwLjA3NiAtMC4wMTQsMC4xMzYgLTAuMDQ0LDAuMTgyIC0wLjAzLDAuMDQ3IC0wLjA3MiwwLjA3OSAtMC4xMjUsMC4wOTYgLTAuMDM3LDAuMDEzIC0wLjE0NywwLjAyIC0wLjMyOCwwLjAyMyBsIC0wLjMxNywwLjAwNiB6IG0gLTAuNDI4LC0xLjM1NCAwLjA0MiwyLjM1OCAwLjg1MywtMC4wMTUgYyAwLjIxOCwtMC4wMDMgMC4zNzMsLTAuMDI3IDAuNDY2LC0wLjA3MSAwLjA5MywtMC4wNDQgMC4xNjgsLTAuMTE5IDAuMjI2LC0wLjIyNCAwLjA1OCwtMC4xMDYgMC4wODYsLTAuMjMyIDAuMDgzLC0wLjM3NyAtMC4wMDMsLTAuMTg1IC0wLjA1MiwtMC4zMzMgLTAuMTQ1LC0wLjQ0NCAtMC4wOTQsLTAuMTExIC0wLjIyNiwtMC4xNzkgLTAuMzk1LC0wLjIwNSAwLjA4NSwtMC4wNjIgMC4xNTYsLTAuMTI4IDAuMjExLC0wLjIwMSAwLjA1NSwtMC4wNzIgMC4xMzEsLTAuMjAxIDAuMjI1LC0wLjM4NyBsIDAuMjM1LC0wLjQ2NCAtMC40ODIsMC4wMDggLTAuMjg0LDAuNTE4IGMgLTAuMTAyLDAuMTg3IC0wLjE3MiwwLjMwNCAtMC4yMDksMC4zNTIgLTAuMDM3LDAuMDQ3IC0wLjA3NywwLjA3OSAtMC4xMTgsMC4wOTggLTAuMDQyLDAuMDE5IC0wLjExLDAuMDI4IC0wLjIwMywwLjAzIGwgLTAuMDg0LDAuMDAxIC0wLjAxOCwtMC45ODQgeiBtIC0xLjM5NiwyLjAwNyAtMC4wMjQsLTAuNjY5IDAuMjIzLC0wLjAwNyBjIDAuMTUxLC0wLjAwNSAwLjI1MywwLjAwMSAwLjMwOCwwLjAyIDAuMDU0LDAuMDE4IDAuMSwwLjA1MyAwLjEzNiwwLjEwNiAwLjAzNiwwLjA1MiAwLjA1NiwwLjExNiAwLjA1OSwwLjE5MyAwLjAwMiwwLjA3OCAtMC4wMTMsMC4xNDUgLTAuMDQ2LDAuMTk5IC0wLjAzNCwwLjA1NSAtMC4wNzcsMC4wOTMgLTAuMTI4LDAuMTEzIC0wLjA1MiwwLjAyIC0wLjE2MiwwLjAzMiAtMC4zMzEsMC4wMzggeiBtIC0wLjQ3NCwtMS45NDQgMC4wODUsMi4zNTYgMC42NSwtMC4wMjIgYyAwLjI0MywtMC4wMDggMC40MDEsLTAuMDI1IDAuNDc0LC0wLjA1IDAuMTE4LC0wLjA0IDAuMjEzLC0wLjEyMSAwLjI4NiwtMC4yNDIgMC4wNzMsLTAuMTIyIDAuMTA2LC0wLjI3NiAwLjEsLTAuNDY0IC0wLjAwNywtMC4xNzEgLTAuMDQ1LC0wLjMxMiAtMC4xMTYsLTAuNDI1IC0wLjA3MSwtMC4xMTMgLTAuMTU3LC0wLjE5MSAtMC4yNTksLTAuMjM0IC0wLjEwMiwtMC4wNDQgLTAuMjc1LC0wLjA2MSAtMC41MTksLTAuMDUzIGwgLTAuMjY2LDAuMDA5IC0wLjAzMiwtMC44ODkgeiBtIC0xLjU3LDAuMDkyIDAuMTcxLDIuMzUzIDAuNDAyLC0wLjAyOCAtMC4xNywtMi4zNTIgeiBtIC0xLjQ4NCwxLjQ4MyAwLjMsLTAuMDI2IGMgMC4xODIsLTAuMDE1IDAuMjk5LC0wLjAxNyAwLjM1LC0wLjAwNiAwLjA1MiwwLjAxMSAwLjA5NSwwLjAzOSAwLjEzLDAuMDgzIDAuMDM1LDAuMDQ1IDAuMDU3LDAuMTA2IDAuMDY0LDAuMTg0IDAuMDA3LDAuMDc1IC0wLjAwNCwwLjEzNiAtMC4wMywwLjE4NCAtMC4wMjcsMC4wNDggLTAuMDY2LDAuMDgzIC0wLjExOCwwLjEwNCAtMC4wMzcsMC4wMTYgLTAuMTQ2LDAuMDMgLTAuMzI2LDAuMDQ2IGwgLTAuMzE2LDAuMDI2IHogbSAtMC41MjUsLTEuMzIyIDAuMjEzLDIuMzQ5IDAuODQ5LC0wLjA3MiBjIDAuMjE3LC0wLjAxOCAwLjM3MSwtMC4wNTMgMC40NiwtMC4xMDMgMC4wODksLTAuMDUgMC4xNTksLTAuMTI5IDAuMjA5LC0wLjIzOCAwLjA1MSwtMC4xMSAwLjA2OSwtMC4yMzcgMC4wNTYsLTAuMzgyIC0wLjAxNywtMC4xODQgLTAuMDc1LC0wLjMyOCAtMC4xNzcsLTAuNDMzIC0wLjEwMiwtMC4xMDQgLTAuMjM4LC0wLjE2MyAtMC40MDksLTAuMTc4IDAuMDgxLC0wLjA2NyAwLjE0NywtMC4xMzggMC4xOTYsLTAuMjE0IDAuMDUsLTAuMDc2IDAuMTE2LC0wLjIxIDAuMTk3LC0wLjQwMiBsIDAuMjAxLC0wLjQ3OSAtMC40OCwwLjA0MSAtMC4yNDcsMC41MzYgYyAtMC4wODgsMC4xOTMgLTAuMTQ5LDAuMzE1IC0wLjE4MywwLjM2NSAtMC4wMzMsMC4wNDkgLTAuMDcsMC4wODQgLTAuMTExLDAuMTA2IC0wLjA0LDAuMDIxIC0wLjEwNywwLjAzNSAtMC4yLDAuMDQzIGwgLTAuMDgzLDAuMDA3IC0wLjA4OSwtMC45OCB6IG0gLTEuMTU5LDAuOTk1IDAuMDQzLDAuMzk1IDAuODY3LC0wLjA4OCAtMC4xMDEsLTAuOTM0IGMgLTAuMDk5LC0wLjA5IC0wLjIzMiwtMC4xNjMgLTAuNCwtMC4yMTggLTAuMTY4LC0wLjA1NiAtMC4zMzMsLTAuMDc1IC0wLjQ5NSwtMC4wNTggLTAuMTk2LDAuMDIgLTAuMzY1LDAuMDgzIC0wLjUwNSwwLjE5MiAtMC4xNCwwLjEwOSAtMC4yNDUsMC4yNjEgLTAuMzEyLDAuNDU2IC0wLjA2NywwLjE5NSAtMC4wODgsMC40MTggLTAuMDYsMC42NjkgMC4wMjgsMC4yNTkgMC4wOTcsMC40NzUgMC4yMDUsMC42NDkgMC4xMDksMC4xNzUgMC4yNCwwLjMgMC4zOTIsMC4zNzYgMC4xNTIsMC4wNzYgMC4zMjcsMC4xMDQgMC41MjUsMC4wODQgMC4yMzgsLTAuMDI0IDAuNDIyLC0wLjEwMSAwLjU1MywtMC4yMzMgMC4xMywtMC4xMzEgMC4yMDMsLTAuMzExIDAuMjIsLTAuNTQyIEwgLTIyLjIxNywwLjA1IGMgLTAuMDE2LDAuMTI0IC0wLjA2MSwwLjIyMiAtMC4xMzQsMC4yOTQgLTAuMDczLDAuMDcyIC0wLjE2NCwwLjExNCAtMC4yNzUsMC4xMjUgLTAuMTcxLDAuMDE3IC0wLjMxOCwtMC4wMzMgLTAuNDM3LC0wLjE1MSAtMC4xMjEsLTAuMTE3IC0wLjE5NSwtMC4zMDggLTAuMjI0LC0wLjU3MiAtMC4wMywtMC4yODIgMC4wMDMsLTAuNTAzIDAuMTAyLC0wLjY2MSAwLjA4NSwtMC4xMzggMC4yMTIsLTAuMjE0IDAuMzc5LC0wLjIzMSAwLjA3OSwtMC4wMDggMC4xNjMsMTBlLTQgMC4yNTEsMC4wMjggMC4wODksMC4wMjggMC4xNjksMC4wNjkgMC4yNDMsMC4xMjQgbCAwLjAzMiwwLjI5NyB6IG0gLTIuODU2LC0wLjUwOCAwLjI5OCwyLjM0IDEuNDc3LC0wLjE3NSAtMC4wNSwtMC4zOTYgLTEuMDc3LDAuMTI4IC0wLjA2NiwtMC41MTkgMSwtMC4xMTggLTAuMDUsLTAuMzk0IC0xLDAuMTE4IC0wLjA4MSwtMC42MzcgMS4xMTIsLTAuMTMyIC0wLjA1LC0wLjM5NCB6IG0gLTEuMjY2LDAuMiAwLjI4MiwxLjkzOSAtMC41OSwwLjA4IDAuMDU4LDAuMzk2IDEuNTc4LC0wLjIxNCAtMC4wNTgsLTAuMzk1IC0wLjU4OCwwLjA3OSAtMC4yODMsLTEuOTQgeiBtIC0yLjQzMiwwLjQxNSAwLjQyNSwyLjMyMiAwLjM4OCwtMC4wNjYgMC41MjQsLTEuNjg4IDAuMjg0LDEuNTUxIDAuMzcxLC0wLjA2MyAtMC40MjUsLTIuMzIyIC0wLjQwMSwwLjA2OCAtMC41MTgsMS42NDkgLTAuMjc3LC0xLjUxNCB6IG0gLTAuNzYyLDAuMTMxIDAuNDY3LDIuMzE1IDAuMzk2LC0wLjA3NCAtMC40NjYsLTIuMzE1IHoiIC8+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIyLjgxMDIsMzIzLjE2MikiCiAgICAgICAgIGlkPSJnODk1Ij4KICAgICAgICA8cGF0aAogICAgICAgICAgIGlkPSJwYXRoODk3IgogICAgICAgICAgIHN0eWxlPSJmaWxsOiNiYThmNGE7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICAgICAgZD0iTSAwLDAgQyAtMC4xMSwxLjU1NiAzLjI2OCwyLjQ1OCA2LjA0MywwLjg0NCA5LjI4OCwtMS44NjkgMi44MzIsLTIuNTY5IDEuNjE0LC0wLjU4OSAxLjI2NCwwLjEyMyAxLjg3LDAuMjc4IDIuNDEyLC0wLjA3OCAzLjQyLC0wLjc0MSA1Ljc4MSwtMC45NjcgNS41NDksMC4wNDUgNC44NjYsMC45MTUgMi4xOTcsMC44OTUgMS43MzUsMC42MyBjIC0zLjQxMiwtMS42OTEgMy40MzgsLTMuODcyIDUuMDk2LC0yLjgyMyA0LjE5MywxLjQ0MyA1Ljg5NCwwLjU3NiA1Ljg1NiwwLjQ0IDAuMDQ4LC0wLjY0NiAtMC40NzUsLTAuNjAyIC0xLjY1NSwtMC41NTMgQyA5Ljk5MSwtMi4yNjQgOC44MTIsLTIuMzc0IDcuOTEsLTIuODg1IDcuOTEsLTQuMTg3IDcuNzk3LC01Ljc3MSA3Ljc5NywtNy4wNzIgNS4wMzIsLTcuMjEyIDIuNjAyLC02Ljg0NCAwLjQ4OCwtNS4zNiAwLjQ5NSwtMy43NDIgLTAuMTc2LC0wLjQzNCAwLDAiIC8+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTcwLjEyMSwzNzQuNzU0OCkiCiAgICAgICAgIGlkPSJnODk5Ij4KICAgICAgICA8cGF0aAogICAgICAgICAgIGlkPSJwYXRoOTAxIgogICAgICAgICAgIHN0eWxlPSJmaWxsOiMyMzI1NTk7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICAgICAgZD0ibSAwLDAgaCAtNDIuNjggdiAtNDAuMDA3IGMgMCwtMTMuMzMzIDExLjk0MywtOC40NDUgMjEuMzM3LC0xMy44NzUgQyAtMTAuNDYsLTQ3LjIyNCAwLC01NC4zMjQgMCwtNDAuMDA3IFoiIC8+CiAgICAgIDwvZz4KICAgICAgPHBhdGgKICAgICAgICAgaWQ9InBhdGg5MDMiCiAgICAgICAgIHN0eWxlPSJmaWxsOiNmZmZmZmY7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICAgIGQ9Im0gMTI3LjQxMSwzNTQuNjY0IGggNDIuNjk4IHYgLTAuNzMyIGggLTQyLjY5OCB6IiAvPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjIuMzY5LDM3My42NDM5KSIKICAgICAgICAgaWQ9Imc5MDUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGg5MDciCiAgICAgICAgICAgc3R5bGU9ImZpbGw6I2JhOGY0YTtmaWxsLW9wYWNpdHk6MTtmaWxsLXJ1bGU6ZXZlbm9kZDtzdHJva2U6bm9uZSIKICAgICAgICAgICBkPSJNIDAsMCAtMC4xODYsLTAuMzczIC0wLjMsLTAuNjAxIC0wLjQ0MiwtMC44ODQgLTAuMjc2LC0xLjE2MSAtMC41ODcsLTEuNDE1IGMgLTAuMDY0LC0wLjA1MiAwLjE0LC0wLjE2OSAwLjA5LC0wLjIzNSBsIC0wLjE2NiwtMC4yMTkgYyAtMC43MDMsLTAuOTI3IC0wLjI0NSwtMi4zODcgMC4yNDksLTQuMzYxIC0wLjMwOSwtMC41MzMgLTIuMDI0LDAuMTg5IC0yLjc1MSwxLjAyIC0wLjE4OCwtMC44NDIgMC44NjYsLTMuMjQ4IDIuMDc0LC0zLjU4NSBsIDAuMjA3LC0wLjU5NCBjIC0xLjI4MywtMC4zMjIgLTMuNDMzLDEuMzIgLTMuNTkzLDEuNDU2IC0wLjEyNCwtMi4xNjUgMS41LC0zLjY5NSAzLjA0NiwtNC40MDcgMC4xNTMsLTAuMDcxIDAuMDkzLC0wLjY1MiAwLjIxMiwtMC43ODMgLTEuNDg5LC0wLjM2MyAtMi44NzUsMS4wMjIgLTQuMTExLDEuNzY3IDAuMTE1LC0xLjczMiAwLjk1MiwtMy4wNzEgMi4xNjUsLTMuODE3IGwgMC43NDMsLTAuMDIyIC0wLjE0MSwtMC4zNjYgMC41MDksMC4xIDAuMDY4LC0wLjU1NSAwLjQzMiwwLjI5MyAwLjIyNywtMC40MSAwLjE5MSwtMC4zNjMgYyAwLjI4OCwtMC42OTEgMC4xODIsLTEuNzMyIDAuMjk0LC0yLjY4NiAxLjAxMSwwIDEuNTgyLDAgMi41OTQsMCAtMC4xNjksMS41MTUgLTAuMTc5LDEuNTE1IDAuMjUzLDMuNzAzIDEuNjI5LDAuNjczIDMuMTk1LDIuMTI5IDMuMTM5LDQuMDY0IC0wLjkyNywtMC43MjkgLTIuNjE0LC0xLjU3OCAtMy44MjQsLTEuNDU2IGwgMC4xOTIsMC42NDcgYyAwLjIxOSwwLjMyMSAyLjY2NSwwLjA0OCAzLjQ1Myw0LjQyNyAtMS4xNTUsLTEuMjA5IC0yLjUwMiwtMS40MDggLTMuNTM3LC0xLjQ2MSAtMC4wNjEsMC4wOTggMC4wMzcsMC4xOTUgMC4wMzQsMC4zODIgMC43ODYsMC44OTggMS43MDUsMC45OTggMS44MTgsMy42NjIgLTAuODQzLC0wLjY2NyAtMi4xMDIsLTEuMzI1IC0yLjc5MiwtMS4wODMgMS4wOSwyLjUwMyAwLjkzLDMuMzQxIDAuMzU1LDQuNDEzIEMgMC44MDUsLTEuODEzIDAuNTM0LC0xLjc1IDAuNTUxLC0xLjY3IEwgMC42LC0xLjQ0IDAuMzA3LC0xLjA0NiAwLjM0NSwtMC43NTEgQyAwLjM3OCwtMC41MDEgMC4wNjgsLTAuMjczIDAsMCIgLz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxMzMuMzgxMywzNDAuMzIxOSkiCiAgICAgICAgIGlkPSJnOTA5Ij4KICAgICAgICA8cGF0aAogICAgICAgICAgIGlkPSJwYXRoOTExIgogICAgICAgICAgIHN0eWxlPSJmaWxsOiNiYThmNGE7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICAgICAgZD0ibSAwLDAgYyAwLjY0OCwtMC40OTYgMS40OTEsLTAuOTkzIDIuMTQsLTEuNDg5IDIuMzEyLDAuNDc1IDEwLjc4NCwyLjYzMyAxMS45OTUsLTIuNjU1IC0wLjM2MSwtNC45OTkgLTQuMTg5LC01LjI5NSAtNi4wOTUsLTQuMjA4IC0xLjQ4LDEuNDIgLTIuMDc0LDMuOTcyIDAuNDg5LDUuMDAzIDIuMjE5LDAuNTM1IDIuNzUzLC0xLjUwMyAxLjgyNiwtMS44NzIgLTIuMTcsLTAuODYzIDAuNTU2LC0yLjU4IDEuNjE3LC0wLjAzNCAwLjY4OCw0LjIzMyAtNy4wMzIsNC40NzMgLTYuNTIxLC0wLjk1NiAwLjM1NSwtMy43ODcgNC43MjcsLTQuODAyIDcuMjU3LC0zLjE3NyA0LjM2NiwyLjkxNCAyLjcwMiw3LjY0MiAwLjA2NSw5LjQ1NSBDIDcuNTQzLDAuMDg5IDUuMjMsLTAuMDIxIDAsMCBNIDAsMCBDIDAuNjQ4LDAuNDk2IDEuNDkxLDAuOTkzIDIuMTQsMS40ODkgNC40NTIsMS4wMTQgMTIuOTI0LC0xLjE0NCAxNC4xMzUsNC4xNDMgMTMuNzc0LDkuMTQzIDkuOTQ2LDkuNDM5IDguMDQsOC4zNTIgNi41Niw2LjkzMiA1Ljk2Niw0LjM4IDguNTI5LDMuMzQ5IGMgMi4yMTksLTAuNTM1IDIuNzUzLDEuNTAzIDEuODI2LDEuODcyIC0yLjE3LDAuODYzIDAuNTU2LDIuNTggMS42MTcsMC4wMzQgQyAxMi42NiwxLjAyMiA0Ljk0LDAuNzgyIDUuNDUxLDYuMjExIDUuODA2LDkuOTk4IDEwLjE3OCwxMS4wMTMgMTIuNzA4LDkuMzg4IDE3LjA3NCw2LjQ3NCAxNS40MSwxLjg3NyAxMi43NzMsMC4wNjUgNy41NDMsMC4wNDMgNS4yMywwLjAyMSAwLDAgbSAxNS4zOTksMC44MDkgYyAwLjQ0NywwIDAuODExLC0wLjM2MyAwLjgxMSwtMC44MDkgMCwtMC40NDYgLTAuMzY0LC0wLjgwOSAtMC44MTEsLTAuODA5IC0wLjQ0NiwwIC0wLjgxLDAuMzYzIC0wLjgxLDAuODA5IDAsMC40NDYgMC4zNjQsMC44MDkgMC44MSwwLjgwOSBNIDMwLjc5OSwwIGMgLTAuNjQ4LDAuNDk2IC0xLjQ5MSwwLjk5MyAtMi4xNCwxLjQ4OSAtMi4zMTIsLTAuNDc1IC0xMC43ODQsLTIuNjMzIC0xMS45OTUsMi42NTQgMC4zNjEsNSA0LjE4OSw1LjI5NiA2LjA5NSw0LjIwOSAxLjQ4LC0xLjQyIDIuMDc0LC0zLjk3MiAtMC40ODksLTUuMDAzIC0yLjIxOSwtMC41MzUgLTIuNzUzLDEuNTAzIC0xLjgyNiwxLjg3MiAyLjE2OSwwLjg2MyAtMC41NTYsMi41OCAtMS42MTcsMC4wMzQgLTAuNjg4LC00LjIzMyA3LjAzMiwtNC40NzMgNi41MjEsMC45NTYgLTAuMzU1LDMuNzg3IC00LjcyNyw0LjgwMiAtNy4yNTcsMy4xNzcgQyAxMy43MjUsNi40NzQgMTUuMzg5LDEuNzQ2IDE4LjAyNiwtMC4wNjcgMjMuMjU2LC0wLjA4OSAyNS41NjksMC4wMjEgMzAuNzk5LDAgbSAwLDAgYyAtMC42NDgsLTAuNDk2IC0xLjQ5MSwtMC45OTMgLTIuMTQsLTEuNDg5IC0yLjMxMiwwLjQ3NSAtMTAuNzg0LDIuNjMzIC0xMS45OTUsLTIuNjU1IDAuMzYxLC00Ljk5OSA0LjE4OSwtNS4yOTUgNi4wOTUsLTQuMjA4IDEuNDgsMS40MiAyLjA3NCwzLjk3MiAtMC40ODksNS4wMDMgLTIuMjE5LDAuNTM1IC0yLjc1MywtMS41MDMgLTEuODI2LC0xLjg3MiAyLjE2OSwtMC44NjMgLTAuNTU2LC0yLjU4IC0xLjYxNywtMC4wMzQgLTAuNjg4LDQuMjMzIDcuMDMyLDQuNDczIDYuNTIxLC0wLjk1NiAtMC4zNTUsLTMuNzg3IC00LjcyNywtNC44MDIgLTcuMjU3LC0zLjE3NyAtNC4zNjYsMi45MTQgLTIuNzAyLDcuNTEgLTAuMDY1LDkuMzIzIDUuMjMsMC4wMjIgNy41NDMsMC4wNDQgMTIuNzczLDAuMDY1IiAvPgogICAgICA8L2c+CiAgICAgIDxnCiAgICAgICAgIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEzMy4zODEzLDM0MC4zMjE5KSIKICAgICAgICAgaWQ9Imc5MTMiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGg5MTUiCiAgICAgICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6I2JhOGY0YTtzdHJva2Utd2lkdGg6MC4wMjU7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW1pdGVybGltaXQ6Mi42MTM7c3Ryb2tlLWRhc2hhcnJheTpub25lO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICAgICAgZD0ibSAwLDAgYyAwLjY0OCwtMC40OTYgMS40OTEsLTAuOTkzIDIuMTQsLTEuNDg5IDIuMzEyLDAuNDc1IDEwLjc4NCwyLjYzMyAxMS45OTUsLTIuNjU1IC0wLjM2MSwtNC45OTkgLTQuMTg5LC01LjI5NSAtNi4wOTUsLTQuMjA4IC0xLjQ4LDEuNDIgLTIuMDc0LDMuOTcyIDAuNDg5LDUuMDAzIDIuMjE5LDAuNTM1IDIuNzUzLC0xLjUwMyAxLjgyNiwtMS44NzIgLTIuMTcsLTAuODYzIDAuNTU2LC0yLjU4IDEuNjE3LC0wLjAzNCAwLjY4OCw0LjIzMyAtNy4wMzIsNC40NzMgLTYuNTIxLC0wLjk1NiAwLjM1NSwtMy43ODcgNC43MjcsLTQuODAyIDcuMjU3LC0zLjE3NyA0LjM2NiwyLjkxNCAyLjcwMiw3LjY0MiAwLjA2NSw5LjQ1NSBDIDcuNTQzLDAuMDg5IDUuMjMsLTAuMDIxIDAsMCBaIE0gMCwwIEMgMC42NDgsMC40OTYgMS40OTEsMC45OTMgMi4xNCwxLjQ4OSA0LjQ1MiwxLjAxNCAxMi45MjQsLTEuMTQ0IDE0LjEzNSw0LjE0MyAxMy43NzQsOS4xNDMgOS45NDYsOS40MzkgOC4wNCw4LjM1MiA2LjU2LDYuOTMyIDUuOTY2LDQuMzggOC41MjksMy4zNDkgYyAyLjIxOSwtMC41MzUgMi43NTMsMS41MDMgMS44MjYsMS44NzIgLTIuMTcsMC44NjMgMC41NTYsMi41OCAxLjYxNywwLjAzNCBDIDEyLjY2LDEuMDIyIDQuOTQsMC43ODIgNS40NTEsNi4yMTEgNS44MDYsOS45OTggMTAuMTc4LDExLjAxMyAxMi43MDgsOS4zODggMTcuMDc0LDYuNDc0IDE1LjQxLDEuODc3IDEyLjc3MywwLjA2NSA3LjU0MywwLjA0MyA1LjIzLDAuMDIxIDAsMCBaIG0gMTUuMzk5LDAuODA5IGMgMC40NDcsMCAwLjgxMSwtMC4zNjMgMC44MTEsLTAuODA5IDAsLTAuNDQ2IC0wLjM2NCwtMC44MDkgLTAuODExLC0wLjgwOSAtMC40NDYsMCAtMC44MSwwLjM2MyAtMC44MSwwLjgwOSAwLDAuNDQ2IDAuMzY0LDAuODA5IDAuODEsMC44MDkgeiBNIDMwLjc5OSwwIGMgLTAuNjQ4LDAuNDk2IC0xLjQ5MSwwLjk5MyAtMi4xNCwxLjQ4OSAtMi4zMTIsLTAuNDc1IC0xMC43ODQsLTIuNjMzIC0xMS45OTUsMi42NTQgMC4zNjEsNSA0LjE4OSw1LjI5NiA2LjA5NSw0LjIwOSAxLjQ4LC0xLjQyIDIuMDc0LC0zLjk3MiAtMC40ODksLTUuMDAzIC0yLjIxOSwtMC41MzUgLTIuNzUzLDEuNTAzIC0xLjgyNiwxLjg3MiAyLjE2OSwwLjg2MyAtMC41NTYsMi41OCAtMS42MTcsMC4wMzQgLTAuNjg4LC00LjIzMyA3LjAzMiwtNC40NzMgNi41MjEsMC45NTYgLTAuMzU1LDMuNzg3IC00LjcyNyw0LjgwMiAtNy4yNTcsMy4xNzcgQyAxMy43MjUsNi40NzQgMTUuMzg5LDEuNzQ2IDE4LjAyNiwtMC4wNjcgMjMuMjU2LC0wLjA4OSAyNS41NjksMC4wMjEgMzAuNzk5LDAgWiBtIDAsMCBjIC0wLjY0OCwtMC40OTYgLTEuNDkxLC0wLjk5MyAtMi4xNCwtMS40ODkgLTIuMzEyLDAuNDc1IC0xMC43ODQsMi42MzMgLTExLjk5NSwtMi42NTUgMC4zNjEsLTQuOTk5IDQuMTg5LC01LjI5NSA2LjA5NSwtNC4yMDggMS40OCwxLjQyIDIuMDc0LDMuOTcyIC0wLjQ4OSw1LjAwMyAtMi4yMTksMC41MzUgLTIuNzUzLC0xLjUwMyAtMS44MjYsLTEuODcyIDIuMTY5LC0wLjg2MyAtMC41NTYsLTIuNTggLTEuNjE3LC0wLjAzNCAtMC42ODgsNC4yMzMgNy4wMzIsNC40NzMgNi41MjEsLTAuOTU2IC0wLjM1NSwtMy43ODcgLTQuNzI3LC00LjgwMiAtNy4yNTcsLTMuMTc3IC00LjM2NiwyLjkxNCAtMi43MDIsNy41MSAtMC4wNjUsOS4zMjMgNS4yMywwLjAyMiA3LjU0MywwLjA0NCAxMi43NzMsMC4wNjUgeiIgLz4KICAgICAgPC9nPgogICAgICA8ZwogICAgICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNDguOTkzMiwzNzMuNjQzOSkiCiAgICAgICAgIGlkPSJnOTE3Ij4KICAgICAgICA8cGF0aAogICAgICAgICAgIGlkPSJwYXRoOTE5IgogICAgICAgICAgIHN0eWxlPSJmaWxsOiNiYThmNGE7ZmlsbC1vcGFjaXR5OjE7ZmlsbC1ydWxlOmV2ZW5vZGQ7c3Ryb2tlOm5vbmUiCiAgICAgICAgICAgZD0iTSAwLDAgLTAuMTg2LC0wLjM3MyAtMC4zLC0wLjYwMSAtMC40NDIsLTAuODg0IC0wLjI3NiwtMS4xNjEgLTAuNTg3LC0xLjQxNSBjIC0wLjA2NCwtMC4wNTIgMC4xNCwtMC4xNjkgMC4wOSwtMC4yMzUgbCAtMC4xNjYsLTAuMjE5IGMgLTAuNzAzLC0wLjkyNyAtMC4yNDUsLTIuMzg3IDAuMjQ5LC00LjM2MSAtMC4zMDksLTAuNTMzIC0yLjAyNCwwLjE4OSAtMi43NTEsMS4wMiAtMC4xODgsLTAuODQyIDAuODY2LC0zLjI0OCAyLjA3NCwtMy41ODUgbCAwLjIwNywtMC41OTQgYyAtMS4yODMsLTAuMzIyIC0zLjQzMywxLjMyIC0zLjU5MywxLjQ1NiAtMC4xMjQsLTIuMTY1IDEuNSwtMy42OTUgMy4wNDYsLTQuNDA3IDAuMTU0LC0wLjA3MSAwLjA5MywtMC42NTIgMC4yMTIsLTAuNzgzIC0xLjQ4OSwtMC4zNjMgLTIuODc1LDEuMDIyIC00LjExMSwxLjc2NyAwLjExNSwtMS43MzIgMC45NTIsLTMuMDcxIDIuMTY2LC0zLjgxNyBsIDAuNzQyLC0wLjAyMiAtMC4xNDEsLTAuMzY2IDAuNTA5LDAuMSAwLjA2OCwtMC41NTUgMC40MzIsMC4yOTMgMC4yMjcsLTAuNDEgMC4xOTIsLTAuMzYzIGMgMC4yODcsLTAuNjkxIDAuMTgxLC0xLjczMiAwLjI5MywtMi42ODYgMS4wMTEsMCAxLjU4MiwwIDIuNTk0LDAgLTAuMTY5LDEuNTE1IC0wLjE3OSwxLjUxNSAwLjI1MywzLjcwMyAxLjYyOSwwLjY3MyAzLjE5NSwyLjEyOSAzLjEzOSw0LjA2NCAtMC45MjcsLTAuNzI5IC0yLjYxNCwtMS41NzggLTMuODI0LC0xLjQ1NiBsIDAuMTkyLDAuNjQ3IGMgMC4yMTksMC4zMjEgMi42NjUsMC4wNDggMy40NTMsNC40MjcgLTEuMTU1LC0xLjIwOSAtMi41MDIsLTEuNDA4IC0zLjUzNywtMS40NjEgLTAuMDYxLDAuMDk4IDAuMDM3LDAuMTk1IDAuMDM0LDAuMzgyIDAuNzg2LDAuODk4IDEuNzA1LDAuOTk4IDEuODE4LDMuNjYyIC0wLjg0MywtMC42NjcgLTIuMTAyLC0xLjMyNSAtMi43OTIsLTEuMDgzIDEuMDksMi41MDMgMC45MywzLjM0MSAwLjM1NSw0LjQxMyBDIDAuODA1LC0xLjgxMyAwLjUzNCwtMS43NSAwLjU1MSwtMS42NyBMIDAuNiwtMS40NCAwLjMwNywtMS4wNDYgMC4zNDUsLTAuNzUxIEMgMC4zNzgsLTAuNTAxIDAuMDY4LC0wLjI3MyAwLDAiIC8+CiAgICAgIDwvZz4KICAgICAgPGcKICAgICAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTM1LjE4NDUsMzczLjY0MzkpIgogICAgICAgICBpZD0iZzkyMSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDkyMyIKICAgICAgICAgICBzdHlsZT0iZmlsbDojYmE4ZjRhO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgICAgIGQ9Ik0gMCwwIC0wLjE4NiwtMC4zNzMgLTAuMywtMC42MDEgLTAuNDQxLC0wLjg4NCAtMC4yNzYsLTEuMTYxIC0wLjU4NywtMS40MTUgYyAtMC4wNjQsLTAuMDUyIDAuMTQsLTAuMTY5IDAuMDksLTAuMjM1IGwgLTAuMTY2LC0wLjIxOSBjIC0wLjcwMywtMC45MjcgLTAuMjQ1LC0yLjM4NyAwLjI0OSwtNC4zNjEgLTAuMzA5LC0wLjUzMyAtMi4wMjQsMC4xODkgLTIuNzUxLDEuMDIgLTAuMTg4LC0wLjg0MiAwLjg2NiwtMy4yNDggMi4wNzQsLTMuNTg1IGwgMC4yMDcsLTAuNTk0IGMgLTEuMjgzLC0wLjMyMiAtMy40MzMsMS4zMiAtMy41OTMsMS40NTYgLTAuMTI0LC0yLjE2NSAxLjUsLTMuNjk1IDMuMDQ2LC00LjQwNyAwLjE1NCwtMC4wNzEgMC4wOTMsLTAuNjUyIDAuMjEyLC0wLjc4MyAtMS40ODksLTAuMzYzIC0yLjg3NSwxLjAyMiAtNC4xMTEsMS43NjcgMC4xMTUsLTEuNzMyIDAuOTUyLC0zLjA3MSAyLjE2NiwtMy44MTcgbCAwLjc0MiwtMC4wMjIgLTAuMTQxLC0wLjM2NiAwLjUwOSwwLjEgMC4wNjgsLTAuNTU1IDAuNDMyLDAuMjkzIDAuMjI3LC0wLjQxIDAuMTkxLC0wLjM2MyBjIDAuMjg4LC0wLjY5MSAwLjE4MiwtMS43MzIgMC4yOTQsLTIuNjg2IDEuMDExLDAgMS41ODIsMCAyLjU5NCwwIC0wLjE2OSwxLjUxNSAtMC4xNzksMS41MTUgMC4yNTMsMy43MDMgMS42MjksMC42NzMgMy4xOTUsMi4xMjkgMy4xMzksNC4wNjQgLTAuOTI3LC0wLjcyOSAtMi42MTQsLTEuNTc4IC0zLjgyNCwtMS40NTYgbCAwLjE5MiwwLjY0NyBjIDAuMjE5LDAuMzIxIDIuNjY1LDAuMDQ4IDMuNDUzLDQuNDI3IC0xLjE1NSwtMS4yMDkgLTIuNTAyLC0xLjQwOCAtMy41MzcsLTEuNDYxIC0wLjA2MSwwLjA5OCAwLjAzNywwLjE5NSAwLjAzNCwwLjM4MiAwLjc4NiwwLjg5OCAxLjcwNSwwLjk5OCAxLjgxOCwzLjY2MiAtMC44NDMsLTAuNjY3IC0yLjEwMiwtMS4zMjUgLTIuNzkyLC0xLjA4MyAxLjA5LDIuNTAzIDAuOTMsMy4zNDEgMC4zNTUsNC40MTMgQyAwLjgwNSwtMS44MTMgMC41MzQsLTEuNzUgMC41NTEsLTEuNjcgTCAwLjYsLTEuNDQgMC4zMDcsLTEuMDQ2IDAuMzQ1LC0wLjc1MSBDIDAuMzc4LC0wLjUwMSAwLjA2OCwtMC4yNzMgMCwwIiAvPgogICAgICA8L2c+CiAgICAgIDxwYXRoCiAgICAgICAgIGlkPSJwYXRoOTI1IgogICAgICAgICBzdHlsZT0iZmlsbDojYmE4ZjRhO2ZpbGwtb3BhY2l0eToxO2ZpbGwtcnVsZTpldmVub2RkO3N0cm9rZTpub25lIgogICAgICAgICBkPSJtIDEyNy40NDEsMzU0Ljc1MSBoIDQyLjY2NyB2IC0wLjgyIGggLTQyLjY2NyB6IiAvPgogICAgPC9nPgogIDwvZz4KPC9zdmc+Cg==">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://lh3.googleusercontent.com" crossorigin>
 <link rel="preconnect" href="https://drive.google.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <!-- Optional live-sync layer (see FIREBASE_CONFIG below and README.md's
      "Live sync (optional)" section) — if FIREBASE_CONFIG.databaseURL is
      never filled in, subscribeLive() just no-ops and this dashboard
@@ -50,7 +49,6 @@
   @keyframes screenFadeOut{ from{opacity:1; transform:scale(1);} to{opacity:0; transform:scale(0.98);} }
   @keyframes screenFadeIn{ from{opacity:0; transform:scale(1.015);} to{opacity:1; transform:scale(1);} }
 
-  /* PIN gate */
   #pinScreen{ min-height:100vh; align-items:center; justify-content:center; padding:32px 20px; }
   /* display:flex only while active — an ID selector outranks .screen{display:none},
      so a bare display:flex here kept the PIN card on the page after login,
@@ -110,8 +108,7 @@
     display:flex; align-items:center; justify-content:center; color:var(--text-faint); font-size:13px;
   }
 
-  /* Dashboard */
-  #deskScreen .wrap{ max-width:1220px; margin:0 auto; padding:32px 20px 80px; }
+  #deskScreen .wrap{ max-width:1100px; margin:0 auto; padding:32px 20px 80px; }
   header{
     display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap;
     margin-bottom:18px; border-bottom:3px solid var(--gold); padding-bottom:20px;
@@ -127,12 +124,12 @@
   .tally-num{ font-family:'Bebas Neue',sans-serif; font-size:30px; color:var(--blue); line-height:1; }
   .tally-label{ font-family:'JetBrains Mono',monospace; font-size:10px; letter-spacing:0.08em; text-transform:uppercase; color:var(--text-dim); margin-top:4px; }
 
-  /* Activity switcher — a section row (Gym / Tennis / Swimming) and,
-     when the active section is Tennis or Swimming, a second row to
-     choose between its Leisure and Lessons activity. */
-  .activity-switcher{ display:flex; flex-direction:column; gap:8px; margin-bottom:22px; }
+  .activity-switcher{ margin-bottom:22px; }
+  .activity-switcher-section-label{
+    font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.1em; text-transform:uppercase;
+    color:var(--text-faint); margin:0 0 8px;
+  }
   .activity-switcher-row{ display:flex; gap:8px; flex-wrap:wrap; }
-  .activity-switcher-subrow{ padding-left:6px; }
   .activity-pill{
     display:flex; align-items:center; gap:8px; background:var(--panel); border:1px solid var(--line);
     color:var(--text-dim); padding:10px 16px; border-radius:10px; cursor:pointer; font-weight:700;
@@ -140,30 +137,6 @@
   }
   .activity-pill:hover{ border-color:var(--blue); color:var(--blue); }
   .activity-pill.active{ background:var(--blue); border-color:var(--blue); color:#fff; }
-  .activity-pill-sub{ background:var(--panel-alt); font-size:11.5px; padding:8px 14px; }
-  .activity-pill-badge{
-    background:var(--gold); color:#fff; font-family:'JetBrains Mono',monospace; font-size:10.5px;
-    font-weight:800; border-radius:20px; padding:1px 7px; min-width:18px; text-align:center;
-  }
-  .activity-pill.active .activity-pill-badge{ background:rgba(255,255,255,0.28); }
-
-  .tab-bar{ display:flex; gap:8px; margin-bottom:22px; background:var(--panel-alt); padding:5px; border-radius:11px; }
-  .tab-btn{
-    flex:1; background:transparent; border:none; color:var(--text-dim);
-    padding:11px 10px; border-radius:8px; cursor:pointer; font-weight:700; font-size:12.5px;
-    font-family:'Inter',sans-serif; text-transform:uppercase; letter-spacing:0.02em;
-    display:flex; align-items:center; justify-content:center; gap:7px;
-  }
-  .tab-btn.active{ background:var(--panel); color:var(--blue); box-shadow:0 1px 3px rgba(15,29,59,0.08); }
-  .tab-badge{
-    background:var(--blue-dim); color:var(--blue); font-family:'JetBrains Mono',monospace;
-    font-size:11px; font-weight:800; border-radius:20px; padding:2px 8px;
-  }
-  .tab-btn.active .tab-badge{ background:var(--blue); color:#fff; }
-
-  .tab-panel{display:none;}
-  .tab-panel.active{display:block; animation:panelFade .18s ease;}
-  @keyframes panelFade{ from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:translateY(0);} }
 
   .panel{ background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:24px; box-shadow:0 1px 3px rgba(15,29,59,0.04); }
   .panel-title{
@@ -192,16 +165,12 @@
   .btn-ghost:hover{border-color:var(--blue); color:var(--blue);}
 
   .table-scroll{ overflow-x:auto; -webkit-overflow-scrolling:touch; }
-  .label-short{ display:none; }
-  table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:900px;}
+  table{width:100%; border-collapse:collapse; font-size:13.5px; min-width:820px;}
   thead th{
     text-align:left; font-family:'JetBrains Mono',monospace; font-size:10.5px; letter-spacing:0.06em;
     text-transform:uppercase; color:var(--text-dim); padding:0 10px 10px; border-bottom:1px solid var(--line);
     white-space:nowrap; user-select:none; position:sticky; top:0; background:var(--panel); z-index:1;
   }
-  thead th[data-key]{ cursor:pointer; }
-  thead th[data-key]:hover{color:var(--blue);}
-  thead th .arrow{opacity:0.5; font-size:9px; margin-left:3px;}
   tbody td{ padding:12px 10px; border-bottom:1px solid var(--line); vertical-align:middle; white-space:nowrap; }
   tbody tr:hover{background:var(--panel-alt);}
   .name-cell{font-weight:600; color:var(--text);}
@@ -214,57 +183,48 @@
   .badge-c5{background:rgba(15,143,120,0.12); color:#0F8F78;}
   .badge-c6{background:rgba(111,66,193,0.12); color:#6F42C1;}
   .badge-c7{background:rgba(91,107,133,0.14); color:var(--text-dim);}
-  .dur-tag{font-family:'JetBrains Mono',monospace; font-size:11.5px; color:var(--text-dim);}
   .empty-state{text-align:center; padding:60px 20px; color:var(--text-dim);}
   .empty-state .icon{font-size:34px; margin-bottom:10px; opacity:0.5;}
   .empty-state p{margin:4px 0; font-size:13px;}
   .foot-note{margin-top:14px; font-size:11.5px; color:var(--text-faint); font-family:'JetBrains Mono',monospace;}
-  .cleared-note{
-    display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap;
-    background:var(--danger-dim); border:1px solid rgba(192,57,43,0.28); color:var(--danger);
-    font-size:12px; padding:10px 14px; border-radius:9px; margin-bottom:14px; line-height:1.5;
-  }
-  .cleared-note button{
-    background:none; border:none; color:var(--danger); font-weight:700; font-size:12px; cursor:pointer;
-    text-decoration:underline; font-family:'Inter',sans-serif; padding:0; flex-shrink:0;
-  }
   .group-row td{
     background:var(--panel-alt); font-family:'JetBrains Mono',monospace; font-size:11px;
     letter-spacing:0.06em; text-transform:uppercase; color:var(--text-dim);
     padding:9px 10px; border-bottom:1px solid var(--line); border-top:1px solid var(--line); white-space:normal;
   }
   .group-row td span.group-count{ color:var(--text-faint); text-transform:none; letter-spacing:0; }
-  tr.expired-row{ background:var(--danger-dim); }
-  tr.expired-row:hover{ background:rgba(192,57,43,0.16); }
-  tr.expired-row td{ border-bottom-color:rgba(192,57,43,0.25); }
   .status-tag{
     font-family:'JetBrains Mono',monospace; font-size:11px; font-weight:700;
     padding:3px 8px; border-radius:20px; white-space:nowrap;
   }
   .status-expired{ background:rgba(192,57,43,0.16); color:var(--danger); }
-  .legend{
-    display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text-dim);
-    font-family:'JetBrains Mono',monospace;
-  }
-  .legend .swatch{ width:10px; height:10px; border-radius:2px; background:var(--danger-dim); border:1px solid var(--danger); }
+  .status-locked{ background:var(--panel-alt); color:var(--text-faint); border:1px solid var(--line); }
 
-  /* Approval cards */
   .approval-card{
     background:var(--panel-alt); border:1px solid var(--line); border-radius:12px;
-    padding:18px 20px; margin-bottom:14px;
+    padding:18px 20px; margin-bottom:14px; transition:box-shadow .12s ease, border-color .12s ease;
   }
+  .approval-card:hover{ border-color:var(--line-strong); box-shadow:0 2px 10px rgba(15,29,59,0.06); }
   .approval-head{
-    display:flex; justify-content:space-between; align-items:flex-start; gap:14px; margin-bottom:14px;
+    display:flex; justify-content:space-between; align-items:flex-start; gap:14px;
     flex-wrap:wrap;
   }
   .approval-name{ font-family:'Bebas Neue',sans-serif; font-size:24px; letter-spacing:0.02em; color:var(--text); }
   .approval-sub{ font-size:12px; color:var(--text-dim); margin-top:2px; }
-  .approval-actions{ display:flex; gap:8px; flex-shrink:0; }
-  .approval-renewal-note{
-    font-size:12.5px; color:var(--text-dim); background:var(--gold-dim);
-    border:1px solid var(--gold); border-radius:8px; padding:9px 12px; margin-bottom:14px;
-    display:flex; align-items:center; gap:8px; flex-wrap:wrap;
+  .approval-actions{ display:flex; gap:8px; flex-shrink:0; align-items:center; }
+  /* Collapsed by default (see renderRegistrants()) — .approval-more
+     below carries its own margin-top once expanded, so this doesn't
+     need its own margin-bottom the way it used to when the detail
+     grid always followed directly underneath it. */
+  #registrantsHost .approval-head{ cursor:pointer; margin-bottom:0; }
+  #registrantsHost .approval-head:focus-visible{ outline:2px solid var(--blue); outline-offset:2px; border-radius:6px; }
+  .expand-chevron{
+    display:inline-block; color:var(--text-faint); font-size:13px; line-height:1;
+    transition:transform .15s ease;
   }
+  .approval-more{ display:none; margin-top:14px; }
+  .approval-card.expanded .approval-more{ display:block; }
+  .approval-card.expanded .expand-chevron{ transform:rotate(180deg); }
   .approve-btn, .reject-btn{
     border:none; border-radius:8px; padding:9px 16px; font-weight:800; font-size:12.5px;
     text-transform:uppercase; letter-spacing:0.03em; cursor:pointer; font-family:'Inter',sans-serif;
@@ -309,76 +269,6 @@
   .medical-callout-value{ font-size:13px; color:var(--text); font-weight:600; word-break:break-word; }
   .medical-callout-empty{ color:var(--text-faint); font-weight:400; }
 
-  /* Walk-in quick-entry form */
-  .walkin-card{
-    background:var(--panel-alt); border:1px solid var(--line); border-radius:12px;
-    padding:18px 20px; margin-bottom:18px;
-  }
-  .walkin-title{ font-family:'Bebas Neue',sans-serif; font-size:20px; letter-spacing:0.02em; margin:0 0 2px; color:var(--text); }
-  .walkin-sub{ font-size:12px; color:var(--text-dim); margin:0 0 16px; }
-  .walkin-row{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
-  .walkin-card .field{ margin-bottom:12px; }
-  .walkin-card label{
-    display:block; font-size:11.5px; font-weight:700; color:var(--text-dim);
-    margin:0 0 5px; text-transform:uppercase; letter-spacing:0.03em;
-  }
-  .walkin-card input[type=text], .walkin-card select{
-    width:100%; background:var(--bg); border:1px solid var(--line-strong); color:var(--text);
-    padding:10px 11px; border-radius:8px; font-family:'Inter',sans-serif; font-size:14px; outline:none;
-  }
-  .walkin-card input:focus, .walkin-card select:focus{ border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-dim); }
-  .walkin-card .field-error{ font-size:11px; color:var(--danger); margin-top:4px; display:none; }
-  .walkin-card .field.invalid input, .walkin-card .field.invalid select{ border-color:var(--danger); }
-  .walkin-card .field.invalid .field-error{ display:block; }
-  .walkin-card .phone-group{ display:flex; gap:8px; }
-  .walkin-card .phone-group select{ flex:0 0 108px; }
-  .walkin-card .phone-group input{ flex:1; min-width:0; }
-  .walkin-actions{ display:flex; justify-content:flex-end; gap:8px; margin-top:4px; }
-
-  .toast{
-    position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(20px);
-    background:var(--blue); color:#fff; padding:12px 22px; border-radius:8px;
-    font-weight:700; font-size:13.5px; opacity:0; transition:all .25s ease; pointer-events:none; z-index:50;
-    box-shadow:0 8px 24px rgba(15,29,59,0.2);
-  }
-  .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
-  .toast.error{background:var(--danger);}
-  @media (max-width:860px){ header{flex-direction:column; align-items:flex-start;} }
-
-  .code-modal-overlay{
-    position:fixed; top:0; right:0; bottom:0; left:0; background:rgba(15,29,59,0.55);
-    display:none; align-items:center; justify-content:center; padding:20px; z-index:300;
-  }
-  .code-modal-overlay.show{display:flex;}
-  .code-modal{
-    background:var(--panel); border:1px solid var(--line); border-radius:16px;
-    padding:32px 28px 26px; max-width:360px; width:100%; text-align:center;
-    box-shadow:0 20px 60px rgba(15,29,59,0.3); animation:codeModalPop .18s ease;
-  }
-  @keyframes codeModalPop{ from{opacity:0; transform:scale(0.96);} to{opacity:1; transform:scale(1);} }
-  .code-modal-eyebrow{
-    font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:0.14em;
-    text-transform:uppercase; color:var(--blue); margin-bottom:8px;
-  }
-  .code-modal-name{ font-family:'Bebas Neue',sans-serif; font-size:28px; letter-spacing:0.02em; color:var(--text); line-height:1; }
-  .code-modal-sub{ font-size:12.5px; color:var(--text-dim); margin-top:4px; }
-  .code-modal-code{
-    font-family:'JetBrains Mono',monospace; font-weight:700; font-size:42px; letter-spacing:0.06em;
-    color:var(--blue); background:var(--blue-dim); border:1px solid var(--line); border-radius:12px;
-    padding:16px 10px; margin:20px 0 12px; word-break:break-all;
-  }
-  .code-modal-hint{ font-size:12px; color:var(--text-faint); margin:0 0 22px; line-height:1.5; }
-  .code-modal-actions{ display:flex; gap:10px; }
-  .code-modal-actions button{
-    flex:1; border-radius:8px; padding:12px 0; font-weight:800; font-size:12.5px;
-    text-transform:uppercase; letter-spacing:0.03em; cursor:pointer; font-family:'Inter',sans-serif;
-  }
-  .code-modal-copy{ background:var(--panel-alt); color:var(--blue); border:1px solid var(--line); }
-  .code-modal-copy:hover{ border-color:var(--blue); }
-  .code-modal-copy.copied{ background:var(--blue-dim-strong); color:var(--blue-dark); border-color:var(--blue); }
-  .code-modal-done{ background:var(--blue); color:#fff; border:none; }
-  .code-modal-done:hover{ background:var(--blue-dark); }
-
   .alert-banner{ display:flex; flex-direction:column; gap:8px; margin-bottom:16px; }
   .alert-item{
     display:flex; align-items:center; justify-content:space-between; gap:12px;
@@ -394,167 +284,39 @@
   }
   .alert-dismiss-btn:hover{ background:var(--danger-dim); }
 
-  .pin-key:focus-visible, .tab-btn:focus-visible, .btn-ghost:focus-visible, .activity-pill:focus-visible,
-  .approve-btn:focus-visible, .reject-btn:focus-visible, thead th[data-key]:focus-visible{
+  .toast{
+    position:fixed; bottom:24px; left:50%; transform:translateX(-50%) translateY(20px);
+    background:var(--blue); color:#fff; padding:12px 22px; border-radius:8px;
+    font-weight:700; font-size:13.5px; opacity:0; transition:all .25s ease; pointer-events:none; z-index:50;
+    box-shadow:0 8px 24px rgba(15,29,59,0.2);
+  }
+  .toast.show{opacity:1; transform:translateX(-50%) translateY(0);}
+  .toast.error{background:var(--danger);}
+  @media (max-width:860px){ header{flex-direction:column; align-items:flex-start;} }
+
+  .pin-key:focus-visible, .btn-ghost:focus-visible, .activity-pill:focus-visible,
+  .approve-btn:focus-visible, .reject-btn:focus-visible{
     outline:2px solid var(--blue); outline-offset:2px;
   }
 
-  .approval-card{ transition:box-shadow .12s ease, border-color .12s ease; }
-  .approval-card:hover{ border-color:var(--line-strong); box-shadow:0 2px 10px rgba(15,29,59,0.06); }
-  .tab-btn{ transition:background .12s ease, color .12s ease, box-shadow .12s ease; }
-  tbody tr{ transition:background .1s ease; }
-
-  /* ---- Phone screens ----
-     Laid out for a phone held upright (360-430px wide), not a squeezed
-     desktop: smaller type and padding throughout, every control row fits
-     on one line, and the two data tables become two-line rows instead of
-     a 9-column grid. Nothing here applies above 640px. */
+  /* ---- Phone screens ---- */
   @media (max-width:640px){
-    #deskScreen .wrap{ padding:14px 12px 56px; }
-
-    /* Header: one compact brand line + title, tally full width */
-    header{ gap:12px; margin-bottom:14px; padding-bottom:14px; border-bottom-width:2px; }
-    .header-left{ width:100%; }
-    .header-left .brand-lockup{ gap:8px; margin-bottom:4px; }
-    .header-left .brand-logo{ width:20px; height:24px; }
-    .header-left .brand-eyebrow{ font-size:8.5px; letter-spacing:0.08em; line-height:1.4; margin:0; }
-    header h1{ font-size:30px; }
-    .tally{ width:100%; display:grid; grid-template-columns:repeat(auto-fit,minmax(62px,1fr)); }
-    .tally-cell{
-      min-width:0; padding:8px 4px; border-right:none;
-      box-shadow:1px 0 0 var(--line), 0 1px 0 var(--line);
-    }
-    .tally-num{ font-size:22px; }
-    .tally-label{ font-size:8px; letter-spacing:0.04em; line-height:1.3; }
-
-    /* Activity pills: one row, equal widths */
-    .activity-switcher{ gap:6px; margin-bottom:12px; }
-    .activity-switcher-row{ flex-wrap:nowrap; gap:6px; }
-    .activity-switcher-subrow{ padding-left:0; }
-    .activity-pill, .activity-pill-sub{
-      flex:1 1 0; min-width:0; justify-content:center; gap:5px;
-      padding:9px 6px; font-size:12px; border-radius:9px;
-    }
-    .activity-pill > span:first-child{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-    .activity-pill-badge{ font-size:9.5px; padding:1px 5px; min-width:16px; }
-
-    /* Expired-sign-in alerts */
-    .alert-banner{ gap:6px; margin-bottom:12px; }
-    .alert-item{ padding:9px 10px; gap:10px; border-radius:9px; }
-    .alert-item-text{ font-size:12px; line-height:1.4; }
-    .alert-item-sub{ font-size:10.5px; }
-    .alert-dismiss-btn{ padding:6px 10px; font-size:11px; }
-
-    /* Tabs: short labels so nothing wraps */
-    .label-long{ display:none; }
-    .label-short{ display:inline; }
-    .tab-bar{ gap:4px; padding:4px; margin-bottom:12px; border-radius:10px; }
-    .tab-btn{ font-size:11px; padding:9px 4px; letter-spacing:0; gap:5px; white-space:nowrap; }
-    .tab-badge{ font-size:10px; padding:1px 6px; }
-
-    /* Panels and toolbars */
-    .panel{ padding:14px 12px; border-radius:12px; }
-    .panel-title{ font-size:9.5px; letter-spacing:0.1em; margin-bottom:12px; gap:4px; }
-    .live-dot{ font-size:9.5px; }
-    .btn-ghost{ padding:8px 12px; font-size:12px; }
-    .table-toolbar{ gap:8px; margin-bottom:10px; }
-    .table-toolbar .search-box{ width:100%; min-width:0; font-size:16px; padding:8px 12px 8px 32px; }
-    .toolbar-actions{ width:100%; gap:6px; flex-wrap:nowrap; }
-    .toolbar-actions .legend{ display:none; }
-    .toolbar-actions .btn-ghost{ flex:1 1 0; min-width:0; padding:8px 4px; text-align:center; white-space:nowrap; }
-    .foot-note{ font-size:10.5px; margin-top:10px; }
-    .cleared-note{ font-size:12px; }
-
-    /* Walk-in quick entry — 16px inputs stop iOS zooming the page in */
-    .walkin-card{ padding:14px 12px; }
-    .walkin-row{ grid-template-columns:1fr; }
-    .walkin-card input[type=text], .walkin-card select{ font-size:16px; }
-
-    /* Approval cards */
-    .approval-card{ padding:14px 12px; border-radius:12px; margin-bottom:12px; }
-    .approval-head{ gap:10px; margin-bottom:12px; }
-    .approval-head .photo-thumb-cell, .approval-head .photo-thumb-placeholder{ width:40px !important; height:40px !important; flex-shrink:0; }
-    .approval-name{ font-size:21px; line-height:1.05; }
-    .approval-sub{ font-size:11px; }
-    .approval-actions{ width:100%; gap:8px; }
-    .approval-actions .approve-btn, .approval-actions .reject-btn{ flex:1; padding:10px 8px; font-size:12px; }
-    .approval-renewal-note{ display:block; font-size:12px; line-height:1.5; padding:8px 10px; margin-bottom:10px; }
-    .approval-renewal-note .status-tag{ display:inline-block; margin:0 6px 2px 0; }
-    .emergency-callout, .medical-callout{ padding:8px 10px; margin-bottom:10px; gap:2px 8px; }
-    .emergency-callout-label, .medical-callout-label{ font-size:9px; }
-    .emergency-callout-value, .medical-callout-value{ font-size:12.5px; }
-    .detail-grid{ grid-template-columns:1fr 1fr; gap:10px 12px; }
-    .detail-item{ min-width:0; }
-    .detail-item .dlabel{ font-size:9px; margin-bottom:2px; }
-    .detail-item .dvalue{ font-size:12.5px; }
-    .detail-item.is-empty{ display:none; }
-    /* Approval cards already carry their own border/background, so the
-       panel around them is dropped on phones instead of nesting a card
-       inside a card (which cost a double indent on a narrow screen). */
-    #tab-approvals > .panel{ background:transparent; border:none; box-shadow:none; padding:4px 0 0; }
-
-    /* Registration Table + Visit Log: two-line rows, no sideways scroll.
-       Line 1: name, with expiry (registrations) or time in → out
-       (visits) on the right. Line 2: category · ID · plan. Tapping a
-       registration row reveals department, phone and registered time
-       (.m-extra, toggled by renderTable()). Column headers can't sit
-       above this layout, so sorting is a wider-screen feature. */
-    .table-scroll{ overflow-x:visible; }
-    .table-scroll table{ min-width:0; font-size:13px; }
-    .table-scroll table, .table-scroll tbody{ display:block; }
-    .table-scroll thead{ display:none; }
-    .table-scroll tbody tr{
-      position:relative; display:flex; flex-wrap:wrap; align-items:baseline;
-      column-gap:8px; row-gap:3px; min-height:58px;
-      padding:11px 4px 11px 50px; border-bottom:1px solid var(--line);
-    }
-    .table-scroll tbody tr::after{ content:""; order:3; flex-basis:100%; height:0; }
-    .table-scroll tbody tr.expired-row{ border-bottom-color:rgba(192,57,43,0.25); }
-    .table-scroll tbody td{ display:block; padding:0; border:none; white-space:normal; }
-    .table-scroll td.cell-photo{ position:absolute; left:4px; top:11px; }
-    .table-scroll td.cell-photo .photo-thumb-cell,
-    .table-scroll td.cell-photo .photo-thumb-placeholder{ width:36px; height:36px; }
-    .table-scroll td.name-cell{ order:1; flex:1 1 0; min-width:0; font-size:14.5px; line-height:1.25; overflow-wrap:anywhere; }
-    .table-scroll td.m-side{ order:2; flex:0 0 auto; max-width:46%; text-align:right; font-size:11.5px; line-height:1.3; }
-    .table-scroll td.m-meta{ order:4; font-size:11.5px; color:var(--text-dim); }
-    .table-scroll td.m-meta ~ td.m-meta::before{ content:"·"; margin-right:8px; color:var(--text-faint); }
-    .table-scroll td.m-meta.m-empty{ display:none; }
-    .table-scroll td.m-meta .badge{ font-size:10px; padding:2px 7px; }
-    .table-scroll td.m-extra{ order:5; display:none; flex-basis:100%; font-size:12px; color:var(--text-dim); padding-top:3px; }
-    .table-scroll tr.m-open td.m-extra{ display:flex; gap:8px; }
-    .table-scroll td.m-extra::before{
-      content:attr(data-label); flex:0 0 76px; padding-top:2px;
-      font-family:'JetBrains Mono',monospace; font-size:9px; letter-spacing:0.06em;
-      text-transform:uppercase; color:var(--text-faint);
-    }
-    .table-scroll tr.m-expandable{ cursor:pointer; }
-    .table-scroll tr.m-open:not(.expired-row){ background:var(--panel-alt); }
-    #tableHost td.m-side::before{
-      content:"Expires"; display:block; font-family:'JetBrains Mono',monospace;
-      font-size:8.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-faint);
-    }
-    #tableHost tr.m-expandable td.name-cell::after{ content:" ▾"; font-size:10px; color:var(--text-faint); }
-    #tableHost tr.m-open td.name-cell::after{ content:" ▴"; }
-    #visitsTableHost td.m-time-out::before{ content:"→ "; color:var(--text-faint); }
-    .table-scroll td.m-side .status-tag{ font-size:10px; padding:2px 7px; }
-    .table-scroll tbody tr.group-row{ display:block; min-height:0; padding:0; border-bottom:none; }
-    .table-scroll tbody tr.group-row::after{ display:none; }
-    .table-scroll tbody tr.group-row td{
-      display:block; padding:8px 6px; font-size:9.5px;
-      border-top:1px solid var(--line); border-bottom:1px solid var(--line);
-    }
-
-    /* Toast: full-width strip at the bottom instead of a half-width
-       box (left:50% + translateX(-50%) squeezed it to half the screen) */
-    .toast{ left:12px; right:12px; bottom:14px; transform:translateY(20px); text-align:center; font-size:13px; padding:11px 14px; }
-    .toast.show{ transform:translateY(0); }
-
-    /* "Here's the member's code" popup */
-    .code-modal{ padding:22px 18px; }
-    .code-modal-actions{ flex-wrap:wrap; }
+    #deskScreen .wrap{ padding:18px 12px 60px; }
+    .panel{ padding:14px; }
+    .approval-actions{ width:100%; }
+    .approval-actions .approve-btn, .approval-actions .reject-btn{ flex:1; padding:11px 10px; }
+    .table-toolbar .search-box{ width:100%; }
   }
+  /* Phone-width specifically (640px above already covers a small
+     tablet/large-phone-landscape range) — the tally row and kiosk PIN
+     card are the two things sized for a much wider starting point than
+     an actual phone screen. */
   @media (max-width:480px){
     .kiosk-card{ padding:26px 20px 24px; }
+    .tally-cell{ padding:9px 12px; min-width:72px; }
+    .tally-num{ font-size:24px; }
+    .approval-card{ padding:14px 14px; }
+    .detail-grid{ grid-template-columns:repeat(auto-fit,minmax(130px,1fr)); }
   }
 
   /* iPhone: Safari zooms the whole page when a field under 16px is tapped, and leaves it zoomed;
@@ -606,13 +368,10 @@
 
 <div class="screen active" id="pinScreen">
   <div class="kiosk-card">
-    <div class="brand-lockup">
-      <span class="brand-logo" role="img" aria-label="University of Ghana coat of arms"></span>
-      <p class="brand-eyebrow">University of Ghana Sports and Wellness Directorate Front Desk</p>
-    </div>
+    <p class="brand-eyebrow">Swimming Front Desk</p>
     <h1>CONFIDENTIAL</h1>
     <div class="setup-warning" id="setupWarning" style="display:none;">
-      ⚠ SCRIPT_URL isn't set yet. Open this file's code and paste in your Apps Script /exec URL.
+      ⚠ SCRIPT_URL isn't set yet. Open this file's code and paste in your Apps Script /exec URL — the SAME one used for the main front desk and registration app.
     </div>
     <div class="pin-dots" id="pinDots">
       <div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div><div class="pin-dot"></div>
@@ -641,9 +400,9 @@
       <div class="header-left">
         <div class="brand-lockup">
           <span class="brand-logo" role="img" aria-label="University of Ghana coat of arms"></span>
-          <p class="brand-eyebrow">University of Ghana Sports and Wellness Directorate — Main Front Desk</p>
+          <p class="brand-eyebrow">University of Ghana Sports and Wellness Directorate — Swimming Front Desk</p>
         </div>
-        <h1>CHECK-IN LOG</h1>
+        <h1>SWIMMING DESK</h1>
       </div>
       <div class="tally" id="tally"></div>
     </header>
@@ -652,147 +411,44 @@
 
     <div class="alert-banner" id="alertBanner" style="display:none;"></div>
 
-    <div class="tab-bar">
-      <button class="tab-btn active" data-tab="approvals">
-        Approvals <span class="tab-badge" id="pendingBadge">0</span>
-      </button>
-      <button class="tab-btn" data-tab="table"><span class="label-long">Registration Table</span><span class="label-short">Registrations</span></button>
-      <button class="tab-btn" data-tab="visits">Visit Log</button>
-    </div>
-
-    <div class="tab-panel active" id="tab-approvals">
-      <div class="panel">
-        <p class="panel-title">
-          <span class="panel-title-label">Pending Registrations — <span id="approvalsActivityLabel"></span></span>
-          <span class="live-dot"><span class="dot"></span> live from Google Sheet</span>
-        </p>
-
-        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
-          <button class="btn-ghost" id="approvalsRefreshBtn">↻ Refresh</button>
-          <button class="btn-ghost" id="walkinToggleBtn">+ Add Walk-in</button>
+    <div class="panel">
+      <p class="panel-title">
+        <span class="panel-title-label">Registrants — <span id="registrantsActivityLabel"></span></span>
+        <span class="live-dot"><span class="dot"></span> live from Google Sheet</span>
+      </p>
+      <p class="foot-note">This desk only sees approved registrants — Pending approvals and the Visit Log are handled at the main front desk.</p>
+      <div class="table-toolbar">
+        <input type="text" class="search-box" id="searchBox" placeholder="Search name, phone, or ID/Code…">
+        <div class="toolbar-actions">
+          <button class="btn-ghost" id="refreshBtn">↻ Refresh</button>
         </div>
-        <p class="foot-note" id="walkinUnavailableNote" style="display:none;margin:0 0 14px;">Walk-ins aren't available for this program — members must register for the plan.</p>
-
-        <div class="walkin-card" id="walkinCard" style="display:none;">
-          <p class="walkin-title">Quick Walk-in Entry</p>
-          <p class="walkin-sub" id="walkinSub">Checks them in immediately — no approval needed, and no code is issued.</p>
-          <form id="walkinForm" novalidate>
-            <div class="walkin-row">
-              <div class="field" id="wf-field-class">
-                <label for="wfClass">Category</label>
-                <select id="wfClass"></select>
-              </div>
-              <div class="field" id="wf-field-id" style="display:none;">
-                <label for="wfId">ID No.</label>
-                <input type="text" id="wfId" placeholder="ID number">
-                <p class="field-error">Required for this category.</p>
-              </div>
-            </div>
-            <div class="walkin-row">
-              <div class="field" id="wf-field-surname">
-                <label for="wfSurname">Surname</label>
-                <input type="text" id="wfSurname" placeholder="e.g. Owusu">
-                <p class="field-error">Required.</p>
-              </div>
-              <div class="field" id="wf-field-otherNames">
-                <label for="wfOtherNames">Other Names</label>
-                <input type="text" id="wfOtherNames" placeholder="e.g. Kwame">
-                <p class="field-error">Required.</p>
-              </div>
-            </div>
-            <div class="field" id="wf-field-phone">
-              <label for="wfPhone">Phone Number <span style="text-transform:none;font-weight:400;color:var(--text-dim);">(optional)</span></label>
-              <div class="phone-group">
-                <select id="wfPhoneCode"></select>
-                <input type="text" id="wfPhone" placeholder="24 123 4567" inputmode="tel">
-              </div>
-            </div>
-            <div class="walkin-actions">
-              <button type="button" class="btn-ghost" id="walkinCancelBtn">Cancel</button>
-              <button type="submit" class="approve-btn" id="walkinSubmitBtn" style="padding:9px 18px;">Sign In</button>
-            </div>
-          </form>
-        </div>
-
-        <div id="approvalsHost"></div>
       </div>
-    </div>
 
-    <div class="tab-panel" id="tab-table">
-      <div class="panel">
-        <p class="panel-title">
-          <span class="panel-title-label">Registration Table — <span id="tableActivityLabel"></span></span>
-          <span class="live-dot"><span class="dot"></span> live from Google Sheet</span>
-        </p>
-        <div class="table-toolbar">
-          <input type="text" class="search-box" id="searchBox" placeholder="Search name, phone, or ID/Code…">
-          <div class="toolbar-actions">
-            <span class="legend"><span class="swatch"></span> expired / used up</span>
-            <button class="btn-ghost" id="refreshBtn">↻ Refresh</button>
-            <button class="btn-ghost" id="exportBtn" style="border-color:var(--gold); color:var(--gold-dark);">⬇ Export<span class="label-long"> to Excel</span></button>
-            <button class="btn-ghost" id="clearListBtn" style="border-color:var(--danger); color:var(--danger);">🧹 Clear List</button>
-          </div>
-        </div>
-        <div class="cleared-note" id="clearedNote" style="display:none;"></div>
-        <div class="table-scroll"><div id="tableHost"></div></div>
-        <p class="foot-note" id="footNote"></p>
-      </div>
-    </div>
-
-    <div class="tab-panel" id="tab-visits">
-      <div class="panel">
-        <p class="panel-title">
-          <span class="panel-title-label">Visit Log — <span id="visitsActivityLabel"></span></span>
-          <span class="live-dot"><span class="dot"></span> live from Google Sheet</span>
-        </p>
-        <div class="table-toolbar">
-          <input type="text" class="search-box" id="visitSearchBox" placeholder="Search name, category, or ID/Code…">
-          <div class="toolbar-actions">
-            <button class="btn-ghost" id="visitsRefreshBtn">↻ Refresh</button>
-          </div>
-        </div>
-        <div class="table-scroll"><div id="visitsTableHost"></div></div>
-        <p class="foot-note" id="visitsFootNote"></p>
-      </div>
+      <div id="registrantsHost"></div>
+      <p class="foot-note" id="footNote"></p>
     </div>
   </div>
 </div>
 
 <div class="toast" id="toast"></div>
 
-<div class="code-modal-overlay" id="codeModalOverlay">
-  <div class="code-modal" role="dialog" aria-modal="true" aria-labelledby="codeModalName">
-    <div class="code-modal-eyebrow">Approved</div>
-    <div class="code-modal-name" id="codeModalName"></div>
-    <div class="code-modal-sub" id="codeModalSub"></div>
-    <div class="code-modal-code" id="codeModalCode"></div>
-    <p class="code-modal-hint">Give this code to the member — they'll use it to sign in, sign out, and renew.</p>
-    <div class="code-modal-actions">
-      <button type="button" class="code-modal-copy" id="codeModalCopyBtn">Copy Code</button>
-      <button type="button" class="code-modal-done" id="codeModalDoneBtn">Done</button>
-    </div>
-  </div>
-</div>
-
 <script>
 (function(){
-  // ---- PASTE YOUR APPS SCRIPT WEB APP URL HERE (same one used in registration-app.html) ----
+  // ---- PASTE YOUR APPS SCRIPT WEB APP URL HERE (same one used everywhere else) ----
   const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwUCJRzZC--3sh2uOi9bRfLjgtMCNlZE4BmCJSURohckusFCxRatuemTUB1XpP-Al6vDQ/exec";
-  // -------------------------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------
 
   // ---- OPTIONAL: paste your Firebase web app config here for instant
-  // cross-desk sync (see README.md's "Live sync (optional)" section for
-  // how to set this up). Leave databaseURL blank/unset and this
-  // dashboard just polls every AUTO_REFRESH_MS like before — nothing
-  // breaks either way. This config is safe to leave in client-side code
-  // — it identifies the project, it isn't a secret; access is controlled
-  // by the database's security rules (read-only for everyone, write-only
-  // via the server's own secret), not by hiding this object. ----
+  // cross-desk sync (see README.md's "Live sync (optional)" section).
+  // Leave databaseURL blank and this dashboard just polls every
+  // AUTO_REFRESH_MS like before. Safe to leave in client-side code —
+  // this identifies the project, it isn't a secret; access is
+  // controlled by the database's security rules, not by hiding this. ----
   const FIREBASE_CONFIG = {
     apiKey: "AIzaSyCN0oFbKn2YsYo46FUoaKnXT_i6372gIZM",
     databaseURL: "https://gymcheckin-5c2a4-default-rtdb.europe-west1.firebasedatabase.app"
   };
-  // -------------------------------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------
 
   // Wraps fetch+json with a couple of quick, silent retries before
   // giving up — a single dropped packet or a slow Apps Script cold
@@ -827,6 +483,7 @@
         throw err;
       });
   }
+
   // The staff PIN is checked by the server (see "Staff authentication"
   // in Code.gs) and is deliberately NOT in this file — this page sits in
   // a public repo and anyone can read its source. A correct PIN gets back
@@ -865,7 +522,7 @@
     showScreen('pin');
   }
   // Cut from 15s (then 5s): staff waiting on a walk-in or registration
-  // to show up (submitted from the registrant app, or another front
+  // to show up (submitted from the registrant app, or the main front
   // desk) were feeling that delay directly — this should feel close to
   // immediate. Safe to run this tight because scheduleAutoRefresh()
   // below is self-rescheduling, not a plain setInterval — the next
@@ -873,7 +530,7 @@
   // patch can never pile up overlapping requests the way a fixed
   // interval would.
   // Cut back from 5000 to 3000 — a walk-in taking "5-10 seconds" to
-  // show up here turned out to be this interval itself, not something
+  // show up turned out to be this interval itself, not something
   // broken: Firebase live sync (see attachLiveActivity() below) can
   // only ever notify a listening dashboard once a minute at best —
   // Apps Script's time-based triggers don't run more often than that,
@@ -900,26 +557,12 @@
     return d.innerHTML;
   }
 
-  // A plain unicode "✓" dropped into toast/button text is one of the
-  // most recognizable "an AI chatbot built this" UI tells there is —
-  // this draws it as a small inline SVG instead. Only ever used with
-  // trusted, code-authored icon names (never user-controlled data), so
-  // building it via a template string is safe here.
-  const ICON_PATHS = {
-    check: '<polyline points="4 12 9 17 20 6"/>'
-  };
-  function svgIcon(name, sizePx, inline){
-    const style = inline ? ' style="display:inline-block;vertical-align:-2px"' : '';
-    return `<svg viewBox="0 0 24 24" width="${sizePx}" height="${sizePx}" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"${style}>${ICON_PATHS[name]}</svg>`;
-  }
-
-  // photoUrl/signatureUrl store Drive's "view" link (file.getUrl(), e.g.
-  // .../file/d/<ID>/view) — that's the right link for "View photo →"
-  // (opens Drive's own viewer in a new tab), but a browser can't render
-  // that page as an <img>, so a thumbnail dropped straight into <img
-  // src> just shows a broken-image icon. This pulls the file ID back
-  // out and builds Drive's thumbnail endpoint instead, which does serve
-  // raw image bytes and is what every inline <img> below should use.
+  // photoUrl stores Drive's "view" link (file.getUrl(), e.g.
+  // .../file/d/<ID>/view) — right for "View photo →" (opens Drive's own
+  // viewer in a new tab), but a browser can't render that page as an
+  // <img>, so dropping it straight into <img src> just shows a broken-
+  // image icon. This pulls the file ID back out and builds Drive's
+  // thumbnail endpoint instead, which does serve raw image bytes.
   function driveThumbUrl(url, size){
     if(!url) return '';
     const m = String(url).match(/\/d\/([-\w]{10,})/) || String(url).match(/[?&]id=([-\w]{10,})/);
@@ -967,24 +610,8 @@
     })();
   }
 
-  // Photo for an approval card. The server sends a tiny preview ("photoThumb") the moment a
-  // registration arrives, long before the real photo has been saved to Drive. It's shown straight
-  // away, remembered here, and kept as the backdrop while the Drive thumbnail loads once that
-  // exists — so the face is there immediately and never flashes blank in between.
-  const thumbMemory = {};
-  function approvalPhotoHtml(e){
-    const key = String(e.idNo);
-    if(e.photoThumb) thumbMemory[key] = e.photoThumb;
-    const mem = thumbMemory[key];
-    if(e.photoUrl){
-      const bg = mem ? `background:#fff url('${escapeHtml(mem)}') center/cover no-repeat;` : '';
-      return `<img src="${escapeHtml(driveThumbUrl(e.photoUrl, 100))}" class="photo-thumb-cell" style="width:44px;height:44px;${bg}" decoding="async" alt="">`;
-    }
-    if(mem) return `<img src="${escapeHtml(mem)}" class="photo-thumb-cell" style="width:44px;height:44px;" alt="">`;
-    return `<span class="photo-thumb-placeholder" style="width:44px;height:44px;">—</span>`;
-  }
-
-  /* ===================== ACTIVITIES (mirrors Code.gs ACTIVITIES — keep in sync) ===================== */
+  // This app only ever touches these two activities (mirrors the matching
+  // entries in Code.gs ACTIVITIES — keep in sync).
   const FAMILY_CATEGORY = "Family Package (Max 5)";
   const LESSON_STYLE_CATEGORIES = [
     "UG Student", "UG Staff",
@@ -994,32 +621,14 @@
   ];
   const UG_STAFF_RELATION_CATEGORIES = ["UG Staff Relation (Under 17)", "UG Staff Relation (17 & Above)"];
   const ACTIVITIES = {
-    gym: {
-      key: "gym", label: "Gymnasium",
-      categories: ["UG Student", "UG Staff", "Non-UG Student", "Public"],
-      idRequiredCategories: ["UG Student", "UG Staff"],
-      durations: { "Walk-in": {days:1}, "Monthly": {days:30}, "Semesterly": {days:120,onlyFor:["UG Student"]}, "Quarterly": {days:90,hideFor:["UG Student"]}, "Half-yearly": {days:182}, "Yearly": {days:365} }
-    },
-    // Leisure Tennis is Walk-in/Monthly only.
-    leisureTennis: {
-      key: "leisureTennis", label: "Leisure Tennis",
-      categories: LESSON_STYLE_CATEGORIES,
-      idRequiredCategories: ["UG Student", "UG Staff"],
-      durations: { "Walk-in": {days:1}, "Monthly": {days:30} }
-    },
     leisureSwimming: {
       key: "leisureSwimming", label: "Leisure Swimming",
       categories: LESSON_STYLE_CATEGORIES,
       idRequiredCategories: ["UG Student", "UG Staff"],
       durations: { "Walk-in": {days:1}, "Monthly": {days:30}, "Semesterly": {days:120,onlyFor:["UG Student"]}, "Quarterly": {days:90,hideFor:["UG Student"]}, "Half-yearly": {days:182}, "Yearly": {days:365} }
     },
-    tennisLessons: {
-      key: "tennisLessons", label: "Tennis Lessons",
-      categories: LESSON_STYLE_CATEGORIES,
-      idRequiredCategories: ["UG Student", "UG Staff"],
-      durations: { "Walk-in": {days:1}, "Monthly": {days:30} }
-    },
-    // Only ONE plan exists for Swimming Lessons — no Walk-in.
+    // Only ONE plan exists for Swimming Lessons — no Walk-in, so it's
+    // excluded from the walk-in Program dropdown below.
     swimmingLessons: {
       key: "swimmingLessons", label: "Swimming Lessons",
       categories: LESSON_STYLE_CATEGORIES,
@@ -1032,52 +641,23 @@
     const idx = activity.categories.indexOf(category);
     return BADGE_CLASSES[idx >= 0 ? idx % BADGE_CLASSES.length : 0];
   }
-  function durationOrderIndex(activity, duration){
-    return Object.keys(activity.durations).indexOf(duration);
-  }
-  function durationAllowedForCategory(cfg, category){
-    if(!cfg) return false;
-    if(cfg.onlyFor && cfg.onlyFor.indexOf(category) === -1) return false;
-    if(cfg.hideFor && cfg.hideFor.indexOf(category) !== -1) return false;
-    return true;
-  }
 
-  let currentActivity = ACTIVITIES.gym;
+  let currentActivity = ACTIVITIES.leisureSwimming;
   try{
-    const stored = localStorage.getItem('frontDeskActivityKey');
+    const stored = localStorage.getItem('swimmingDeskActivityKey');
     if(stored && ACTIVITIES[stored]) currentActivity = ACTIVITIES[stored];
   }catch(e){}
 
-  let pendingEntries = [];
   let approvedEntries = [];
-  let alertEntries = [];
-  let registrationsClearedAt = null;
   let registrationStats = null;
-  let pendingCounts = {};
-  // Snapshots of the last data loadAll() actually rendered, so a 3s
-  // poll that comes back identical (the common case — nothing changed
-  // in the sheet since the last check) can skip re-rendering entirely
-  // instead of tearing down and rebuilding every panel's full HTML.
-  // That rebuild work was competing with the main thread right when a
-  // staff member might be clicking a tab, which is what made tab
-  // switching feel like it stuttered instead of being instant. Reset
-  // to null on every activity switch (see switchActivity()) so the
-  // first load for a newly-selected activity always renders, even in
-  // the edge case where its data happens to serialize identically to
-  // the previous activity's (e.g. both empty).
-  let lastPendingJSON = null, lastApprovedJSON = null, lastVisitsJSON = null, lastAlertsJSON = null, lastClearedAtSeen = undefined, lastStatsJSON = null;
-  let sortKey = "class";
-  let sortDir = 1;
+  let alertEntries = [];
+  const toastedAlertIds = new Set();
   let searchTerm = "";
   let pinBuffer = "";
   let pinChecking = false;
   let refreshTimer = null;
-  let busyIds = new Set();
 
-  const screens = {
-    pin: document.getElementById('pinScreen'),
-    desk: document.getElementById('deskScreen')
-  };
+  const screens = { pin: document.getElementById('pinScreen'), desk: document.getElementById('deskScreen') };
   function showScreen(name){
     const next = screens[name];
     const current = Object.values(screens).find(s => s.classList.contains('active'));
@@ -1140,364 +720,127 @@
       showScreen('desk');
       renderActivitySwitcher();
       showActivityLoading();
-      Promise.all([loadAll(), loadFullVisitHistory()]).then(prefetchOtherActivities);
-      refreshAllPendingCounts();
+      loadAll().then(prefetchOtherActivities);
       scheduleAutoRefresh();
       subscribeLive();
     })
     .catch(() => fail("Couldn't reach the server — check the connection and try again."));
   }
 
-  // ---- Activity switcher ----
-  // Gym is its own section; Tennis and Swimming each combine a Leisure
-  // activity and a Lessons activity into one section with a second-row
-  // toggle between the two.
-  const SWITCHER_SECTIONS = [
-    { key: 'gym', label: 'Gymnasium', activityKey: 'gym' },
-    { key: 'tennis', label: 'Tennis', options: ['leisureTennis', 'tennisLessons'] },
-    { key: 'swimming', label: 'Swimming', options: ['leisureSwimming', 'swimmingLessons'] }
-  ];
-  function sectionForActivity(key){
-    return SWITCHER_SECTIONS.find(s => s.activityKey === key || (s.options && s.options.indexOf(key) !== -1));
-  }
-  function sectionPendingCount(section){
-    const keys = section.options || [section.activityKey];
-    return keys.reduce((sum, k) => sum + (pendingCounts[k] || 0), 0);
-  }
-
   function renderActivitySwitcher(){
     const host = document.getElementById('activitySwitcher');
-    const activeSection = sectionForActivity(currentActivity.key);
-
-    let html = '<div class="activity-switcher-row">' + SWITCHER_SECTIONS.map(s => {
-      const count = sectionPendingCount(s);
-      const badge = count ? `<span class="activity-pill-badge">${count}</span>` : '';
-      const isActive = activeSection && activeSection.key === s.key;
-      return `<div class="activity-pill${isActive ? ' active' : ''}" data-section="${s.key}" tabindex="0" role="button">
-        <span>${escapeHtml(s.label)}</span>${badge}
+    const pills = Object.values(ACTIVITIES).map(a => {
+      return `<div class="activity-pill${a.key === currentActivity.key ? ' active' : ''}" data-key="${a.key}" tabindex="0" role="button">
+        <span>${escapeHtml(a.label)}</span>
       </div>`;
-    }).join('') + '</div>';
-
-    if(activeSection && activeSection.options){
-      html += '<div class="activity-switcher-row activity-switcher-subrow">' + activeSection.options.map(key => {
-        const a = ACTIVITIES[key];
-        const count = pendingCounts[key];
-        const badge = count ? `<span class="activity-pill-badge">${count}</span>` : '';
-        return `<div class="activity-pill activity-pill-sub${key === currentActivity.key ? ' active' : ''}" data-key="${key}" tabindex="0" role="button">
-          <span>${escapeHtml(a.label)}</span>${badge}
-        </div>`;
-      }).join('') + '</div>';
-    }
-
-    host.innerHTML = html;
-    host.querySelectorAll('.activity-pill[data-section]').forEach(el => {
-      el.addEventListener('click', () => handleSectionSwitcherClick(el.dataset.section));
-      el.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); handleSectionSwitcherClick(el.dataset.section); } });
-    });
-    host.querySelectorAll('.activity-pill[data-key]').forEach(el => {
+    }).join('');
+    host.innerHTML = `<p class="activity-switcher-section-label">Swimming</p><div class="activity-switcher-row">${pills}</div>`;
+    host.querySelectorAll('.activity-pill').forEach(el => {
       el.addEventListener('click', () => switchActivity(el.dataset.key));
       el.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); switchActivity(el.dataset.key); } });
     });
-
-    ['approvalsActivityLabel','tableActivityLabel','visitsActivityLabel'].forEach(id => {
-      document.getElementById(id).textContent = currentActivity.label;
-    });
-    document.getElementById('walkinSub').textContent =
-      `Checks them into ${currentActivity.label} immediately — no approval needed, and no code is issued.`;
-
-    // Swimming Lessons has no Walk-in plan — members must register for
-    // the 12-session package instead.
-    const hasWalkin = !!currentActivity.durations['Walk-in'];
-    document.getElementById('walkinToggleBtn').style.display = hasWalkin ? 'inline-block' : 'none';
-    document.getElementById('walkinUnavailableNote').style.display = hasWalkin ? 'none' : 'block';
-    if(!hasWalkin) closeWalkinCard();
-  }
-
-  function handleSectionSwitcherClick(sectionKey){
-    const section = SWITCHER_SECTIONS.find(s => s.key === sectionKey);
-    if(!section) return;
-    if(!section.options){
-      switchActivity(section.activityKey);
-      return;
-    }
-    const activeSection = sectionForActivity(currentActivity.key);
-    if(activeSection && activeSection.key === section.key) return; // already in this section
-    switchActivity(section.options[0]); // default to Leisure
+    document.getElementById('registrantsActivityLabel').textContent = currentActivity.label;
   }
 
   function switchActivity(key){
     if(key === currentActivity.key) return;
     currentActivity = ACTIVITIES[key];
-    try{ localStorage.setItem('frontDeskActivityKey', key); }catch(e){}
-    closeWalkinCard();
-    populateCategorySelect(wfClass, currentActivity);
+    try{ localStorage.setItem('swimmingDeskActivityKey', key); }catch(e){}
     searchTerm = ""; document.getElementById('searchBox').value = "";
-    visitSearchTerm = ""; document.getElementById('visitSearchBox').value = "";
-    sortKey = "class"; sortDir = 1;
-    // Force the next loadAll() to render every panel regardless of
-    // whether the new activity's data happens to serialize the same as
-    // the old one's (e.g. both empty) — see the snapshot vars' comment.
-    lastPendingJSON = lastApprovedJSON = lastVisitsJSON = lastAlertsJSON = null; lastStatsJSON = null;
-    lastClearedAtSeen = undefined;
-    // Paint the new activity right now — from memory if we have it
-    // (normally always, thanks to the post-login prefetch), otherwise a
-    // "Loading…" state. Either way the previous activity's lists are
-    // gone the instant the label changes. Then refresh in the
-    // background so what's shown catches up with any change made since
-    // it was remembered.
     renderActivitySwitcher();
+    // Paint the new activity right now — from memory if we have it,
+    // otherwise a "Loading…" state; never the previous activity's list.
+    // Then refresh in the background to catch up with any change made
+    // since it was remembered.
     const st = storeFor(key);
     if(st.loaded) showActivityFromStore(st); else showActivityLoading();
     loadAll();
-    if(!st.visitsLoaded) loadFullVisitHistory();
     attachLiveActivity();
   }
 
-  // ---- Dashboard tabs ----
-  document.querySelectorAll('.tab-bar > .tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-bar > .tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-    });
-  });
-
   const toast = document.getElementById('toast');
-  // icon (optional): a name from ICON_PATHS above — e.g. "check" for a
-  // success toast. Built via DOM methods (an icon span, then msg as a
-  // plain text node) rather than one innerHTML string, since msg isn't
-  // always pre-escaped at every call site — this keeps that safe no
-  // matter what msg contains, while still allowing a trusted, code-
-  // authored icon alongside it.
-  function showToast(msg, isError, duration, icon){
+  function showToast(msg, isError, duration){
     if(!staffToken) return; // signed out — the PIN screen carries its own message
-    toast.textContent = '';
-    if(icon){
-      const iconWrap = document.createElement('span');
-      iconWrap.innerHTML = svgIcon(icon, 13, true);
-      iconWrap.style.marginRight = '6px';
-      toast.appendChild(iconWrap);
-    }
-    toast.appendChild(document.createTextNode(msg));
+    toast.textContent = msg;
     toast.classList.toggle('error', !!isError);
     toast.classList.add('show');
     setTimeout(()=> toast.classList.remove('show'), duration || 2200);
   }
 
-  // ---- Member-code popup (shown after approving a new registration) ----
-  const codeModalOverlay = document.getElementById('codeModalOverlay');
-  const codeModalCopyBtn = document.getElementById('codeModalCopyBtn');
-  function showApprovedCodeModal(entry, familySize){
-    document.getElementById('codeModalName').textContent = entry.name || '';
-    document.getElementById('codeModalSub').textContent = (familySize > 1)
-      ? `${entry.class || ''} — Family Package (${familySize} members; other codes via Sign In's phone lookup)`
-      : (entry.class || '');
-    document.getElementById('codeModalCode').textContent = entry.idNo || '';
-    codeModalCopyBtn.textContent = "Copy Code";
-    codeModalCopyBtn.classList.remove('copied');
-    codeModalOverlay.classList.add('show');
-  }
-  function hideApprovedCodeModal(){ codeModalOverlay.classList.remove('show'); }
-  document.getElementById('codeModalDoneBtn').addEventListener('click', hideApprovedCodeModal);
-  codeModalOverlay.addEventListener('click', (e) => { if(e.target === codeModalOverlay) hideApprovedCodeModal(); });
-  document.addEventListener('keydown', (e) => { if(e.key === 'Escape') hideApprovedCodeModal(); });
-  codeModalCopyBtn.addEventListener('click', () => {
-    const code = document.getElementById('codeModalCode').textContent;
-    if(!code) return;
-    const markCopied = () => { codeModalCopyBtn.innerHTML = 'Copied ' + svgIcon('check', 13, true); codeModalCopyBtn.classList.add('copied'); };
-    if(navigator.clipboard && navigator.clipboard.writeText){
-      navigator.clipboard.writeText(code).then(markCopied).catch(() => {});
-    }
-  });
-
-  // ---- Data loading ----
-  const toastedAlertIds = new Set();
-
-  // One request instead of four (pending/registrations/visits/alerts
-  // used to each be their own fetch — each is a separate Apps Script
-  // execution with its own overhead on top of the actual sheet read).
+  // This desk only has access to approved registrants and expired-
+  // membership alerts — no Pending, no Visit Log (both are handled at
+  // the main front desk) — so "registrantsDashboard" is a leaner view
+  // than the main dashboard's, and one request still covers everything
+  // this page needs per refresh cycle.
   // Auto-refresh already retries itself every AUTO_REFRESH_MS regardless
   // of what happened last cycle — no need to alarm the user over one
   // blip on top of fetchJSON's own retries. Only surface a toast once a
   // run of consecutive failures has lasted long enough to actually
   // matter, and only once (not every cycle after that).
   let consecutiveLoadFailures = 0;
-  // "visits" in the dashboard response is only TODAY's rows (see
-  // Code.gs's getRecentVisits) — Visits only ever grows, and re-fetching
-  // its whole history every AUTO_REFRESH_MS was getting slower every
-  // day. loadFullVisitHistory() below loads everything once; every fast
-  // cycle after that only needs to replace today's slice in place,
-  // leaving yesterday-and-older rows (and the Visit Log's search over
-  // them) exactly as already loaded.
-  // todayLabel MUST be the server's own date label (Code.gs's
-  // "dashboard" view sends it as visitsDateLabel, in Ghana time via
-  // TIMEZONE), never computed from this device's own clock — a
-  // front-desk device isn't guaranteed to be set to Ghana time (the
-  // same reason TIMEZONE exists server-side at all), and if this
-  // guessed wrong, the filter below would never match any of these
-  // rows again, so every cycle would append the same "today" batch on
-  // top of what's already there instead of replacing it — visible as
-  // the same check-ins duplicating in the Visit Log forever. Falls
-  // back to a local guess only if talking to an older deployment that
-  // doesn't send visitsDateLabel yet.
-  function mergeTodayVisits(existing, todayRows, todayLabel){
-    const label = todayLabel || formatDateDMY(new Date());
-    return existing.filter(v => v.date !== label).concat(todayRows);
-  }
-
-  // Everything this desk has loaded, remembered PER ACTIVITY. Switching
-  // used to leave the old activity's lists on screen until the new
-  // one's fetch came back, and threw everything away again on the way
-  // out, so every switch — even back to one you'd just been looking at —
-  // meant waiting. Now a switch paints from this memory instantly
-  // (showActivityFromStore) and then refreshes it in the background, and
-  // every activity is loaded once right after sign-in
-  // (prefetchOtherActivities) so even the first visit is instant.
-  // pendingEntries/approvedEntries/... below stay the "what's on screen
-  // now" copies every render function already reads.
+  // Applies one registrantsDashboard-shaped payload to the UI — called
+  // by loadAll() below on every poll response, including one triggered
+  // early by a live Firebase "touch" signal (see attachLiveActivity()
+  // further down, which only ever triggers a fetch, never hands data
+  // to this function directly).
+  // Everything loaded so far, remembered PER ACTIVITY (Leisure and
+  // Lessons). Switching used to leave the old activity's list on screen
+  // until the new one's fetch came back, and forgot it again on the way
+  // out, so every switch meant waiting. Now a switch paints from this
+  // memory instantly and refreshes it in the background, and the other
+  // activity is loaded once right after sign-in so even the first
+  // switch is instant.
   const store = {};
   function storeFor(key){
-    return store[key] || (store[key] = { pending: [], registrations: [], stats: null, clearedAt: null, alerts: [], visits: [], loaded: false, visitsLoaded: false });
+    return store[key] || (store[key] = { registrations: [], stats: null, alerts: [], loaded: false });
   }
   function showActivityFromStore(st){
-    pendingEntries = st.pending; approvedEntries = st.registrations; registrationStats = st.stats;
-    registrationsClearedAt = st.clearedAt; alertEntries = st.alerts; visitEntries = st.visits;
-    renderTally(); renderApprovals(); renderTable(); renderVisitsTable(); renderAlerts();
+    approvedEntries = st.registrations; registrationStats = st.stats; alertEntries = st.alerts;
+    renderTally(); renderRegistrants(); renderAlerts();
   }
-  // Only for an activity with nothing remembered yet (first visit,
-  // before the prefetch reached it): show that it's loading instead of
-  // the previous activity's data or a misleading "nothing here" state.
+  // Only for an activity with nothing remembered yet: say it's loading
+  // instead of showing the previous activity's list or a misleading
+  // "no registrants" state.
   function showActivityLoading(){
-    pendingEntries = []; approvedEntries = []; alertEntries = []; visitEntries = [];
-    registrationsClearedAt = null; registrationStats = null;
-    const loading = `<div class="empty-state"><p>Loading ${escapeHtml(currentActivity.label)}…</p></div>`;
-    ['approvalsHost', 'tableHost', 'visitsTableHost'].forEach(id => { document.getElementById(id).innerHTML = loading; });
+    approvedEntries = []; alertEntries = []; registrationStats = null;
+    document.getElementById('registrantsHost').innerHTML =
+      `<div class="empty-state"><p>Loading ${escapeHtml(currentActivity.label)}…</p></div>`;
     document.getElementById('tally').innerHTML = '';
-    document.getElementById('pendingBadge').textContent = pendingCounts[currentActivity.key] || 0;
-    const banner = document.getElementById('alertBanner'); banner.style.display = 'none'; banner.innerHTML = '';
-    document.getElementById('clearedNote').style.display = 'none';
     document.getElementById('footNote').textContent = '';
-    document.getElementById('visitsFootNote').textContent = '';
+    const banner = document.getElementById('alertBanner'); banner.style.display = 'none'; banner.innerHTML = '';
   }
-  // Quietly loads every activity we don't have yet, one at a time and
-  // only after the visible one has finished, so it never competes with
-  // what the person is actually looking at. Small dashboards first, the
-  // (larger) full visit histories after.
   let prefetchRunning = false;
   function prefetchOtherActivities(){
     if(prefetchRunning) return;
     prefetchRunning = true;
-    const others = Object.keys(ACTIVITIES).filter(k => k !== currentActivity.key);
-    const chain = (jobFor) => others.reduce((p, k) => p.then(() => jobFor(k)), Promise.resolve());
-    chain(k => storeFor(k).loaded ? null : loadAll(ACTIVITIES[k]))
-      .then(() => chain(k => storeFor(k).visitsLoaded ? null : loadFullVisitHistory(ACTIVITIES[k])))
+    const others = Object.keys(ACTIVITIES).filter(k => k !== currentActivity.key && !storeFor(k).loaded);
+    others.reduce((p, k) => p.then(() => loadAll(ACTIVITIES[k])), Promise.resolve())
       .then(() => { prefetchRunning = false; }, () => { prefetchRunning = false; });
-  }
-  // Applies one dashboard-shaped payload (pending/registrations/visits/
-  // alerts/clearedAt) to the UI — called by loadAll() below on every
-  // poll response, and by that same loadAll() when a live Firebase
-  // "touch" signal (see attachLiveActivity() further down) triggers an
-  // early re-fetch. Firebase never hands this function data directly —
-  // it only ever triggers the same fetch loadAll() already does — so
-  // there's exactly one code path that turns server data into UI,
-  // whichever reason triggered the fetch.
-  // Cards this desk has just approved/rejected. A poll that was already in
-  // flight when the click happened can come back AFTER the card was
-  // removed, carrying the old list — which used to put the card straight
-  // back ("stays in the approval area even after approval") until a later
-  // poll fixed it. Anything listed here is kept out of every incoming
-  // list until the server's own list stops containing it (or 45s pass).
-  const resolvedPending = {};
-  function filterResolvedPending(key, rows){
-    const m = resolvedPending[key];
-    if(!m || m.size === 0) return rows;
-    const present = new Set(rows.map(r => String(r.idNo)));
-    const now = Date.now();
-    m.forEach((ts, id) => { if(!present.has(id) || now - ts > 45000) m.delete(id); });
-    return rows.filter(r => !m.has(String(r.idNo)));
   }
   function applyDashboardPayload(res, activity){
     const st = storeFor(activity.key);
-    res.pending = filterResolvedPending(activity.key, res.pending || []);
-    st.pending = res.pending || [];
     st.registrations = res.registrations || [];
-    st.clearedAt = res.clearedAt || null;
     st.stats = res.stats || null;
     st.alerts = res.alerts || [];
-    st.visits = mergeTodayVisits(st.visits, res.visits || [], res.visitsDateLabel);
     st.loaded = true;
-    pendingCounts[activity.key] = st.pending.length;
-    if(activity.key !== currentActivity.key) prefetchPhotoThumbs(st.registrations);
-    // Not the activity on screen (a prefetch/background refresh, or the
-    // person switched while this was in flight): remembered for later,
-    // nothing to paint.
+    prefetchPhotoThumbs(st.registrations);
+    // Not the activity on screen (prefetch/background refresh, or the
+    // person switched while this was in flight): remembered for later.
     if(activity.key !== currentActivity.key) return;
-
-    const newPendingJSON = JSON.stringify(res.pending || []);
-    const newApprovedJSON = JSON.stringify(res.registrations || []);
-    const newVisitsJSON = JSON.stringify(res.visits || []);
-    const newAlertsJSON = JSON.stringify(res.alerts || []);
-    const newClearedAt = res.clearedAt || null;
-
-    const pendingChanged = newPendingJSON !== lastPendingJSON;
-    const approvedChanged = newApprovedJSON !== lastApprovedJSON || newClearedAt !== lastClearedAtSeen || JSON.stringify(res.stats || null) !== lastStatsJSON;
-    const visitsChanged = newVisitsJSON !== lastVisitsJSON;
-    const alertsChanged = newAlertsJSON !== lastAlertsJSON;
-
-    pendingEntries = st.pending;
     approvedEntries = st.registrations;
     registrationStats = st.stats;
-    registrationsClearedAt = newClearedAt;
-    visitEntries = st.visits;
     alertEntries = st.alerts;
-
-    // Every render() below rebuilds its panel's full innerHTML from
-    // scratch — skip whichever ones the sheet hasn't actually
-    // changed since last time, so a poll (or live push) that comes
-    // back identical (the common case) is nearly free instead of
-    // tearing down and rebuilding tables that can run to hundreds of
-    // rows.
-    if(pendingChanged || approvedChanged) renderTally();
-    if(pendingChanged) renderApprovals();
-    if(approvedChanged){ renderTable(); prefetchPhotoThumbs(approvedEntries); }
-    if(visitsChanged) renderVisitsTable();
-    if(alertsChanged) renderAlerts();
-
-    lastPendingJSON = newPendingJSON;
-    lastApprovedJSON = newApprovedJSON;
-    lastVisitsJSON = newVisitsJSON;
-    lastAlertsJSON = newAlertsJSON;
-    lastClearedAtSeen = newClearedAt;
-    lastStatsJSON = JSON.stringify(res.stats || null);
+    renderTally();
+    renderRegistrants();
+    renderAlerts();
   }
-  // activity defaults to the one on screen (also called straight from
-  // click handlers, which pass an Event — hence the .key check). Any
-  // other activity is a background load: it fills that activity's
-  // memory and never toasts or counts toward the connection-failure
-  // warning.
-  const loadSeq = {}, appliedSeq = {};
+  // activity defaults to the one on screen. Any other activity is a
+  // background load: it fills that activity's memory and never toasts or
+  // counts toward the connection-failure warning.
   function loadAll(activity){
     if(!activity || !activity.key) activity = currentActivity;
-    // TEMPORARY debug instrumentation (see Code.gs's matching comment
-    // on the "dashboard" view) — logs the server's own step-by-step
-    // breakdown for THIS poll, alongside the client-observed round
-    // trip, straight to this browser's console (F12). This is what
-    // carries a newly-submitted walk-in's info to this screen, so if
-    // that feels slow to show up, this is where to look. Safe to
-    // remove, here and in Code.gs, once that's done.
-    const _reqStart = Date.now();
-    // Replies can arrive out of order (a slow earlier request finishing
-    // after a newer one). Only ever apply a reply newer than the last one
-    // applied, so an old list can't overwrite a newer one.
-    const seq = (loadSeq[activity.key] = (loadSeq[activity.key] || 0) + 1);
-    return fetchJSON(SCRIPT_URL + "?activity=" + activity.key + "&view=dashboard&t=" + Date.now())
+    return fetchJSON(SCRIPT_URL + "?activity=" + activity.key + "&view=registrantsDashboard&t=" + Date.now())
       .then(res => {
-        if(res && res.status === "ok"){
-          if(seq < (appliedSeq[activity.key] || 0)) return;
-          appliedSeq[activity.key] = seq;
-        }
-        if(res._timing) console.log(`[dashboard poll timing] activity=${activity.key} clientRoundTripMs=${Date.now() - _reqStart}`, res._timing);
         if(res.status !== "ok"){
           if(activity.key === currentActivity.key) showToast(res.message || "Couldn't reach the sheet — check connection", true);
           return;
@@ -1514,126 +857,68 @@
       });
   }
   document.getElementById('refreshBtn').addEventListener('click', loadAll);
-  document.getElementById('approvalsRefreshBtn').addEventListener('click', loadAll);
-
-  // Full Visits history for the current activity, fetched once (see the
-  // callers below) instead of on every AUTO_REFRESH_MS cycle — loadAll()
-  // only brings in today's rows after this. Resets lastVisitsJSON so the
-  // very next dashboard cycle's change-check can't skip a real update by
-  // comparing against a now-stale value.
-  function loadFullVisitHistory(activity){
-    if(!activity || !activity.key) activity = currentActivity;
-    return fetchJSON(SCRIPT_URL + "?activity=" + activity.key + "&view=visits&t=" + Date.now())
-      .then(res => {
-        if(res.status !== "ok") return;
-        const st = storeFor(activity.key);
-        st.visits = res.rows || [];
-        st.visitsLoaded = true;
-        if(activity.key !== currentActivity.key) return; // remembered for a later switch
-        visitEntries = st.visits;
-        lastVisitsJSON = null;
-        renderVisitsTable();
-      })
-      .catch(() => {});
-  }
-
-  // One request covering every activity's pending count, instead of
-  // one fetch per activity.
-  function refreshAllPendingCounts(){
-    return fetchJSON(SCRIPT_URL + "?view=allPendingCounts&t=" + Date.now())
-      .then(res => {
-        if(res.status !== "ok") return;
-        Object.keys(res.counts || {}).forEach(k => { pendingCounts[k] = res.counts[k]; });
-        renderActivitySwitcher();
-      })
-      .catch(() => {});
-  }
 
   // ---- Live sync (optional) ----
   // If FIREBASE_CONFIG.databaseURL is set (see the top of this script),
-  // this front desk finds out within about a minute whenever ANY desk
-  // writes something — see Code.gs's touchActivity()/
+  // this desk finds out within about a minute whenever ANY desk writes
+  // something for this activity — see Code.gs's touchActivity()/
   // drainDirtyActivitiesToFirebase(). Not instant on purpose: Code.gs
   // queues the change locally and a once-a-minute scheduled job is the
-  // only thing that actually talks to Firebase, specifically so that a
-  // slow or misconfigured Firebase can never add latency to (or break)
-  // the write action itself — UrlFetchApp has no timeout in Apps
-  // Script, so a synchronous push here risked stalling every single
-  // check-in/out/approval/submission on Firebase's own responsiveness,
-  // which is the opposite of what this app needs. So a
-  // "touch" here just triggers the exact same fetch loadAll() already
-  // does — this only removes the up-to-AUTO_REFRESH_MS wait for THAT
-  // fetch to happen, it doesn't change what it costs. The poll itself
-  // keeps running regardless, as a fallback for a dropped connection.
+  // only thing that actually talks to Firebase, specifically so a slow
+  // or misconfigured Firebase can never add latency to (or break) the
+  // write action itself — UrlFetchApp has no timeout in Apps Script, so
+  // a synchronous push here risked stalling every check-in/out/approval
+  // on Firebase's own responsiveness, which is the opposite of what
+  // this app needs. So a "touch" here just
+  // triggers the exact same fetch loadAll() already does — this only
+  // removes the up-to-AUTO_REFRESH_MS wait for THAT fetch to happen.
+  // The poll itself keeps running regardless, as a fallback for a
+  // dropped connection.
   let liveActivityRef = null;
-  const liveBadgeRefs = [];
-  function onLiveRef(ref, handler){
-    // Firebase fires 'value' immediately with whatever's already
-    // there, which would otherwise trigger an extra, redundant fetch
-    // right on top of the one loadAll()/refreshAllPendingCounts()
-    // already did at startup/switch — skip that first firing.
-    let first = true;
-    ref.on('value', () => {
-      if(first){ first = false; return; }
-      handler();
-    });
-  }
   function attachLiveActivity(){
     if(typeof firebase === 'undefined' || !firebase.apps.length) return;
     if(liveActivityRef) liveActivityRef.off();
     const activity = currentActivity;
     liveActivityRef = firebase.database().ref('live/' + activity.key + '/touch');
-    onLiveRef(liveActivityRef, () => {
+    // Firebase fires 'value' immediately with whatever's already there,
+    // which would otherwise trigger an extra, redundant fetch right on
+    // top of the one loadAll() already did at startup/switch — skip
+    // that first firing.
+    let first = true;
+    liveActivityRef.on('value', () => {
+      if(first){ first = false; return; }
       if(activity.key !== currentActivity.key) return; // switched since attaching
       loadAll();
-      refreshAllPendingCounts();
-    });
-  }
-  // One tiny listener per activity, purely to keep the pending-count
-  // badges live even for activities this desk isn't currently looking
-  // at — cheap (refreshAllPendingCounts() is a single small sheet
-  // read), unlike re-rendering a dashboard nobody's looking at.
-  function attachLiveBadges(){
-    liveBadgeRefs.forEach(ref => ref.off());
-    liveBadgeRefs.length = 0;
-    Object.keys(ACTIVITIES).forEach(key => {
-      const ref = firebase.database().ref('live/' + key + '/touch');
-      onLiveRef(ref, () => { if(key !== currentActivity.key){ refreshAllPendingCounts(); loadAll(ACTIVITIES[key]); } });
-      liveBadgeRefs.push(ref);
     });
   }
   function subscribeLive(){
-    if(!FIREBASE_CONFIG.databaseURL) return; // not configured — polling only, nothing else to do
+    if(!FIREBASE_CONFIG.databaseURL) return; // not configured — polling only
     if(typeof firebase === 'undefined') return;
     if(!firebase.apps.length){
       try{ firebase.initializeApp(FIREBASE_CONFIG); }catch(e){ return; }
     }
     attachLiveActivity();
-    attachLiveBadges();
   }
 
   // Self-rescheduling instead of setInterval: the next cycle is only
-  // queued once the current one (and everything it fetched) has fully
-  // settled. A plain setInterval keeps firing a fresh batch of requests
-  // every AUTO_REFRESH_MS regardless of whether the previous batch ever
-  // finished — during any slow patch that piles requests up faster than
-  // Apps Script can drain them, which then makes everything slower
-  // still. Also skips the cycle entirely while the tab is
-  // hidden/backgrounded, since a front desk device is often left open
-  // all day.
+  // queued once the current one has fully settled, and is skipped
+  // entirely while the tab is hidden/backgrounded. A plain setInterval
+  // keeps firing a fresh batch of requests every AUTO_REFRESH_MS
+  // regardless of whether the previous batch ever finished — during
+  // any slow patch that piles requests up faster than Apps Script can
+  // drain them, which then makes everything slower still.
   let refreshTick = 0;
   function scheduleAutoRefresh(){
     clearTimeout(refreshTimer);
     if(!staffToken) return; // signed out — checkPin() restarts this after the next login
     refreshTimer = setTimeout(() => {
       if(document.hidden){ scheduleAutoRefresh(); return; }
-      Promise.allSettled([loadAll(), refreshAllPendingCounts()]).then(scheduleAutoRefresh);
-      // Keep the other activities' memory from going stale: one of them
-      // every 5th cycle (~15s), round-robin, fired separately so a slow
-      // one can never delay the visible activity's own cycle.
+      loadAll().then(scheduleAutoRefresh);
+      // Keep the other activity's memory from going stale: refresh it
+      // every 5th cycle (~15s), fired separately so a slow one can never
+      // delay the visible activity's own cycle.
       if(++refreshTick % 5 === 0){
-        const others = Object.keys(ACTIVITIES).filter(k => k !== currentActivity.key);
-        if(others.length) loadAll(ACTIVITIES[others[Math.floor(refreshTick / 5) % others.length]]);
+        Object.keys(ACTIVITIES).filter(k => k !== currentActivity.key).forEach(k => loadAll(ACTIVITIES[k]));
       }
     }, AUTO_REFRESH_MS);
   }
@@ -1678,422 +963,7 @@
     }).catch(() => showToast("Couldn't reach the sheet — check connection", true));
   }
 
-  // ---- Add Walk-in ----
-  // Country list for the phone fields. The flag is built from the 2-letter country code
-  // (Windows shows the letters, e.g. "JP +81", instead of a flag picture — that's normal there).
-  // US and Canada share +1, so one entry covers both.
-  const COUNTRY_CODES = [
-    { iso:"GH", code:"+233",def:true },
-    { iso:"NG", code:"+234" },
-    { iso:"CI", code:"+225" },
-    { iso:"TG", code:"+228" },
-    { iso:"BJ", code:"+229" },
-    { iso:"BF", code:"+226" },
-    { iso:"ML", code:"+223" },
-    { iso:"SN", code:"+221" },
-    { iso:"SL", code:"+232" },
-    { iso:"LR", code:"+231" },
-    { iso:"GM", code:"+220" },
-    { iso:"GN", code:"+224" },
-    { iso:"NE", code:"+227" },
-    { iso:"CM", code:"+237" },
-    { iso:"ZA", code:"+27" },
-    { iso:"KE", code:"+254" },
-    { iso:"EG", code:"+20" },
-    { iso:"ET", code:"+251" },
-    { iso:"TZ", code:"+255" },
-    { iso:"UG", code:"+256" },
-    { iso:"RW", code:"+250" },
-    { iso:"ZM", code:"+260" },
-    { iso:"ZW", code:"+263" },
-    { iso:"BW", code:"+267" },
-    { iso:"NA", code:"+264" },
-    { iso:"MA", code:"+212" },
-    { iso:"DZ", code:"+213" },
-    { iso:"TN", code:"+216" },
-    { iso:"US", code:"+1" },
-    { iso:"GB", code:"+44" },
-    { iso:"IE", code:"+353" },
-    { iso:"FR", code:"+33" },
-    { iso:"DE", code:"+49" },
-    { iso:"NL", code:"+31" },
-    { iso:"BE", code:"+32" },
-    { iso:"CH", code:"+41" },
-    { iso:"AT", code:"+43" },
-    { iso:"IT", code:"+39" },
-    { iso:"ES", code:"+34" },
-    { iso:"PT", code:"+351" },
-    { iso:"SE", code:"+46" },
-    { iso:"NO", code:"+47" },
-    { iso:"DK", code:"+45" },
-    { iso:"FI", code:"+358" },
-    { iso:"IS", code:"+354" },
-    { iso:"PL", code:"+48" },
-    { iso:"CZ", code:"+420" },
-    { iso:"GR", code:"+30" },
-    { iso:"TR", code:"+90" },
-    { iso:"RU", code:"+7" },
-    { iso:"UA", code:"+380" },
-    { iso:"AE", code:"+971" },
-    { iso:"SA", code:"+966" },
-    { iso:"QA", code:"+974" },
-    { iso:"IL", code:"+972" },
-    { iso:"IN", code:"+91" },
-    { iso:"PK", code:"+92" },
-    { iso:"BD", code:"+880" },
-    { iso:"LK", code:"+94" },
-    { iso:"CN", code:"+86" },
-    { iso:"HK", code:"+852" },
-    { iso:"JP", code:"+81" },
-    { iso:"KR", code:"+82" },
-    { iso:"SG", code:"+65" },
-    { iso:"MY", code:"+60" },
-    { iso:"TH", code:"+66" },
-    { iso:"VN", code:"+84" },
-    { iso:"PH", code:"+63" },
-    { iso:"ID", code:"+62" },
-    { iso:"AU", code:"+61" },
-    { iso:"NZ", code:"+64" },
-    { iso:"BR", code:"+55" },
-    { iso:"MX", code:"+52" },
-    { iso:"AR", code:"+54" },
-    { iso:"CO", code:"+57" },
-    { iso:"LU", code:"+352" },
-    { iso:"MT", code:"+356" },
-    { iso:"CY", code:"+357" },
-    { iso:"HU", code:"+36" },
-    { iso:"RO", code:"+40" },
-    { iso:"BG", code:"+359" },
-    { iso:"HR", code:"+385" },
-    { iso:"RS", code:"+381" },
-    { iso:"SK", code:"+421" },
-    { iso:"SI", code:"+386" },
-    { iso:"LT", code:"+370" },
-    { iso:"LV", code:"+371" },
-    { iso:"EE", code:"+372" },
-    { iso:"BY", code:"+375" },
-    { iso:"AL", code:"+355" },
-    { iso:"BA", code:"+387" },
-    { iso:"MK", code:"+389" },
-    { iso:"ME", code:"+382" },
-    { iso:"MD", code:"+373" },
-    { iso:"AO", code:"+244" },
-    { iso:"MZ", code:"+258" },
-    { iso:"MW", code:"+265" },
-    { iso:"CD", code:"+243" },
-    { iso:"CG", code:"+242" },
-    { iso:"GA", code:"+241" },
-    { iso:"GQ", code:"+240" },
-    { iso:"SD", code:"+249" },
-    { iso:"LY", code:"+218" },
-    { iso:"MU", code:"+230" },
-    { iso:"SC", code:"+248" },
-    { iso:"MG", code:"+261" },
-    { iso:"SO", code:"+252" },
-    { iso:"DJ", code:"+253" },
-    { iso:"BI", code:"+257" },
-    { iso:"SS", code:"+211" },
-    { iso:"TD", code:"+235" },
-    { iso:"CV", code:"+238" },
-    { iso:"GW", code:"+245" },
-    { iso:"MR", code:"+222" },
-    { iso:"LS", code:"+266" },
-    { iso:"SZ", code:"+268" },
-    { iso:"ER", code:"+291" },
-    { iso:"JO", code:"+962" },
-    { iso:"LB", code:"+961" },
-    { iso:"KW", code:"+965" },
-    { iso:"BH", code:"+973" },
-    { iso:"OM", code:"+968" },
-    { iso:"IQ", code:"+964" },
-    { iso:"IR", code:"+98" },
-    { iso:"YE", code:"+967" },
-    { iso:"AF", code:"+93" },
-    { iso:"NP", code:"+977" },
-    { iso:"MM", code:"+95" },
-    { iso:"KH", code:"+855" },
-    { iso:"LA", code:"+856" },
-    { iso:"MN", code:"+976" },
-    { iso:"UZ", code:"+998" },
-    { iso:"TW", code:"+886" },
-    { iso:"MO", code:"+853" },
-    { iso:"BN", code:"+673" },
-    { iso:"CL", code:"+56" },
-    { iso:"PE", code:"+51" },
-    { iso:"VE", code:"+58" },
-    { iso:"EC", code:"+593" },
-    { iso:"UY", code:"+598" },
-    { iso:"PY", code:"+595" },
-    { iso:"BO", code:"+591" },
-    { iso:"CR", code:"+506" },
-    { iso:"PA", code:"+507" },
-    { iso:"GT", code:"+502" },
-    { iso:"HN", code:"+504" },
-    { iso:"SV", code:"+503" },
-    { iso:"NI", code:"+505" },
-    { iso:"CU", code:"+53" }
-  ].map(c => Object.assign(c, {
-    label: (c.iso === "US" ? "\uD83C\uDDFA\uD83C\uDDF8\uD83C\uDDE8\uD83C\uDDE6" : String.fromCodePoint(...[...c.iso].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65))) + " " + c.code
-  }));
-  // Digits allowed in the number part, after the country code and without the leading 0.
-  // Ghana's are exactly 9; everywhere else numbers vary (Norway 8, Germany up to 11, USA/UK 10...), so
-  // allow anything from 7 digits up to the international limit of 15 digits in total with the country code.
-  function phoneDigitRules(code){
-    if(code === '+233') return { min: 9, max: 9 };
-    return { min: 7, max: Math.max(7, 15 - String(code).replace(/\D/g, '').length) };
-  }
-  const wfPhoneCode = document.getElementById('wfPhoneCode');
-  wfPhoneCode.innerHTML = COUNTRY_CODES.map(c => `<option value="${c.code}"${c.def ? ' selected' : ''}>${c.label}</option>`).join('');
-
-  // Ghanaian habit: local numbers are usually written with a leading 0
-  // ("024 123 4567") even though every phone field here already pairs
-  // with an explicit country code select that accounts for it — so a
-  // leading 0 is dropped the moment it's typed, and typing is capped
-  // at the most digits that country's numbers can have (see phoneDigitRules).
-  document.querySelectorAll('.phone-group input[type="text"]').forEach(input => {
-    const codeSelect = input.closest('.phone-group').querySelector('select');
-    function applyLimit(){
-      const code = codeSelect ? codeSelect.value : '+233';
-      const maxDigits = phoneDigitRules(code).max;
-      // Italy is the one common exception where the leading 0 is part of the number.
-      let value = code === '+39' ? input.value : input.value.replace(/^0/, '');
-      let digitCount = 0, cutIndex = value.length;
-      for(let i = 0; i < value.length; i++){
-        if(/\d/.test(value[i])){
-          digitCount++;
-          if(digitCount > maxDigits){ cutIndex = i; break; }
-        }
-      }
-      value = value.slice(0, cutIndex);
-      if(value !== input.value) input.value = value;
-    }
-    input.addEventListener('input', applyLimit);
-    if(codeSelect) codeSelect.addEventListener('change', applyLimit);
-  });
-
-  function populateCategorySelect(selectEl, activity){
-    selectEl.innerHTML = activity.categories.map(c => `<option value="${escapeHtml(c)}">${escapeHtml(c)}</option>`).join('');
-  }
-
-  const walkinCard = document.getElementById('walkinCard');
-  const walkinToggleBtn = document.getElementById('walkinToggleBtn');
-  const walkinCancelBtn = document.getElementById('walkinCancelBtn');
-  const walkinForm = document.getElementById('walkinForm');
-  const wfClass = document.getElementById('wfClass');
-  const wfIdField = document.getElementById('wf-field-id');
-  const wfId = document.getElementById('wfId');
-  const wfSurname = document.getElementById('wfSurname');
-  const wfOtherNames = document.getElementById('wfOtherNames');
-  const wfPhone = document.getElementById('wfPhone');
-  const walkinSubmitBtn = document.getElementById('walkinSubmitBtn');
-  populateCategorySelect(wfClass, currentActivity);
-
-  function setFieldInvalid(el, invalid){ el.classList.toggle('invalid', !!invalid); }
-
-  function openWalkinCard(){ walkinCard.style.display = 'block'; walkinToggleBtn.style.display = 'none'; }
-  function closeWalkinCard(){
-    walkinCard.style.display = 'none';
-    walkinToggleBtn.style.display = 'inline-block';
-    walkinForm.reset();
-    populateCategorySelect(wfClass, currentActivity);
-    wfIdField.style.display = 'none';
-    [wfIdField, document.getElementById('wf-field-surname'), document.getElementById('wf-field-otherNames')].forEach(f => setFieldInvalid(f, false));
-  }
-  walkinToggleBtn.addEventListener('click', openWalkinCard);
-  walkinCancelBtn.addEventListener('click', closeWalkinCard);
-
-  wfClass.addEventListener('change', () => {
-    const needsId = currentActivity.idRequiredCategories.indexOf(wfClass.value) !== -1;
-    wfIdField.style.display = needsId ? 'block' : 'none';
-    if(!needsId) setFieldInvalid(wfIdField, false);
-  });
-
-  walkinForm.addEventListener('submit', function(e){
-    e.preventDefault();
-    let valid = true;
-    const needsId = currentActivity.idRequiredCategories.indexOf(wfClass.value) !== -1;
-
-    const surnameField = document.getElementById('wf-field-surname');
-    const otherNamesField = document.getElementById('wf-field-otherNames');
-    if(!wfSurname.value.trim()){ setFieldInvalid(surnameField, true); valid = false; } else setFieldInvalid(surnameField, false);
-    if(!wfOtherNames.value.trim()){ setFieldInvalid(otherNamesField, true); valid = false; } else setFieldInvalid(otherNamesField, false);
-    if(needsId && !wfId.value.trim()){ setFieldInvalid(wfIdField, true); valid = false; } else setFieldInvalid(wfIdField, false);
-    if(!valid) return;
-
-    const payload = {
-      action: "addWalkinVisit",
-      activity: currentActivity.key,
-      class: wfClass.value,
-      name: `${wfSurname.value.trim()} ${wfOtherNames.value.trim()}`.trim(),
-      idNo: needsId ? wfId.value.trim() : "",
-      phone: wfPhone.value.trim() ? `${wfPhoneCode.value} ${wfPhone.value.trim()}` : ""
-    };
-
-    walkinSubmitBtn.disabled = true;
-    walkinSubmitBtn.textContent = "Signing in…";
-
-    fetchJSON(SCRIPT_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify(payload)
-    })
-    .then(data => {
-      walkinSubmitBtn.disabled = false;
-      walkinSubmitBtn.textContent = "Sign In";
-      if(data.status === "ok"){
-        showToast("Walk-in signed in", false, 2200, "check");
-        closeWalkinCard();
-        loadAll();
-      } else {
-        showToast(data.message || "Couldn't sign in walk-in", true);
-      }
-    })
-    .catch(() => {
-      walkinSubmitBtn.disabled = false;
-      walkinSubmitBtn.textContent = "Sign In";
-      showToast("Couldn't reach the sheet — check connection", true);
-    });
-  });
-
-  // ---- Visit Log tab ----
-  let visitEntries = [];
-  let visitSearchTerm = "";
-
-  // Visits are now part of the combined loadAll() dashboard fetch, so
-  // the Visit Log tab's refresh button just re-runs that.
-  document.getElementById('visitsRefreshBtn').addEventListener('click', loadFullVisitHistory);
-  document.getElementById('visitSearchBox').addEventListener('input', function(){
-    visitSearchTerm = this.value.trim().toLowerCase();
-    renderVisitsTable();
-  });
-
-  // "h:mm a" (e.g. "9:05 AM") to minutes-since-midnight, so visits sort
-  // by actual time of day instead of comparing the strings character by
-  // character — a plain string compare puts "9:05 AM" ahead of
-  // "10:15 AM" because "9" > "1".
-  function parseTimeToMinutes(timeStr){
-    if(!timeStr) return -1;
-    const s = String(timeStr).trim();
-    let m = s.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)$/i);
-    if(m){
-      let hour = Number(m[1]) % 12;
-      if(m[3].toUpperCase() === 'PM') hour += 12;
-      return hour * 60 + Number(m[2]);
-    }
-    m = s.match(/^(\d{1,2}):(\d{2})(?::(\d{2}))?$/);
-    if(m) return Number(m[1]) * 60 + Number(m[2]);
-    return -1;
-  }
-
-  function sortedFilteredVisits(){
-    let list = visitEntries.filter(v => {
-      if(!visitSearchTerm) return true;
-      // String(...), not just "|| ''" — an idNo that's a plain numeric
-      // string (most of them are) can come back from the sheet as an
-      // actual Number instead of text if it was ever entered/edited
-      // without the usual text-protecting apostrophe. "|| ''" only
-      // catches falsy values (null, "", 0) — a real number like
-      // 64255342 is truthy, sails past it, and .toLowerCase() doesn't
-      // exist on a Number, so this filter used to throw the instant
-      // anyone typed a search term. The very first, unfiltered render
-      // never hit this line at all (it returns true before reaching
-      // it), so the table looked fine right up until someone actually
-      // tried to search — at which point it silently broke with
-      // nothing on screen to explain why.
-      return String(v.name||'').toLowerCase().includes(visitSearchTerm)
-        || String(v.idNo||'').toLowerCase().includes(visitSearchTerm)
-        || String(v.class||'').toLowerCase().includes(visitSearchTerm);
-    });
-    list.sort((a,b) => parseTimeToMinutes(b.timeIn) - parseTimeToMinutes(a.timeIn));
-    return list;
-  }
-
-  // Same reasoning as renderTable()'s own wrapper above — the Visit
-  // Log's search box calls this directly, so a crash in here must show
-  // something on screen instead of just leaving the box looking dead.
-  function renderVisitsTable(){
-    try {
-      renderVisitsTableUnsafe();
-    } catch (err) {
-      document.getElementById('visitsTableHost').innerHTML =
-        `<div class="empty-state"><p>Couldn't display the Visit Log.</p><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-faint);">${escapeHtml(String(err && err.message || err))}</p></div>`;
-      console.error('renderVisitsTable failed:', err);
-    }
-  }
-  function renderVisitsTableUnsafe(){
-    const host = document.getElementById('visitsTableHost');
-    const footNote = document.getElementById('visitsFootNote');
-    const list = sortedFilteredVisits();
-
-    if(visitEntries.length === 0){
-      host.innerHTML = `<div class="empty-state"><p>No visits logged yet for ${escapeHtml(currentActivity.label)}.</p><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-faint);">Sign-ins and sign-outs from the registration app will appear here.</p></div>`;
-      footNote.textContent = ""; return;
-    }
-    if(list.length === 0){
-      host.innerHTML = `<div class="empty-state"><p>No matches for "${escapeHtml(visitSearchTerm)}".</p></div>`;
-      footNote.textContent = ""; return;
-    }
-
-    const photoByIdNo = {};
-    approvedEntries.forEach(e => { if(e.idNo) photoByIdNo[e.idNo] = e.photoUrl; });
-
-    const groups = groupByDate(list);
-    let rows = groups.map(g => {
-      const groupRows = g.rows.map(v => {
-        const photoUrl = photoByIdNo[v.idNo];
-        return `
-        <tr>
-          <td class="cell-photo">${photoUrl ? `<a href="${escapeHtml(photoUrl)}" target="_blank" rel="noopener"><img src="${escapeHtml(driveThumbUrl(photoUrl, 100))}" class="photo-thumb-cell" loading="lazy" decoding="async" alt=""></a>` : '<span class="photo-thumb-placeholder">—</span>'}</td>
-          <td class="name-cell">${escapeHtml(v.name)}</td>
-          <td class="m-meta"><span class="badge ${badgeClassFor(currentActivity, v.class)}">${escapeHtml(v.class||'')}</span></td>
-          <td class="id-cell m-meta">${escapeHtml(v.duration||'—')}</td>
-          <td class="id-cell m-meta m-id${(v.duration === 'Walk-in' && currentActivity.idRequiredCategories.indexOf(v.class) === -1) ? ' m-empty' : ''}">${(v.duration === 'Walk-in' && currentActivity.idRequiredCategories.indexOf(v.class) === -1) ? '<span style="color:var(--text-faint);">—</span>' : escapeHtml(v.idNo||'')}</td>
-          <td class="id-cell m-side m-time-in">${escapeHtml(v.timeIn||'—')}</td>
-          <td class="id-cell m-side m-time-out">${v.timeOut ? escapeHtml(v.timeOut) : '<span class="status-tag" style="background:var(--gold-dim);color:var(--gold-dark);">Still in</span>'}</td>
-        </tr>`;
-      }).join('');
-      return `
-        <tr class="group-row">
-          <td colspan="7">${dateLabel(g.date)} <span class="group-count">— ${g.rows.length} visit${g.rows.length===1?'':'s'}</span></td>
-        </tr>
-        ${groupRows}`;
-    }).join('');
-
-    host.innerHTML = `
-      <table>
-        <thead><tr>
-          <th>Photo</th>
-          <th>Name</th>
-          <th>Category</th>
-          <th>Plan</th>
-          <th>ID No. / Code</th>
-          <th>Time In</th>
-          <th>Time Out</th>
-        </tr></thead>
-        <tbody>${rows}</tbody>
-      </table>`;
-
-    const openCount = list.filter(v => !v.timeOut).length;
-    footNote.textContent = `Showing ${list.length} of ${visitEntries.length} visit(s) across ${groups.length} day${groups.length===1?'':'s'} · ${openCount} still signed in.`;
-  }
-
-  function renderTally(){
-    // Totals come from the server's own count of ALL registrations (stats), so they don't
-    // shrink when Clear List hides rows from the table; fall back to the visible rows if absent.
-    const stats = registrationStats;
-    const counts = {};
-    currentActivity.categories.forEach(c => counts[c] = stats && stats.byClass ? (Number(stats.byClass[c]) || 0) : 0);
-    if(!stats) approvedEntries.forEach(e => { if(counts[e.class] !== undefined) counts[e.class]++; });
-    const total = stats && stats.total !== undefined ? stats.total : approvedEntries.length;
-    let html = `<div class="tally-cell"><div class="tally-num">${total}</div><div class="tally-label">Total</div></div>`;
-    currentActivity.categories.forEach(c => {
-      html += `<div class="tally-cell"><div class="tally-num">${counts[c]}</div><div class="tally-label">${escapeHtml(c)}</div></div>`;
-    });
-    document.getElementById('tally').innerHTML = html;
-    document.getElementById('pendingBadge').textContent = pendingEntries.length;
-    pendingCounts[currentActivity.key] = pendingEntries.length;
-  }
-
+  // ---- Registrants (full detail, read-only) ----
   // Both pulled out of the plain detail-grid into their own callouts so
   // staff can spot them immediately instead of hunting through a dozen
   // fields — medical in gold, emergency contact in red, so they read as
@@ -2110,269 +980,8 @@
       : (e.hasMedicalCondition === 'No' ? '<span class="medical-callout-empty">None reported</span>' : '<span class="medical-callout-empty">Not provided</span>');
     return `<div class="medical-callout"><span class="medical-callout-label">Medical Conditions</span><span class="medical-callout-value">${value}</span></div>`;
   }
-
-  // ---- Approvals tab ----
-  function planLabel(entry){
-    const cfg = currentActivity.durations[entry.duration];
-    let label = (entry.duration || '').replace('/', ' / ');
-    if(cfg && cfg.sessionCap){
-      const used = Number(entry.sessionsUsed) || 0;
-      label += ` (${used}/${cfg.sessionCap} sessions used)`;
-    }
-    return label;
-  }
-
-  // One Pending row's approval card — a solo registration, a renewal
-  // request, or (when a Family Package's group only has one member left
-  // pending, e.g. the rest were already handled) a lone family row.
-  function renderApprovalCard(e){
-    const busy = busyIds.has(e.idNo);
-    const isRenewal = String(e.isRenewal||'').trim().toUpperCase() === "TRUE";
-    const current = isRenewal ? approvedEntries.find(a => a.idNo === e.idNo) : null;
-    const renewalBanner = isRenewal ? `
-      <div class="approval-renewal-note">
-        <span class="status-tag" style="background:var(--gold-dim);color:var(--gold-dark);">Renewal request</span>
-        ${current ? `Currently <strong>${escapeHtml(current.duration||'—')}</strong>, expiring ${formatExpiry(current)} · requesting <strong>${escapeHtml(e.duration||'')}</strong>`
-                   : `Requesting <strong>${escapeHtml(e.duration||'')}</strong> — couldn't find their current record for comparison`}
-      </div>` : '';
-    // A Family Package registration is several rows sharing one
-    // familyGroupId (see Code.gs) — the primary registrant has full
-    // details, each additional family member is a lightweight
-    // name-only row. Normally these render together via
-    // renderFamilyApprovalCard() below; this solo path only shows up
-    // when just one row of the group is still pending.
-    const familyRow = e.class === FAMILY_CATEGORY
-      ? `<div class="detail-item"><div class="dlabel">Family Package</div><div class="dvalue">${e.dob ? 'Primary registrant' : 'Additional family member'} — other codes retrievable by phone on Sign In</div></div>` +
-        (!e.dob && e.familyRelationship ? `<div class="detail-item"><div class="dlabel">Relationship to Primary</div><div class="dvalue">${escapeHtml(e.familyRelationship)}</div></div>` : '')
-      : '';
-    const staffRelationRow = UG_STAFF_RELATION_CATEGORIES.indexOf(e.class) !== -1
-      ? `<div class="detail-item"><div class="dlabel">Related UG Staff</div><div class="dvalue">${e.relatedStaffName ? escapeHtml(e.relatedStaffName) : '—'} (${e.relatedStaffIdNo ? escapeHtml(e.relatedStaffIdNo) : '—'})</div></div>
-         <div class="detail-item"><div class="dlabel">Relationship to Staff</div><div class="dvalue">${e.staffRelationship ? escapeHtml(e.staffRelationship) : '—'}</div></div>`
-      : '';
-    return `
-    <div class="approval-card">
-      <div class="approval-head">
-        <div style="display:flex; align-items:center; gap:12px;">
-          ${approvalPhotoHtml(e)}
-          <div>
-            <div class="approval-name">${escapeHtml(e.name)}${isRenewal ? ' <span class="status-tag" style="background:var(--gold-dim);color:var(--gold-dark);font-size:10px;vertical-align:middle;">RENEWAL</span>' : ''}</div>
-            <div class="approval-sub">${isRenewal ? 'Requested' : 'Submitted'} ${escapeHtml(e.date||'')} · ${escapeHtml(e.time||'')}</div>
-          </div>
-        </div>
-        <div class="approval-actions">
-          <button class="reject-btn" data-idno="${escapeHtml(e.idNo)}" data-action="reject" ${busy?'disabled':''}>Reject</button>
-          <button class="approve-btn" data-idno="${escapeHtml(e.idNo)}" data-action="approve" ${busy?'disabled':''}>${isRenewal ? 'Approve Renewal' : 'Approve'}</button>
-        </div>
-      </div>
-      ${renewalBanner}
-      ${emergencyCalloutHtml(e)}
-      ${medicalCalloutHtml(e)}
-      <div class="detail-grid">
-        <div class="detail-item"><div class="dlabel">Category</div><div class="dvalue"><span class="badge ${badgeClassFor(currentActivity, e.class)}">${escapeHtml(e.class||'')}</span></div></div>
-        <div class="detail-item"><div class="dlabel">Department</div><div class="dvalue">${e.department ? escapeHtml(e.department) : '—'}</div></div>
-        ${familyRow}
-        ${staffRelationRow}
-        <div class="detail-item"><div class="dlabel">Date of Birth</div><div class="dvalue">${escapeHtml(e.dob||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Gender</div><div class="dvalue">${escapeHtml(e.gender||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Nationality</div><div class="dvalue">${escapeHtml(e.nationality||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Phone</div><div class="dvalue">${escapeHtml(e.phone||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Email</div><div class="dvalue">${escapeHtml(e.email||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">ID No. / Code</div><div class="dvalue">${(e.duration === 'Walk-in' && currentActivity.idRequiredCategories.indexOf(e.class) === -1) ? '<span style="color:var(--text-faint);">walk-in — no code issued</span>' : (e.idNo ? escapeHtml(e.idNo) : '<span style="color:var(--text-faint);">generated on approval</span>')}</div></div>
-        <div class="detail-item"><div class="dlabel">Photo</div><div class="dvalue">${e.photoUrl ? `<a href="${escapeHtml(e.photoUrl)}" target="_blank" rel="noopener" style="color:var(--blue);">View photo →</a>` : '—'}</div></div>
-        <div class="detail-item"><div class="dlabel">Signature</div><div class="dvalue">${e.signatureUrl ? `<a href="${escapeHtml(e.signatureUrl)}" target="_blank" rel="noopener" style="color:var(--blue);">View signature →</a>` : '—'}</div></div>
-        <div class="detail-item"><div class="dlabel">Address</div><div class="dvalue">${escapeHtml(e.address||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Plan</div><div class="dvalue">${planLabel(e)}</div></div>
-      </div>
-    </div>`;
-  }
-
-  // One card for a whole Family Package submission — approving or
-  // rejecting it (via the primary registrant's idNo) acts on every
-  // member at once server-side (see Code.gs's doApprove/doReject), so
-  // the front desk only has to decide on the family once, not once per
-  // member.
-  function renderFamilyApprovalCard(members){
-    const primary = members.find(m => m.dob) || members[0];
-    const others = members.filter(m => m !== primary);
-    const busy = busyIds.has(primary.idNo);
-    const memberListHtml = others.length
-      ? `<div class="detail-item"><div class="dlabel">Family Members (${others.length})</div><div class="dvalue">${others.map(m => `${escapeHtml(m.name||'')}${m.familyRelationship ? ' ('+escapeHtml(m.familyRelationship)+')' : ''}`).join(', ')}</div></div>`
-      : '';
-    const staffRelationRow = UG_STAFF_RELATION_CATEGORIES.indexOf(primary.class) !== -1
-      ? `<div class="detail-item"><div class="dlabel">Related UG Staff</div><div class="dvalue">${primary.relatedStaffName ? escapeHtml(primary.relatedStaffName) : '—'} (${primary.relatedStaffIdNo ? escapeHtml(primary.relatedStaffIdNo) : '—'})</div></div>
-         <div class="detail-item"><div class="dlabel">Relationship to Staff</div><div class="dvalue">${primary.staffRelationship ? escapeHtml(primary.staffRelationship) : '—'}</div></div>`
-      : '';
-    return `
-    <div class="approval-card">
-      <div class="approval-head">
-        <div style="display:flex; align-items:center; gap:12px;">
-          ${approvalPhotoHtml(primary)}
-          <div>
-            <div class="approval-name">${escapeHtml(primary.name)} <span class="status-tag" style="background:var(--gold-dim);color:var(--gold-dark);font-size:10px;vertical-align:middle;">FAMILY · ${members.length}</span></div>
-            <div class="approval-sub">Submitted ${escapeHtml(primary.date||'')} · ${escapeHtml(primary.time||'')}</div>
-          </div>
-        </div>
-        <div class="approval-actions">
-          <button class="reject-btn" data-idno="${escapeHtml(primary.idNo)}" data-action="reject" ${busy?'disabled':''}>Reject Family</button>
-          <button class="approve-btn" data-idno="${escapeHtml(primary.idNo)}" data-action="approve" ${busy?'disabled':''}>Approve Family (${members.length})</button>
-        </div>
-      </div>
-      ${emergencyCalloutHtml(primary)}
-      ${medicalCalloutHtml(primary)}
-      <div class="detail-grid">
-        <div class="detail-item"><div class="dlabel">Category</div><div class="dvalue"><span class="badge ${badgeClassFor(currentActivity, primary.class)}">${escapeHtml(primary.class||'')}</span></div></div>
-        <div class="detail-item"><div class="dlabel">Department</div><div class="dvalue">${primary.department ? escapeHtml(primary.department) : '—'}</div></div>
-        ${memberListHtml}
-        ${staffRelationRow}
-        <div class="detail-item"><div class="dlabel">Date of Birth</div><div class="dvalue">${escapeHtml(primary.dob||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Gender</div><div class="dvalue">${escapeHtml(primary.gender||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Nationality</div><div class="dvalue">${escapeHtml(primary.nationality||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Phone</div><div class="dvalue">${escapeHtml(primary.phone||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Email</div><div class="dvalue">${escapeHtml(primary.email||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">ID No. / Code (Primary)</div><div class="dvalue">${primary.idNo ? escapeHtml(primary.idNo) : '<span style="color:var(--text-faint);">generated on approval</span>'}</div></div>
-        <div class="detail-item"><div class="dlabel">Photo</div><div class="dvalue">${primary.photoUrl ? `<a href="${escapeHtml(primary.photoUrl)}" target="_blank" rel="noopener" style="color:var(--blue);">View photo →</a>` : '—'}</div></div>
-        <div class="detail-item"><div class="dlabel">Signature</div><div class="dvalue">${primary.signatureUrl ? `<a href="${escapeHtml(primary.signatureUrl)}" target="_blank" rel="noopener" style="color:var(--blue);">View signature →</a>` : '—'}</div></div>
-        <div class="detail-item"><div class="dlabel">Address</div><div class="dvalue">${escapeHtml(primary.address||'—')}</div></div>
-        <div class="detail-item"><div class="dlabel">Plan</div><div class="dvalue">${planLabel(primary)}</div></div>
-      </div>
-    </div>`;
-  }
-
-  function renderApprovals(){
-    const host = document.getElementById('approvalsHost');
-    if(pendingEntries.length === 0){
-      host.innerHTML = `<div class="empty-state"><p>No pending registrations for ${escapeHtml(currentActivity.label)}.</p><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-faint);">New submissions from the registration app will appear here.</p></div>`;
-      return;
-    }
-    // A fresh Family Package submission is several Pending rows sharing
-    // one familyGroupId (see Code.gs) — group them into a single card
-    // here so approving/rejecting the family is one click instead of
-    // one per member. A renewal keeps its old familyGroupId too, but
-    // Code.gs's doApprove/doReject never group a renewal (only one
-    // member is ever renewing at a time), so it's excluded here to
-    // match — it always renders as its own solo card.
-    const seenGroups = new Set();
-    const cardsHtml = pendingEntries.map(e => {
-      const isRenewal = String(e.isRenewal||'').trim().toUpperCase() === "TRUE";
-      if(e.familyGroupId && !isRenewal){
-        if(seenGroups.has(e.familyGroupId)) return '';
-        seenGroups.add(e.familyGroupId);
-        const members = pendingEntries.filter(m => m.familyGroupId === e.familyGroupId && String(m.isRenewal||'').trim().toUpperCase() !== "TRUE");
-        return members.length > 1 ? renderFamilyApprovalCard(members) : renderApprovalCard(members[0]);
-      }
-      return renderApprovalCard(e);
-    }).join('');
-    host.innerHTML = cardsHtml;
-    // Flag fields that were never filled in (a walk-in has no DOB,
-    // address, photo...) so phone-width CSS can hide them instead of
-    // listing a column of "—" dashes. Wider screens still show them.
-    host.querySelectorAll('.detail-item').forEach(item => {
-      const v = item.querySelector('.dvalue');
-      if(v && v.textContent.trim() === '—') item.classList.add('is-empty');
-    });
-
-    host.querySelectorAll('[data-action]').forEach(btn => {
-      btn.addEventListener('click', () => handleApprovalAction(btn.dataset.idno, btn.dataset.action));
-    });
-  }
-
-  // idNos may be numbers if a cell was ever hand-edited in the sheet, so
-  // compare as strings. Updates that activity's memory too, in case the
-  // person has already switched away by the time the server answers.
-  function removePendingLocally(activity, idNos){
-    const gone = new Set(idNos.map(String));
-    const resolved = resolvedPending[activity.key] || (resolvedPending[activity.key] = new Map());
-    gone.forEach(id => resolved.set(id, Date.now()));
-    const st = storeFor(activity.key);
-    st.pending = st.pending.filter(e => !gone.has(String(e.idNo)));
-    pendingCounts[activity.key] = st.pending.length;
-    if(activity.key !== currentActivity.key) return;
-    pendingEntries = st.pending;
-    renderApprovals();
-    renderTally();
-    renderActivitySwitcher();
-  }
-
-  function handleApprovalAction(idNo, action){
-    const entry = pendingEntries.find(e => String(e.idNo) === String(idNo));
-    const isWalkin = action === "approve" && entry && entry.duration === "Walk-in";
-    const isRenewal = entry && String(entry.isRenewal||'').trim().toUpperCase() === "TRUE";
-    // A Family Package's group approves/rejects together server-side
-    // (see Code.gs) whenever the idNo clicked belongs to one — grab the
-    // group's size now, before loadAll() below refreshes pendingEntries
-    // out from under it.
-    const familySize = (entry && entry.familyGroupId && !isRenewal)
-      ? pendingEntries.filter(e => e.familyGroupId === entry.familyGroupId && String(e.isRenewal||'').trim().toUpperCase() !== "TRUE").length
-      : 1;
-    const activity = currentActivity;
-    busyIds.add(idNo);
-    renderApprovals();
-    // TEMPORARY debug instrumentation (see Code.gs's matching comment on
-    // doApprove()) — logs the client-observed round trip alongside the
-    // server's own step-by-step breakdown, so a slow approval can be
-    // diagnosed straight from this browser's console (F12) without
-    // needing to dig through the Apps Script editor's Executions log.
-    // Safe to remove, here and in Code.gs, once that's done.
-    const _reqStart = Date.now();
-    fetchJSON(SCRIPT_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({ action: action, activity: activity.key, idNo: idNo })
-    })
-    .then(data => {
-      busyIds.delete(idNo);
-      if(data._timing){
-        console.log(`[${action} timing] idNo=${idNo} isWalkin=${isWalkin} clientRoundTripMs=${Date.now() - _reqStart}`, data._timing);
-      }
-      if(data.status === "ok"){
-        if(action === "approve"){
-          // Trust the server's own read of the row it just processed
-          // (data.isWalkin/data.isRenewal) over this desk's own local
-          // guess (isWalkin/isRenewal above, from its last-polled copy
-          // of pendingEntries) whenever the server actually sent one —
-          // that local copy can be a poll cycle stale by the time
-          // someone clicks Approve, and a stale guess here is exactly
-          // what could pop the "here's your code" modal up for a
-          // Walk-in, which never has a real code to show. "Already
-          // handled" (someone else approved/rejected it first) sends
-          // no approvedIdNos at all — nothing was actually approved by
-          // THIS click, so neither the toast nor the code modal apply.
-          const approvedSomething = Array.isArray(data.approvedIdNos) && data.approvedIdNos.length > 0;
-          const confirmedWalkin = data.isWalkin !== undefined ? data.isWalkin : isWalkin;
-          const confirmedRenewal = data.isRenewal !== undefined ? data.isRenewal : isRenewal;
-          if(!approvedSomething){
-            showToast(data.message || "Already handled by another desk", true);
-          } else if(confirmedWalkin){
-            showToast("Walk-in checked in", false, 5000, "check");
-          } else if(confirmedRenewal){
-            showToast("Renewal approved", false, 5000, "check");
-          } else {
-            showApprovedCodeModal(entry || { idNo: idNo }, familySize);
-          }
-        } else {
-          showToast(isRenewal ? "Renewal request rejected" : (familySize > 1 ? `Family of ${familySize} rejected` : "Rejected"));
-        }
-        // The server has confirmed, so take those entries off the list
-        // now instead of leaving the card sitting there until the
-        // reload below comes back (approving used to cost the approval
-        // round trip PLUS a full dashboard reload before anything moved).
-        removePendingLocally(activity, data.approvedIdNos || data.rejectedIdNos || [idNo]);
-        loadAll(activity);
-      } else {
-        showToast(data.message || "Couldn't update — try again", true);
-        renderApprovals();
-      }
-    })
-    .catch(() => {
-      busyIds.delete(idNo);
-      showToast("No connection", true);
-      renderApprovals();
-    });
-  }
-
-  // ---- Registration table tab ----
   const searchBox = document.getElementById('searchBox');
-  searchBox.addEventListener('input', function(){ searchTerm = this.value.trim().toLowerCase(); renderTable(); });
+  searchBox.addEventListener('input', function(){ searchTerm = this.value.trim().toLowerCase(); renderRegistrants(); });
 
   // The "date" column is always DATE_FORMAT-shaped ("dd/MM/yyyy") — the
   // bare Date constructor treats an ambiguous slash-separated string as
@@ -2387,9 +996,6 @@
   // e.g. "8/3/2026"), a registration/visit date is never in the
   // future — so if one reading lands after today and the other
   // doesn't, the one that doesn't is almost certainly the real one.
-  // This is what was pushing old ambiguous rows above today's
-  // genuinely current entries in the Visit Log: misread into a later
-  // month than they actually happened in, they sorted as if newer.
   // Only a row that's ambiguous AND both readings land on the same
   // side of today can still come out wrong — no way to tell those
   // apart from the string alone.
@@ -2418,9 +1024,8 @@
   }
   function getExpiryDate(entry){
     const regDate = parseRegDate(entry.date);
-    if(!regDate) return null;
     const cfg = currentActivity.durations[entry.duration];
-    if(!cfg) return null;
+    if(!regDate || !cfg) return null;
     const expiry = new Date(regDate);
     expiry.setHours(0,0,0,0);
     expiry.setDate(expiry.getDate() + cfg.days);
@@ -2441,274 +1046,120 @@
     const expiry = getExpiryDate(entry);
     return expiry ? formatDateDMY(expiry) : '—';
   }
-  function statusCellHtml(entry){
-    const cfg = currentActivity.durations[entry.duration];
-    const expired = isExpired(entry);
-    let text = formatExpiry(entry);
-    if(cfg && cfg.sessionCap){
-      text = `${Number(entry.sessionsUsed)||0}/${cfg.sessionCap} sessions · exp. ${formatExpiry(entry)}`;
-    }
-    return `${escapeHtml(text)} ${expired ? '<span class="status-tag status-expired">Expired</span>' : ''}`;
-  }
 
-  function sortedFiltered(){
-    let list = approvedEntries.filter(e => {
+  function filteredRegistrants(){
+    return approvedEntries.filter(e => {
       if(!searchTerm) return true;
-      // String(...), not just "|| ''" — see sortedFilteredVisits()'s
-      // matching comment: a numeric-looking idNo/phone that ever got
-      // written or edited without the usual text-protecting apostrophe
-      // comes back as an actual Number, and a plain "|| ''" doesn't
-      // catch that (only falsy values), so .toLowerCase() on a Number
-      // used to throw and silently break the whole search the moment
-      // anyone typed anything.
+      // String(...), not just "|| ''" — a numeric-looking idNo/phone
+      // that was ever written or edited without the usual text-
+      // protecting apostrophe comes back as an actual Number, which
+      // "|| ''" (only catches falsy values) doesn't guard against —
+      // .toLowerCase() on a Number throws, silently breaking search
+      // the instant anyone types anything.
       return String(e.name||'').toLowerCase().includes(searchTerm)
         || String(e.phone||'').toLowerCase().includes(searchTerm)
         || String(e.idNo||'').toLowerCase().includes(searchTerm)
         || String(e.email||'').toLowerCase().includes(searchTerm);
     });
-    list.sort((a,b) => {
-      let av, bv;
-      if(sortKey === 'class'){ av = currentActivity.categories.indexOf(a.class); bv = currentActivity.categories.indexOf(b.class); }
-      else if(sortKey === 'duration'){ av = durationOrderIndex(currentActivity, a.duration); bv = durationOrderIndex(currentActivity, b.duration); }
-      else if(sortKey === 'name'){ av = String(a.name||'').toLowerCase(); bv = String(b.name||'').toLowerCase(); }
-      else if(sortKey === 'phone'){ av = String(a.phone||'').toLowerCase(); bv = String(b.phone||'').toLowerCase(); }
-      else if(sortKey === 'idNo'){ av = String(a.idNo||'').toLowerCase(); bv = String(b.idNo||'').toLowerCase(); }
-      else if(sortKey === 'department'){ av = String(a.department||'').toLowerCase(); bv = String(b.department||'').toLowerCase(); }
-      else { av = a.idNo; bv = b.idNo; }
-      if(av < bv) return -1*sortDir;
-      if(av > bv) return 1*sortDir;
-      return (a.name||'').localeCompare(b.name||'');
-    });
-    return list;
   }
 
-  function arrow(key){ return sortKey === key ? `<span class="arrow">${sortDir === 1 ? '▲' : '▼'}</span>` : ''; }
-
-  function groupByDate(list){
-    const map = new Map();
-    list.forEach(e => {
-      const key = e.date || 'Unknown date';
-      if(!map.has(key)) map.set(key, []);
-      map.get(key).push(e);
-    });
-    const keys = [...map.keys()].sort((a,b) => {
-      const da = parseRegDate(a), db = parseRegDate(b);
-      if(!da || !db) return 0;
-      return db - da;
-    });
-    return keys.map(k => ({ date: k, rows: map.get(k) }));
-  }
-
-  function dateLabel(dateStr){
-    const d = parseRegDate(dateStr);
-    if(!d) return escapeHtml(dateStr);
-    const today = new Date(); today.setHours(0,0,0,0);
-    const cmp = new Date(d); cmp.setHours(0,0,0,0);
-    const diffDays = Math.round((today - cmp) / 86400000);
-    if(diffDays === 0) return `Today — ${dateStr}`;
-    if(diffDays === 1) return `Yesterday — ${dateStr}`;
-    return dateStr;
-  }
-
-  function renderClearedNote(){
-    const note = document.getElementById('clearedNote');
-    if(!registrationsClearedAt){ note.style.display = 'none'; note.innerHTML = ''; return; }
-    const when = new Date(registrationsClearedAt);
-    const whenLabel = isNaN(when.getTime()) ? '' : (formatDateDMY(when) + ' ' + when.toLocaleTimeString());
-    note.style.display = 'flex';
-    note.innerHTML = `<span>List cleared${whenLabel ? ' as of ' + escapeHtml(whenLabel) : ''} — nothing was deleted, everyone before this point is still in the Google Sheet.</span>`;
-    const restoreBtn = document.createElement('button');
-    restoreBtn.type = 'button';
-    restoreBtn.textContent = 'Restore full list';
-    restoreBtn.addEventListener('click', restoreRegistrationsView);
-    note.appendChild(restoreBtn);
-  }
-
-  function restoreRegistrationsView(){
-    const activity = currentActivity;
-    fetchJSON(SCRIPT_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({ action: "restoreRegistrationsView", activity: activity.key })
-    })
-    .then(res => {
-      if(res.status !== "ok"){ showToast(res.message || "Couldn't restore the list", true); return; }
-      showToast("Full list restored", false, 2200, "check");
-      loadAll();
-    })
-    .catch(() => showToast("Couldn't reach the sheet — check connection", true));
-  }
-
-  document.getElementById('clearListBtn').addEventListener('click', function(){
-    const activity = currentActivity;
-    const confirmed = confirm(
-      `Clear the Registration Table for ${activity.label}?\n\n` +
-      `This only hides the current list from this app (and future Excel exports) — the totals at the top stay as they are, and every entry stays exactly as-is in the Google Sheet, and members can still sign in/out and renew normally. You can restore the full list here anytime.`
-    );
-    if(!confirmed) return;
-    fetchJSON(SCRIPT_URL, {
-      method: "POST",
-      headers: { "Content-Type": "text/plain;charset=utf-8" },
-      body: JSON.stringify({ action: "clearRegistrationsView", activity: activity.key })
-    })
-    .then(res => {
-      if(res.status !== "ok"){ showToast(res.message || "Couldn't clear the list", true); return; }
-      showToast("Registration table cleared (still in the Google Sheet)", false, 2200, "check");
-      loadAll();
-    })
-    .catch(() => showToast("Couldn't reach the sheet — check connection", true));
-  });
-
-  // A search box's own 'input' listener calls this directly — if
-  // anything in here throws (one bad row's data, an unexpected value),
-  // the exception used to propagate silently: the search box's event
-  // fired fine, but the table underneath it never updated, which just
-  // looks like "search doesn't do anything" with nothing to explain
-  // why. This wrapper means a crash always shows SOMETHING on screen
-  // instead of leaving the page looking unresponsive.
-  function renderTable(){
-    try {
-      renderTableUnsafe();
-    } catch (err) {
-      document.getElementById('tableHost').innerHTML =
-        `<div class="empty-state"><p>Couldn't display the registration table.</p><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-faint);">${escapeHtml(String(err && err.message || err))}</p></div>`;
-      console.error('renderTable failed:', err);
-    }
-  }
-  function renderTableUnsafe(){
-    const tableHost = document.getElementById('tableHost');
+  function renderRegistrants(){
+    const host = document.getElementById('registrantsHost');
     const footNote = document.getElementById('footNote');
-    const list = sortedFiltered();
-
-    renderClearedNote();
+    const list = filteredRegistrants();
 
     if(approvedEntries.length === 0){
-      tableHost.innerHTML = registrationsClearedAt
-        ? `<div class="empty-state"><p>List cleared for ${escapeHtml(currentActivity.label)}.</p><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-faint);">Nothing new since the clear — the previous entries are still safe in the Google Sheet.</p></div>`
-        : `<div class="empty-state"><p>No approved registrations yet for ${escapeHtml(currentActivity.label)}.</p><p style="font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--text-faint);">Approve entries in the Approvals tab to see them here.</p></div>`;
+      host.innerHTML = `<div class="empty-state"><p>No approved registrants yet for ${escapeHtml(currentActivity.label)}.</p></div>`;
       footNote.textContent = ""; return;
     }
     if(list.length === 0){
-      tableHost.innerHTML = `<div class="empty-state"><p>No matches for "${escapeHtml(searchTerm)}".</p></div>`;
+      host.innerHTML = `<div class="empty-state"><p>No matches for "${escapeHtml(searchTerm)}".</p></div>`;
       footNote.textContent = ""; return;
     }
 
-    const groups = groupByDate(list);
-    let rows = groups.map(g => {
-      const groupRows = g.rows.map(e => {
-        const expired = isExpired(e);
-        return `
-        <tr class="m-expandable${expired ? ' expired-row' : ''}">
-          <td class="cell-photo">${e.photoUrl ? `<a href="${escapeHtml(e.photoUrl)}" target="_blank" rel="noopener"><img src="${escapeHtml(driveThumbUrl(e.photoUrl, 100))}" class="photo-thumb-cell" loading="lazy" decoding="async" alt=""></a>` : '<span class="photo-thumb-placeholder">—</span>'}</td>
-          <td class="name-cell">${escapeHtml(e.name)}</td>
-          <td class="m-meta"><span class="badge ${badgeClassFor(currentActivity, e.class)}">${escapeHtml(e.class||'')}</span></td>
-          <td class="id-cell m-extra" data-label="Department">${e.department ? escapeHtml(e.department) : '<span style="color:var(--text-faint);">—</span>'}</td>
-          <td class="id-cell m-extra" data-label="Phone">${escapeHtml(e.phone||'')}</td>
-          <td class="id-cell m-meta m-id">${escapeHtml(e.idNo||'')}</td>
-          <td class="dur-tag m-meta">${(e.duration||'').replace('/', ' / ')}</td>
-          <td class="id-cell m-side">${statusCellHtml(e)}</td>
-          <td class="id-cell m-extra" data-label="Registered">${escapeHtml(e.date||'')} · ${escapeHtml(e.time||'')}</td>
-        </tr>`;
-      }).join('');
+    // Collapsed by default, same idea as the main front desk's
+    // Registration Table row: just enough to place someone at a glance
+    // (photo, name, category, plan, expiry status) — the full detail
+    // grid (DOB, address, emergency contact, medical notes, photo/
+    // signature links...) only shows once a card is actually tapped.
+    // A screen full of fully-expanded cards was both a lot to scroll
+    // through and a lot of text to cram onto a phone; this way a
+    // narrow screen shows far more people at once, and still gets you
+    // to any one person's full record in a single tap.
+    host.innerHTML = list.map(e => {
+      const expired = isExpired(e);
+      const cfg = currentActivity.durations[e.duration];
+      const planText = cfg && cfg.sessionCap
+        ? `${(e.duration||'').replace('/', ' / ')} (${Number(e.sessionsUsed)||0}/${cfg.sessionCap} sessions used)`
+        : (e.duration||'').replace('/', ' / ');
       return `
-        <tr class="group-row">
-          <td colspan="9">${dateLabel(g.date)} <span class="group-count">— ${g.rows.length} registration${g.rows.length===1?'':'s'}</span></td>
-        </tr>
-        ${groupRows}`;
+      <div class="approval-card">
+        <div class="approval-head" role="button" tabindex="0" aria-expanded="false">
+          <div style="display:flex; align-items:center; gap:12px;">
+            ${e.photoUrl ? `<img src="${escapeHtml(driveThumbUrl(e.photoUrl, 100))}" class="photo-thumb-cell" style="width:44px;height:44px;" loading="lazy" decoding="async" alt="">` : `<span class="photo-thumb-placeholder" style="width:44px;height:44px;">—</span>`}
+            <div>
+              <div class="approval-name">${escapeHtml(e.name)} <span class="badge ${badgeClassFor(currentActivity, e.class)}">${escapeHtml(e.class||'')}</span></div>
+              <div class="approval-sub">${escapeHtml(planText)} · Registered ${escapeHtml(e.date||'')}</div>
+            </div>
+          </div>
+          <div class="approval-actions">
+            ${expired ? '<span class="status-tag status-expired">Expired / Used Up</span>' : ''}
+            <span class="expand-chevron">▾</span>
+          </div>
+        </div>
+        <div class="approval-more">
+          ${emergencyCalloutHtml(e)}
+          ${medicalCalloutHtml(e)}
+          <div class="detail-grid">
+            <div class="detail-item"><div class="dlabel">Department</div><div class="dvalue">${e.department ? escapeHtml(e.department) : '—'}</div></div>
+            ${e.class === FAMILY_CATEGORY ? `<div class="detail-item"><div class="dlabel">Family Package</div><div class="dvalue">${e.dob ? 'Primary registrant' : 'Additional family member'} — other codes retrievable by phone on Sign In</div></div>` : ''}
+            ${UG_STAFF_RELATION_CATEGORIES.indexOf(e.class) !== -1 ? `<div class="detail-item"><div class="dlabel">Related UG Staff</div><div class="dvalue">${e.relatedStaffName ? escapeHtml(e.relatedStaffName) : '—'} (${e.relatedStaffIdNo ? escapeHtml(e.relatedStaffIdNo) : '—'})</div></div><div class="detail-item"><div class="dlabel">Relationship to Staff</div><div class="dvalue">${e.staffRelationship ? escapeHtml(e.staffRelationship) : '—'}</div></div>` : ''}
+            <div class="detail-item"><div class="dlabel">Date of Birth</div><div class="dvalue">${escapeHtml(e.dob||'—')}</div></div>
+            <div class="detail-item"><div class="dlabel">Gender</div><div class="dvalue">${escapeHtml(e.gender||'—')}</div></div>
+            <div class="detail-item"><div class="dlabel">Nationality</div><div class="dvalue">${escapeHtml(e.nationality||'—')}</div></div>
+            <div class="detail-item"><div class="dlabel">Phone</div><div class="dvalue">${escapeHtml(e.phone||'—')}</div></div>
+            <div class="detail-item"><div class="dlabel">Email</div><div class="dvalue">${escapeHtml(e.email||'—')}</div></div>
+            <div class="detail-item"><div class="dlabel">ID No. / Code</div><div class="dvalue">${escapeHtml(e.idNo||'—')}</div></div>
+            <div class="detail-item"><div class="dlabel">Address</div><div class="dvalue">${escapeHtml(e.address||'—')}</div></div>
+            <div class="detail-item"><div class="dlabel">Expires</div><div class="dvalue">${escapeHtml(formatExpiry(e))}</div></div>
+            <div class="detail-item"><div class="dlabel">Photo</div><div class="dvalue">${e.photoUrl ? `<a href="${escapeHtml(e.photoUrl)}" target="_blank" rel="noopener" style="color:var(--blue);">View photo →</a>` : '—'}</div></div>
+            <div class="detail-item"><div class="dlabel">Signature</div><div class="dvalue">${e.signatureUrl ? `<a href="${escapeHtml(e.signatureUrl)}" target="_blank" rel="noopener" style="color:var(--blue);">View signature →</a>` : '—'}</div></div>
+          </div>
+        </div>
+      </div>`;
     }).join('');
 
-    tableHost.innerHTML = `
-      <table>
-        <thead><tr>
-          <th>Photo</th>
-          <th data-key="name" tabindex="0" role="button">Name ${arrow('name')}</th>
-          <th data-key="class" tabindex="0" role="button">Category ${arrow('class')}</th>
-          <th data-key="department" tabindex="0" role="button">Department ${arrow('department')}</th>
-          <th data-key="phone" tabindex="0" role="button">Phone ${arrow('phone')}</th>
-          <th data-key="idNo" tabindex="0" role="button">ID No. / Code ${arrow('idNo')}</th>
-          <th data-key="duration" tabindex="0" role="button">Plan ${arrow('duration')}</th>
-          <th>Status</th>
-          <th>Registered</th>
-        </tr></thead>
-        <tbody>${rows}</tbody>
-      </table>`;
-
-    tableHost.querySelectorAll('thead th[data-key]').forEach(th => {
-      const trigger = () => {
-        const key = th.dataset.key;
-        if(sortKey === key){ sortDir *= -1; } else { sortKey = key; sortDir = 1; }
-        renderTable();
+    host.querySelectorAll('.approval-head').forEach(head => {
+      const toggle = () => {
+        const card = head.closest('.approval-card');
+        const expanded = card.classList.toggle('expanded');
+        head.setAttribute('aria-expanded', expanded ? 'true' : 'false');
       };
-      th.addEventListener('click', trigger);
-      th.addEventListener('keydown', (e) => { if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); trigger(); } });
-    });
-    // Phones only: each row shows a two-line summary, and a tap reveals
-    // the rest (department, phone, registered time) — see .m-extra in
-    // the max-width:640px CSS. Wider screens show every column already.
-    tableHost.querySelectorAll('tr.m-expandable').forEach(tr => {
-      tr.addEventListener('click', (ev) => {
-        if(ev.target.closest('a')) return;
-        if(!window.matchMedia('(max-width:640px)').matches) return;
-        tr.classList.toggle('m-open');
+      head.addEventListener('click', toggle);
+      head.addEventListener('keydown', (ev) => {
+        if(ev.key === 'Enter' || ev.key === ' '){ ev.preventDefault(); toggle(); }
       });
     });
+
     const expiredCount = list.filter(isExpired).length;
-    footNote.textContent = `Showing ${list.length} of ${approvedEntries.length} approved registration(s) across ${groups.length} day${groups.length===1?'':'s'} · ${expiredCount} expired/used up. Auto-refreshes every ${AUTO_REFRESH_MS/1000}s.`;
+    footNote.textContent = `Showing ${list.length} of ${approvedEntries.length} registrant(s) · ${expiredCount} expired/used up. Auto-refreshes every ${AUTO_REFRESH_MS/1000}s.`;
   }
 
-  // ---- Export ----
-  // Builds and downloads a local .xlsx of the current Registration
-  // Table — entirely client-side (no server round trip, no file kept
-  // in Drive).
-  document.getElementById('exportBtn').addEventListener('click', function(){
-    const activity = currentActivity;
-    if(approvedEntries.length === 0){ showToast("Nothing to export yet", true); return; }
-    const sorted = [...approvedEntries].sort((a,b) => {
-      const ac = activity.categories.indexOf(a.class), bc = activity.categories.indexOf(b.class);
-      if(ac !== bc) return ac - bc;
-      const ad = durationOrderIndex(activity, a.duration), bd = durationOrderIndex(activity, b.duration);
-      if(ad !== bd) return ad - bd;
-      return (a.name||'').localeCompare(b.name||'');
+  function renderTally(){
+    // Totals come from the server's own count of ALL registrations (stats), so they don't
+    // shrink when Clear List hides rows at the main desk; fall back to the visible rows if absent.
+    const stats = registrationStats;
+    const counts = {};
+    currentActivity.categories.forEach(c => counts[c] = stats && stats.byClass ? (Number(stats.byClass[c]) || 0) : 0);
+    if(!stats) approvedEntries.forEach(e => { if(counts[e.class] !== undefined) counts[e.class]++; });
+    const total = stats && stats.total !== undefined ? stats.total : approvedEntries.length;
+    let html = `<div class="tally-cell"><div class="tally-num">${total}</div><div class="tally-label">Total</div></div>`;
+    currentActivity.categories.forEach(c => {
+      html += `<div class="tally-cell"><div class="tally-num">${counts[c]}</div><div class="tally-label">${escapeHtml(c)}</div></div>`;
     });
+    document.getElementById('tally').innerHTML = html;
+  }
 
-    // Columns: A ID No./Code, B Category, C Name, D Phone, E Date of Registration (real date),
-    // F Days Left (live formula), G Sessions Used, H Session Cap
-    const aoa = [["ID No. / Code", "Category", "Name", "Phone Number", "Date of Registration", "Days Left", "Sessions Used", "Session Cap"]];
-    sorted.forEach(e => {
-      const regDate = parseRegDate(e.date);
-      const cfg = activity.durations[e.duration];
-      aoa.push([
-        e.idNo || "", e.class || "", e.name || "", e.phone || "",
-        regDate || (e.date || ""), null,
-        cfg && cfg.sessionCap ? (Number(e.sessionsUsed)||0) : "",
-        cfg && cfg.sessionCap ? cfg.sessionCap : ""
-      ]);
-    });
-
-    const ws = XLSX.utils.aoa_to_sheet(aoa);
-    sorted.forEach((e, i) => {
-      const rowNum = i + 2; // header is row 1
-      const cfg = activity.durations[e.duration];
-      if(!cfg) return;
-      // Live formula: recalculates against TODAY() every time the file is opened.
-      ws["F" + rowNum] = { t: 'n', f: `E${rowNum}+${cfg.days}-TODAY()`, z: '0' };
-    });
-    ws['!cols'] = [{wch:14},{wch:16},{wch:24},{wch:16},{wch:18},{wch:12},{wch:14},{wch:12}];
-    ws['!ref'] = XLSX.utils.encode_range({ s:{r:0,c:0}, e:{r:sorted.length, c:7} });
-
-    const wb = XLSX.utils.book_new();
-    XLSX.utils.book_append_sheet(wb, ws, "Registrations");
-
-    const summary = activity.categories.map(c => ({ "Category": c, "Count": approvedEntries.filter(e => e.class === c).length }));
-    summary.push({"Category":"Total","Count":approvedEntries.length});
-    const ws2 = XLSX.utils.json_to_sheet(summary);
-    ws2['!cols'] = [{wch:22},{wch:8}];
-    XLSX.utils.book_append_sheet(wb, ws2, "Summary");
-
-    const fileName = activity.label.toLowerCase().replace(/[^a-z0-9]+/g, '-') + "-registrations.xlsx";
-    XLSX.writeFile(wb, fileName);
-    showToast("Excel file downloaded (countdown updates live)", false, 2200, "check");
-  });
 })();
 </script>
 </body>
