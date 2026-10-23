@@ -153,7 +153,7 @@
   .search-box{
     background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='%238B98AC'%3E%3Cpath fill-rule='evenodd' d='M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.6 4.2l3.6 3.6a.75.75 0 11-1.06 1.06l-3.6-3.6A7 7 0 012 9z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat 11px center;
     background-size:14px; border:1px solid var(--line-strong); border-radius:8px; padding:9px 12px 9px 32px;
-    color:var(--text); font-size:13px; font-family:'Inter',sans-serif; min-width:200px; outline:none;
+    color:var(--text); font-size:13px; font-family:'Inter',sans-serif; min-width:290px; outline:none;
     transition:border-color .12s ease, box-shadow .12s ease;
   }
   .search-box:focus{border-color:var(--blue); box-shadow:0 0 0 3px var(--blue-dim);}
@@ -218,13 +218,8 @@
      grid always followed directly underneath it. */
   #registrantsHost .approval-head{ cursor:pointer; margin-bottom:0; }
   #registrantsHost .approval-head:focus-visible{ outline:2px solid var(--blue); outline-offset:2px; border-radius:6px; }
-  .expand-chevron{
-    display:inline-block; color:var(--text-faint); font-size:13px; line-height:1;
-    transition:transform .15s ease;
-  }
   .approval-more{ display:none; margin-top:14px; }
   .approval-card.expanded .approval-more{ display:block; }
-  .approval-card.expanded .expand-chevron{ transform:rotate(180deg); }
   .approve-btn, .reject-btn{
     border:none; border-radius:8px; padding:9px 16px; font-weight:800; font-size:12.5px;
     text-transform:uppercase; letter-spacing:0.03em; cursor:pointer; font-family:'Inter',sans-serif;
@@ -330,37 +325,45 @@
   #pinScreen{ min-height:100vh; min-height:100dvh; }
 
   /* ---- Tally: one card per number instead of one boxed strip ----
-     Total is the navy tile; each category gets its own card with a gold
-     edge, numbers left-aligned and big, labels allowed to wrap so long
-     names ("UG Staff Relation (17 & Above)") are never squeezed or cut. */
+     Total is the navy tile; each category is its own white card. Number on top, label directly
+     under it (so numbers and labels line up across cards however many lines a label wraps to),
+     and no coloured accents. */
   .tally, .tally .tally-cell{ box-shadow:none; }
   .tally{
-    display:grid; grid-template-columns:repeat(auto-fit,minmax(138px,1fr)); gap:10px;
-    background:transparent; border:none; border-radius:0; overflow:visible; width:100%; max-width:900px;
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:10px;
+    background:transparent; border:none; border-radius:0; overflow:visible; width:100%; max-width:960px;
   }
   .tally .tally-cell{
-    min-width:0; padding:12px 14px 11px; text-align:left; border:1px solid var(--line); border-left:3px solid var(--gold);
-    border-radius:10px; background:var(--panel);
+    position:relative; min-width:0; padding:14px 14px 12px; text-align:left;
+    border:1px solid var(--line); border-radius:10px; background:var(--panel);
     box-shadow:0 1px 3px rgba(15,29,59,0.05);
-    display:flex; flex-direction:column; justify-content:space-between; gap:6px;
+    display:flex; flex-direction:column; justify-content:flex-start; gap:6px;
   }
   .tally .tally-num{ font-size:32px; line-height:1; color:var(--blue); }
-  .tally .tally-label{ font-size:10px; letter-spacing:0.07em; line-height:1.35; margin-top:0; color:var(--text-dim); }
-  .tally .tally-cell:first-child{ background:var(--blue); border-color:var(--blue); border-left-color:var(--gold); }
+  .tally .tally-label{ font-size:10px; letter-spacing:0.05em; line-height:1.4; margin-top:0; color:var(--text-dim); text-wrap:balance; overflow-wrap:anywhere; }
+  .tally .tally-cell:first-child{ background:var(--blue); border-color:var(--blue); }
   .tally .tally-cell:first-child .tally-num{ color:#fff; }
   .tally .tally-cell:first-child .tally-label{ color:rgba(255,255,255,0.78); }
   @media (max-width:640px){
     .tally{ grid-template-columns:1fr 1fr; gap:8px; max-width:none; }
-    .tally .tally-cell{ padding:7px 11px 7px; gap:3px; box-shadow:0 1px 2px rgba(15,29,59,0.05); }
-    .tally .tally-num{ font-size:22px; }
+    .tally .tally-cell{ padding:12px 12px 9px; gap:4px; box-shadow:0 1px 2px rgba(15,29,59,0.05); }
+      .tally .tally-num{ font-size:22px; }
     .tally .tally-label{ font-size:9.5px; letter-spacing:0.05em; }
     /* Total runs the full width with the number and label side by side. */
     .tally .tally-cell:first-child{ grid-column:1 / -1; flex-direction:row; align-items:center; justify-content:space-between; }
-    .tally .tally-cell:first-child{ padding:8px 14px; }
+    .tally .tally-cell:first-child{ padding:10px 14px; }
     .tally .tally-cell:first-child .tally-num{ font-size:26px; }
     .tally .tally-cell:first-child .tally-label{ font-size:10.5px; }
     /* An odd leftover category card spans both columns instead of leaving a hole. */
     .tally .tally-cell:last-child:nth-child(even){ grid-column:1 / -1; }
+  }
+  /* Registrant cards: badge in the body font (it was inheriting the big condensed name font), and the
+     chevron stays on the right of the card's first row on phones instead of dropping to its own line. */
+  .approval-actions:empty{ display:none; }
+  .approval-name .badge{ font-family:'Inter',sans-serif; margin-left:4px; vertical-align:middle; }
+  @media (max-width:640px){
+    #registrantsHost .approval-head{ flex-wrap:nowrap; align-items:flex-start; gap:8px; }
+    #registrantsHost .approval-actions{ width:auto; margin-left:auto; padding-top:2px; }
   }
 </style>
 </head>
@@ -1102,10 +1105,7 @@
               <div class="approval-sub">${escapeHtml(planText)} · Registered ${escapeHtml(e.date||'')}</div>
             </div>
           </div>
-          <div class="approval-actions">
-            ${expired ? '<span class="status-tag status-expired">Expired / Used Up</span>' : ''}
-            <span class="expand-chevron">▾</span>
-          </div>
+          ${expired ? '<div class="approval-actions"><span class="status-tag status-expired">Expired / Used Up</span></div>' : ''}
         </div>
         <div class="approval-more">
           ${emergencyCalloutHtml(e)}
@@ -1145,6 +1145,15 @@
     footNote.textContent = `Showing ${list.length} of ${approvedEntries.length} registrant(s) · ${expiredCount} expired/used up. Auto-refreshes every ${AUTO_REFRESH_MS/1000}s.`;
   }
 
+  // Short names for the totals cards only (the full names are on each card's tooltip and everywhere else).
+  const TALLY_SHORT = {
+    "UG Staff Relation (Under 17)": "Staff Rel. U17",
+    "UG Staff Relation (17 & Above)": "Staff Rel. 17+",
+    "Public Child (Under 17)": "Child U17",
+    "Public Adult (17 & Above)": "Adult 17+",
+    "Family Package (Max 5)": "Family"
+  };
+  function tallyLabel(c){ return TALLY_SHORT[c] || c; }
   function renderTally(){
     // Totals come from the server's own count of ALL registrations (stats), so they don't
     // shrink when Clear List hides rows at the main desk; fall back to the visible rows if absent.
@@ -1155,7 +1164,7 @@
     const total = stats && stats.total !== undefined ? stats.total : approvedEntries.length;
     let html = `<div class="tally-cell"><div class="tally-num">${total}</div><div class="tally-label">Total</div></div>`;
     currentActivity.categories.forEach(c => {
-      html += `<div class="tally-cell"><div class="tally-num">${counts[c]}</div><div class="tally-label">${escapeHtml(c)}</div></div>`;
+      html += `<div class="tally-cell" title="${escapeHtml(c)}"><div class="tally-num">${counts[c]}</div><div class="tally-label">${escapeHtml(tallyLabel(c))}</div></div>`;
     });
     document.getElementById('tally').innerHTML = html;
   }
